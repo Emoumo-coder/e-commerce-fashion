@@ -1,0 +1,131 @@
+/* Typography Classes */
+.font-baloo{
+    font-family: $font-baloo;
+}
+
+.font-montserrat{
+    font-family: $font-montserrat;
+}
+
+.font-raleway{
+    font-family: $font-raleway;
+}
+
+.font-size-12{
+    font-size: 12px !important;
+}
+
+.font-size-14{
+    font-size: 14px;
+}
+
+.font-size-16{
+    font-size: 16px;
+}
+
+.font-size-20{
+    font-size: 20px;
+}
+// <div class="container mt-5 pt-4 hide-for-tablate">
+//       <div class="row pt-5">
+//         <div class="col-1">
+//           <div class="row pt-3 pb-2">
+//             <div class="col-xl-12 text-center">
+//               <a href="#/"><img src="Images/Apparel_Male_T-Shirts_1355260171.jpg" height="50px" width="100%"
+//                   class="zooming"></a>
+//             </div>
+//             <div class="col-xl-12 mt-3">
+//               <a href="#/"><img src="Images/Apparel_Male_T-Shirts_1356382863.jpg" height="50px" width="100%"
+//                   class="zooming-1"></a>
+//             </div>
+//             <div class="col-xl-12 mt-3 front-show pos-relative">
+//               <a href="#/"><img src="Images/Apparel_Men_Hoodies_1358360276.jpg" height="55px" width="75%"
+//                   class="zooming-2"></a>
+//               <a href="#/">
+//                 <div style="font-size:25px;z-index:1;color:black;position: absolute;padding-left:20%;"
+//                   class="pt-1 front-show">+3</div>
+//               </a>
+//             </div>
+//             <div class="col-xl-12 mt-3 front-hide">
+//               <a href="#/"><img src="Images/Apparel_Men_Jeans_1359324055.jpg" height="50px" width="100%"
+//                   class="zooming-5"></a>
+//             </div>
+//             <div class="col-xl-12 mt-3 front-hide">
+//               <a href="#/"><img src="Images/Apparel_Men_Shoes_1359327004.jpg" height="50px" width="100%"
+//                   class="zooming-3"></a>
+//             </div>
+//             <div class="col-xl-12 mt-3 front-hide">
+//               <a href="#/"><img src="Images/Apparel_Men_Shoes_1359327085.jpg" height="50px" width="100%"
+//                   class="zooming-4"></a>
+//             </div>
+//           </div>
+//         </div>
+//         <div class="col-5 text-center zooming-open-head wm-zoom-container my-zoom-1">
+//           <div class="wm-zoom-box">
+//             <img src="Images/Apparel_Men_Jewelry_1358361381.jpg" height="400px" width="405px"
+//               class="wm-zoom-default-img" alt="alternative text"
+//               data-hight-src="Images/Apparel_Men_Jewelry_1358361381.jpg">
+//           </div>
+//           <div class="row">
+//             <div class="col">
+//               <button type="submit" class="btn btn-danger form-control"><i class="fa fa-shopping-cart"
+//                   aria-hidden="true"></i>Add to Cart</button>
+//             </div>
+//             <div class="col">
+//               <button type="submit" class="btn btn-danger form-control"><i class="fa fa-bolt"
+//                   aria-hidden="true"></i>Buy Now</button>
+//             </div>
+//           </div>
+//         </div>
+//         <!--hidden-->
+//         <div class="col-5 text-center zooming-open-1 wm-zoom-container my-zoom-1">
+//           <div class="wm-zoom-box">
+//             <img src="Images/Apparel_Men_Jewelry_1358361473.jpg"
+//               class="wm-zoom-default-img img-fluid" alt="alternative text"
+//               data-hight-src="Images/Apparel_Men_Jewelry_1358361473.jpg">
+//           </div>
+//         </div>
+//         <!--hidden-->
+//         <div class="col-5 text-center zooming-open-2">
+//           <img src="Images/Apparel_Men_Jewelry_1358362188.jpg" height="400px" width="95%">
+//         </div>
+//         <!--hidden-->
+//         <div class="col-5 text-center zooming-open-3">
+//           <img src="Images/Apparel_Men_Shoes_1359327004.jpg" height="400px" width="95%">
+//         </div>
+//         <!--hidden-->
+//         <div class="col-5 text-center zooming-open-4">
+//           <img src="Images/Apparel_Women_Active-wear_1356997694.jpg" height="400px" width="95%">
+//         </div>
+//         <div class="col-5 ms-4">
+//           <div class="row">
+//             <div class="col-12 pt-3">
+//               <p style="font-size:25px;font-weight:600">Symbol Men's Solid Regular fit Half Sleeve Polo</p>
+//             </div>
+//             <div class="col-12 pl-5">
+//               <p style="font-weight:600;font-size:20px;"> Price:<span
+//                   style="color:red">&#8377;200.00-&#8377;300.00</span></p>
+//             </div>
+//             <div class="col-12 pl-5">
+//               <p style="font-weight:600;font-size:20px;">size: <span style="border:1px solid;padding:1% 3%"
+//                   class="ml-3">M</span> <span style="border:1px solid;padding:1% 4%" class="ml-2">L</span> <span
+//                   style="border:1px solid;padding:1% 3%" class="ml-2">XL</span> <br class="break"><a href="#/"
+//                   style="color:black" class="ml-3 open-pop-container">size chart <img src="Images/size-icon.png"
+//                     height="20px"></a></p>
+//             </div>
+//             <div class="col-12">
+//               <ul>
+//                 <li>Care Instructions: hand wash</li>
+//                 <li>Fit Type: regular fit</li>
+//                 <li>Color:Blue Radiance</li>
+//                 <li>60% Polyester and 40% Cotton</li>
+//                 <li>Regular fit</li>
+//                 <li>Half sleeve</li>
+//                 <li>Polo with classic collar</li>
+//                 <li>Hand wash</li>
+//               </ul>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>

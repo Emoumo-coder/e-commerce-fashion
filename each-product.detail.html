@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopee Site</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <!-- <link rel="stylesheet" href="assets/css/material-icons.css" /> -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!-- Swiperjs cdn -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
+
+  <!-- Owl-carousel CDN -->
+  <!-- <link rel="stylesheet" href="assets/" /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" /> -->
+
+  <!-- zOOM CDN -->
+  <link rel="stylesheet" href="assets/jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom/wm-zoom/jquery.wm-zoom-1.0.min.css">
+  <!-- zOOM CDN -->
+
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+
+  <!-- Custom CSS file -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-color: lavender;">
+
+  <!-- START HEADER -->
+
+  <header>
+    <!-- The Top Section -->
+    <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+      <p class="font-montserrat font-size-12 text-black-50 m-0"> +971 50 202 0067 support@fashionys.com</p>
+      <div class="font-montserrat font-size-14">
+        <a href="#" class="px-3 border-start text-dark"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="px-3 border-start border-end text-dark"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <!-- !The Top Section -->
+
+    <div class="container-sm">
+      <div class="row inner py-2">
+        <div class="col-auto logo m-0">
+          <a href="index.php" class="color-black font-raleway">Shopee Site</a>
+        </div>
+
+        <div class="col-auto ms-auto right">
+          <ul class="d-flex justify-content-end py-1 font-raleway font-size-16  list-style">
+            <li><a href="#" class="color-primary"><i class="fa fa-sign-in"></i><span>Login</span></a></li>
+            <li><a href="#" class="color-primary"><i class="fa fa-user-plus"></i><span>Register</span></a>
+            </li>
+            <li><a href="#" class="color-primary"><i class="fa fa-heart"></i>(0.00)</a></li>
+            <li><a href="#" class="color-primary"><i class="fa fa-shopping-cart">($0.00)</i></a></li>
+          </ul>
+        </div>
+        <div class="col-auto search-area">
+          <form class="search-event d-flex align-items-center justify-content-center">
+            <input type="text" placeholder="Search..." class="header-search">
+            <label for="header-search" class="fa fa-search"></label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 pl_0 pe_0">
+            <div class="menu-container">
+              <div class="menu">
+                <ul>
+                  <li><a href="index.php">Home</a></li>
+                  <li><a href="#">Men</a>
+                    <ul>
+                      <li><a href="#">Men Accessory</a>
+                        <ul>
+                          <li><a href="#">Men Accessory</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Men Accessory</a>
+                        <ul>
+                          <li><a href="#">Men Accessory</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Men Accessory</a>
+                        <ul>
+                          <li><a href="#">Men Accessory</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a href="about.php">Men</a></li>
+                  <li><a href="about.php">Women</a></li>
+                  <li><a href="about.php">Kids</a></li>
+                  <li><a href="about.php">About Us</a></li>
+                  <li><a href="faq.php">FAQ</a></li>
+
+                  <li><a href="contact.php">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- !START HEADER -->
+
+  <!-- START MAIN SECTION -->
+  <main>
+    <!-- START POP UP SECTION -->
+
+    <div class="container-fluid mt-5 pop-container" style="position:absolute;z-index:3;background-color: transparent;">
+      <div class="container bg-light mt-2 mb-2 pt-2" style="border-radius:20px;">
+        <div class="row pt-5">
+          <div class="col-6 text-start pt-2 table-header">
+            <span style="font-size:25px;">Size Chart</span>
+          </div>
+          <div class="col-6 text-end pe-5">
+            <span style="font-size:35px;" class="close-pop"><a href="#/" style="color:black">&times;</a></span>
+          </div>
+        </div>
+        <div class="row pt-3 table-header text-center" style="font-size:20px;">
+          <div class="col-12">
+            Veirdo Men's Shirts size chart
+          </div>
+          <div class="col-12">
+            shirts
+          </div>
+        </div>
+        <div class="row pt-3 pb-5 table">
+          <div class="col table-responsive">
+            <table class="table table-bordered table-hover table-striped hide-for-tablate">
+              <thead>
+                <tr>
+                  <th>Label size</th>
+                  <th>India</th>
+                  <th>Chest(in inches)</th>
+                  <th>Waist(in inches)</th>
+                  <th>Length(in inches)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>S</td>
+                  <td>Small</td>
+                  <td>38</td>
+                  <td>37.5</td>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <td>M</td>
+                  <td>Medium</td>
+                  <td>40</td>
+                  <td>39.5</td>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <td>L</td>
+                  <td>Large</td>
+                  <td>42</td>
+                  <td>41.5</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <td>XL</td>
+                  <td>X-Large</td>
+                  <td>44</td>
+                  <td>43.5</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>XXL</td>
+                  <td>XX-Large</td>
+                  <td>46</td>
+                  <td>45.5</td>
+                  <td>30.5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 table-header">
+            <p class="pt-3">Measuring T Shirt Size</p>
+            <span>Not sure about your t shirt size? Follow these simple steps to figure it out:</span><br>
+            <span style="font-weight: 600;">Shoulder</span> - Measure the shoulder at the back, from edge to edge with
+            arms relaxed on both sides<br>
+            <span style="font-weight:600;">Chest</span> - Measure around the body under the arms at the fullest part of
+            the chest with your arms relaxed at both sides.<br>
+            <span style="font-weight:600;">Sleeve</span> - Measure from the shoulder seam through the outer arm to the
+            cuff/hem<br>
+            <span style="font-weight:600;">Neck</span> - Measured horizontally across the neck Length - Measure from the
+            highest point of the shoulder seam to the bottom hem of the garment's<br>
+          </div>
+          <div class="col-12 text-center pt-5 pb-5">
+            <img src="Images/shirt-detail.jpg" height="300px" width="50%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END POP UP SECTION -->
+
+    <!-- START PRODUCT DETAIL SECTION -->
+    <!-- ...::: Strat Product Gallery Section :::... -->
+    <div class="product-gallery-info-section section-fluid-270 section-top-gap-100">
+      <div class="box-wrapper">
+        <div class="product-gallery-info-wrapper">
+          <div class="container-fluid">
+            <div class="row flex-column-reverse flex-lg-row">
+              <div class="col-xl-8 col-lg-7 offset-lg-1  ">
+                <div class="row">
+                  <div class="col-md-6 col-lg-12 col-xl-6">
+                    <!-- Start Product Gallert - Thumbnail Style -->
+                    <div class="product-gallery product-gallery--style-thumbnail-bottom">
+                      <div class="row flex-column-reverse">
+                        <div class="col-md-12">
+                          <!-- Start Product Thumbnail -->
+                          <ul class="product-thumbnail-image nav">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#img-1"
+                                type="button">
+                                <span class="thumb">
+                                  <img class="img-fluid" src="image/product_img3.jpg" alt="">
+                                </span>
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#img-2" type="button">
+                                <span class="thumb">
+                                  <img class="img-fluid" src="image/product_img5.jpg" alt="">
+                                </span>
+                              </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" data-bs-toggle="tab" data-bs-target="#img-3" type="button">
+                                <span class="thumb">
+                                  <img class="img-fluid" src="image/product_img8.jpg" alt="">
+                                </span>
+                              </button>
+                            </li>
+                          </ul>
+                          <!-- End Product Thumbnail -->
+                        </div>
+                        <div class="col-md-12">
+                          <!-- Start Product Large Image -->
+                          <div class="product-large-image tab-content zooming-open-head wm-zoom-container my-zoom-1">
+                            <div class="tab-pane fade show active" id="img-1" role="tabpanel">
+                              <div class="image wm-zoom-box">
+                                <img class="wm-zoom-default-img" data-hight-src="Images/Apparel_Men_Jewelry_1358361381.jpg"
+                                 src="image/product_img12.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="img-2" role="tabpanel">
+                              <div class="image">
+                                <img class="img-fluid" src="image/product_img1.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="img-3" role="tabpanel">
+                              <div class="image">
+                                <img class="img-fluid" src="image/product_img4.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End Product Large Image -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Product Gallert - Tab Style -->
+                  </div>
+                  <!-- Start Product Details Content -->
+                  <div class="col-md-6 col-lg-12 col-xl-6">
+                    <!-- Start Product Content -->
+                      <h5 class="font-baloo font-size-20">Symbol Men's Solid Regular fit Half Sleeve Polo</h5>
+                      <div class="d-flex">
+                          <div class="rating text-warning font-size-12">
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="far fa-star"></i></span>
+                            </div>
+                            <a href="#" class="px-2 font-rale font-size-14">20,534 ratings | 1000+ answered questions</a>
+                      </div>
+                      <hr class="m-0">
+
+                      <!---    product price       -->
+                          <table class="my-3">
+                              <tr class="font-rale font-size-14">
+                                  <td>M.R.P:</td>
+                                  <td><strike>$162.00</strike></td>
+                              </tr>
+                              <tr class="font-rale font-size-14">
+                                  <td>Deal Price:</td>
+                                  <td class="font-size-20 text-danger">$<span>152.00</span><small class="text-dark font-size-12">&nbsp;&nbsp;Inclusive of all taxes</small></td>
+                              </tr>
+                              <tr class="font-rale font-size-14">
+                                  <td>You Save:</td>
+                                  <td><span class="font-size-16 text-danger">$152.00</span></td>
+                              </tr>
+                          </table>
+                      <!---    !product price       -->
+                          <hr>
+
+                      <!-- order-details -->
+                          <div id="order-details" class="font-rale d-flex flex-column text-dark">
+                              <small>Delivery by : Mar 29  - Apr 1</small>
+                              <small>Sold by <a href="#">Shopee Site </a>(4.5 out of 5 | 18,198 ratings)</small>
+                              <small><i class="fas fa-map-marker-alt color-primary"></i>&nbsp;&nbsp;Deliver to Customer - 424201</small>
+                          </div>
+                       <!-- !order-details -->
+
+                       <div class="size-qty">
+                           <div class="size-wrapper">
+                                  <!-- color -->
+                                  <div class="size my-3 d-flex">
+                                    <h6 class="font-baloo">Size : &nbsp;&nbsp;</h6>
+                                    <select name="choice" id="">
+                                      <option value="first">S</option>
+                                      <option value="first" selected>M</option>
+                                      <option value="first">L</option>
+                                      <option value="first">XL</option>
+                                      <option value="first">XXL</option>
+                                  </select>
+                                </div>
+                                  <!-- !color -->
+                           </div>
+                           <div class="qty-wrapper">
+                             <!-- product qty section -->  
+                               <div class="qty d-flex align-items-center">
+                                   <h6 class="font-baloo">Quality</h6>
+                                   <div class="px-4 d-flex font-rale">
+                                    <div class="num-in">
+                                      <span class="minus dis">+</span>
+                                      <input type="text" class="in-num" value="1" readonly="">
+                                      <span class="plus">-</span>
+                                  </div>
+                                   </div>
+                               </div>
+                              <!-- !product qty section -->  
+                           </div>
+                       </div>
+
+                      <!-- size -->
+                          <div class="size my-3 d-flex flex-wrap">
+                              <h6 class="font-baloo">Color : &nbsp;&nbsp;</h6>
+                              <select name="choice" id="">
+                                <option value="first">Black</option>
+                                <option value="first" selected>yellow</option>
+                                <option value="first">Blue</option>
+                                <option value="first">Green</option>
+                                <option value="first">Purple</option>
+                            </select>
+                            <a href="#/" style="color:black" class="ml-3 open-pop-container">size chart <img src="Images/size-icon.png" height="20px"></a>
+                          </div>
+                      <!-- !size -->
+                      <div class="row pt-4 font-size-16 font-baloo">
+                        <div class="col" style="max-width: 200px;">
+                          <button type="submit" class="btn btn-danger form-control font-size-12">Buy Now</button>
+                        </div>
+                        <div class="col" style="max-width: 200px;">
+                          <button type="submit" class="btn btn-warning form-control font-size-12">Add to Cart</button>
+                        </div>
+                      </div>
+                    <!-- End Product Content -->
+                  </div>
+                  <!-- End Product Details Content -->
+                  <!-- Start Product Description Section -->
+                  <div class="col-12">
+                    <div class="product-description-content section-top-gap-120">
+                      <h6 class="title">Description</h6>
+                      <p>This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        quibusdam animi aliquid corporis nulla assumenda, eveniet amet, ipsam eos,
+                        autem magni nihil? Quas corporis possimus qui dolores dicta aliquam enim.
+                      </p>
+
+                      <p>Navy Blue Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+                        facilis in cum dicta sit voluptates libero, id quod, atque aliquam esse
+                        placeat velit distinctio labore!</p>
+
+                      <ul class="items-info-list">
+                        <li>Striped Lorem ipsum dolor sit amet.</li>
+                        <li>Slim Fit Lorem ipsum dolor sit amet.</li>
+                        <li>Formal Lorem ipsum dolor sit.</li>
+                        <li>Pure wool Lorem ipsum dolor sit amet.</li>
+                      </ul>
+
+                      <p>Product Code : 14293888</p>
+
+                      <div class="social-links">
+                        <span class="text">Share:</span>
+                        <div class="items">
+                          <a href="https://example.com/"><img class="icon-svg"
+                              src="images/icons/icon-facebook-f-dark.svg" alt=""></a>
+                          <a href="https://example.com/"><img class="icon-svg" src="images/icons/icon-twitter-dark.svg"
+                              alt=""></a>
+                          <a href="https://example.com/"><img class="icon-svg"
+                              src="images/icons/icon-pinterest-p-dark.svg" alt=""></a>
+                          <a href="https://example.com/"><img class="icon-svg" src="images/icons/icon-dribbble-dark.svg"
+                              alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Product Description Section -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- END PRODUCT DETAIL SECTION -->
+
+      <!-- Feature product starts -->
+
+<div class="product-tab-item-section section-fluid-270 section-top-gap-100">
+  <div class="box-wrapper">
+      <div class="section-wrapper">
+          <div class="container-fluid">
+              <div class="row justify-content-between align-items-center flex-wrap">
+                  <div class="col-xxl-4 col-lg-5 col-md-6 col-sm-8 col-auto">
+                      <div class="section-content section-content-gap-60">
+                          <h2 class="section-title">Feature Products</h2>
+                          <p>See all our latest products from here.</p>
+                      </div>
+                  </div>
+                  <div class="col-auto feature-btns-slider">
+                      <div class="slider-buttons">
+                          <div class="slider-button button-prev">
+                              <i class="fas fa-angle-left text-success"></i>
+                          </div>
+                          <div class="slider-button button-next">
+                              <i class="fas fa-angle-right"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="product-item-wrapper">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12">
+                      <div class="product-slider-3grids-1row">
+                          <div class="swiper-container">
+                              <div class="swiper-wrapper">
+                                  <div class="product-single-item-style-1 swiper-slide">
+                                      <a href="#" class="image img-responsive">
+                                          <img src="img/product/p1.png" alt="" class="img-fluid">
+                                          <ul class="tooltip-tag-items">
+                                              <li class="color-green">20%</li>
+                                          </ul>
+                                      </a>
+                                      <div class="content">
+                                          <div class="text-center">
+                                              <div class="top">
+                                                  <span class="category">MEN</span>
+                                                  <h4 class="title">
+                                                      <a href="#">Puma Tshirts</a>
+                                                  </h4>
+                                                  <span class="price">Rs. 4799
+                                                      <del>Rs. 5999</del>
+                                                  </span>
+                                              </div>
+                                              <div class="bottom">
+                                                  <div class="rating text-success font-size-12">
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="far fa-star"></i></span>
+                                                  </div>
+                                                  <button type="submit" class="btn .cart-btn  font-size-12">Add to Cart</button>
+                                                  <button type="submit" class="btn .wishlist-btn font-size-12">Wishlist</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-single-item-style-1 swiper-slide">
+                                      <a href="#" class="image img-responsive">
+                                          <img src="img/product/p1.png" alt="" class="img-fluid">
+                                          <ul class="tooltip-tag-items">
+                                              <li class="color-green">20%</li>
+                                          </ul>
+                                      </a>
+                                      <div class="content">
+                                          <div class="text-center">
+                                              <div class="top">
+                                                  <span class="category">MEN</span>
+                                                  <h4 class="title">
+                                                      <a href="#">Puma Tshirts</a>
+                                                  </h4>
+                                                  <span class="price">Rs. 4799
+                                                      <del>Rs. 5999</del>
+                                                  </span>
+                                              </div>
+                                              <div class="bottom">
+                                                  <div class="rating text-success font-size-12">
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="far fa-star"></i></span>
+                                                  </div>
+                                                  <button type="submit" class="btn .cart-btn  font-size-12">Add to Cart</button>
+                                                  <button type="submit" class="btn .wishlist-btn font-size-12">Wishlist</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-single-item-style-1 swiper-slide">
+                                      <a href="#" class="image img-responsive">
+                                          <img src="img/product/p1.png" alt="" class="img-fluid">
+                                          <ul class="tooltip-tag-items">
+                                              <li class="color-green">20%</li>
+                                          </ul>
+                                      </a>
+                                      <div class="content">
+                                          <div class="text-center">
+                                              <div class="top">
+                                                  <span class="category">MEN</span>
+                                                  <h4 class="title">
+                                                      <a href="#">Puma Tshirts</a>
+                                                  </h4>
+                                                  <span class="price">Rs. 4799
+                                                      <del>Rs. 5999</del>
+                                                  </span>
+                                              </div>
+                                              <div class="bottom">
+                                                  <div class="rating text-success font-size-12">
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="far fa-star"></i></span>
+                                                  </div>
+                                                  <button type="submit" class="btn .cart-btn  font-size-12">Add to Cart</button>
+                                                  <button type="submit" class="btn .wishlist-btn font-size-12">Wishlist</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-single-item-style-1 swiper-slide">
+                                      <a href="#" class="image img-responsive">
+                                          <img src="img/product/p1.png" alt="" class="img-fluid">
+                                          <ul class="tooltip-tag-items">
+                                              <li class="color-green">20%</li>
+                                          </ul>
+                                      </a>
+                                      <div class="content">
+                                          <div class="text-center">
+                                              <div class="top">
+                                                  <span class="category">MEN</span>
+                                                  <h4 class="title">
+                                                      <a href="#">Puma Tshirts</a>
+                                                  </h4>
+                                                  <span class="price">Rs. 4799
+                                                      <del>Rs. 5999</del>
+                                                  </span>
+                                              </div>
+                                              <div class="bottom">
+                                                  <div class="rating text-success font-size-12">
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="far fa-star"></i></span>
+                                                  </div>
+                                                  <button type="submit" class="btn .cart-btn  font-size-12">Add to Cart</button>
+                                                  <button type="submit" class="btn .wishlist-btn font-size-12">Wishlist</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-single-item-style-1 swiper-slide">
+                                      <a href="#" class="image img-responsive">
+                                          <img src="img/product/p1.png" alt="" class="img-fluid">
+                                          <ul class="tooltip-tag-items">
+                                              <li class="color-green">20%</li>
+                                          </ul>
+                                      </a>
+                                      <div class="content">
+                                          <div class="text-center">
+                                              <div class="top">
+                                                  <span class="category">MEN</span>
+                                                  <h4 class="title">
+                                                      <a href="#">Puma Tshirts</a>
+                                                  </h4>
+                                                  <span class="price">Rs. 4799
+                                                      <del>Rs. 5999</del>
+                                                  </span>
+                                              </div>
+                                              <div class="bottom">
+                                                  <div class="rating text-success font-size-12">
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="far fa-star"></i></span>
+                                                  </div>
+                                                  <button type="submit" class="btn .cart-btn  font-size-12">Add to Cart</button>
+                                                  <button type="submit" class="btn .wishlist-btn font-size-12">Wishlist</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-single-item-style-1 swiper-slide">
+                                      <a href="#" class="image img-responsive">
+                                          <img src="img/product/p1.png" alt="" class="img-fluid">
+                                          <ul class="tooltip-tag-items">
+                                              <li class="color-green">20%</li>
+                                          </ul>
+                                      </a>
+                                      <div class="content">
+                                          <div class="text-center">
+                                              <div class="top">
+                                                  <span class="category">MEN</span>
+                                                  <h4 class="title">
+                                                      <a href="#">Puma Tshirts</a>
+                                                  </h4>
+                                                  <span class="price">Rs. 4799
+                                                      <del>Rs. 5999</del>
+                                                  </span>
+                                              </div>
+                                              <div class="bottom">
+                                                  <div class="rating text-success font-size-12">
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="fas fa-star"></i></span>
+                                                      <span><i class="far fa-star"></i></span>
+                                                  </div>
+                                                  <button type="submit" class="btn .cart-btn  font-size-12">Add to Cart</button>
+                                                  <button type="submit" class="btn .wishlist-btn font-size-12">Wishlist</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Feature product ends -->
+  </main>
+  <!-- !START MAIN SECTION -->
+  <!-- START FOOOTER -->
+  <footer id="footer" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-12">
+          <h4 class="font-rubik font-size-20">Shopee Site</h4>
+          <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Repellendus, deserunt.</p>
+        </div>
+        <div class="col-lg-4 col-12 me-2">
+          <h4 class="font-rubik font-size-20">Newslatter</h4>
+          <form class="form-row">
+            <input type="text" class="form-control" placeholder="Email *">
+            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-2 col-12">
+          <h4 class="font-rubik font-size-20">Information</h4>
+          <div class="d-flex flex-column flex-wrap">
+            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
+            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
+            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
+            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-12">
+          <h4 class="font-rubik font-size-20">Account</h4>
+          <div class="d-flex flex-column flex-wrap">
+            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
+            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
+            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newslatters</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="px-lg-5 credit bg-dark">
+    <p> created by <span>Umar Umar</span> | all rights reserved! </p>
+    <img src="img/logo/payment-logo.png" class="img-fluid" alt="">
+  </div>
+  <!-- !START FOOOTER -->
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Owl Carousel Js file -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script> -->
+
+  <!--  isotope plugin cdn  -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script> -->
+
+  <!-- Header Javascript -->
+  <script src="assets/js/jquery-ui.min.js"></script>
+  <!-- ZOOM JS CDN -->
+  <script src="assets/jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom/assets/js/jquery-1.11.1.js"></script>
+  <script src="assets/jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom/wm-zoom/jquery.wm-zoom-1.0.min.js"></script>
+  <!-- <script src="assets/js/modernizr-3.11.2.min.js"></script> -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- Swiperjs js cdn -->
+  <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/each-product.detail.js"></script>
+</body>
+
+</html>

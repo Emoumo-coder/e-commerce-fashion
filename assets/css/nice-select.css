@@ -1,0 +1,184 @@
+.nice-select{-webkit-tap-highlight-color:transparent;background-color:#fff;border-radius:5px;border:solid 1px #e8e8e8;box-sizing:border-box;clear:both;cursor:pointer;display:block;float:left;font-family:inherit;font-size:14px;font-weight:400;height:42px;line-height:40px;outline:0;padding-left:18px;padding-right:30px;position:relative;text-align:left!important;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;white-space:nowrap;width:auto}.nice-select:hover{border-color:#dbdbdb}.nice-select.open,.nice-select:active,.nice-select:focus{border-color:#999}.nice-select:after{border-bottom:2px solid #999;border-right:2px solid #999;content:'';display:block;height:5px;margin-top:-4px;pointer-events:none;position:absolute;right:12px;top:50%;-webkit-transform-origin:66% 66%;-ms-transform-origin:66% 66%;transform-origin:66% 66%;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);-webkit-transition:all .15s ease-in-out;transition:all .15s ease-in-out;width:5px}.nice-select.open:after{-webkit-transform:rotate(-135deg);-ms-transform:rotate(-135deg);transform:rotate(-135deg)}.nice-select.open .list{opacity:1;pointer-events:auto;-webkit-transform:scale(1) translateY(0);-ms-transform:scale(1) translateY(0);transform:scale(1) translateY(0)}.nice-select.disabled{border-color:#ededed;color:#999;pointer-events:none}.nice-select.disabled:after{border-color:#ccc}.nice-select.wide{width:100%}.nice-select.wide .list{left:0!important;right:0!important}.nice-select.right{float:right}.nice-select.right .list{left:auto;right:0}.nice-select.small{font-size:12px;height:36px;line-height:34px}.nice-select.small:after{height:4px;width:4px}.nice-select.small .option{line-height:34px;min-height:34px}.nice-select .list{background-color:#fff;border-radius:5px;box-shadow:0 0 0 1px rgba(68,68,68,.11);box-sizing:border-box;margin-top:4px;opacity:0;overflow:hidden;padding:0;pointer-events:none;position:absolute;top:100%;left:0;-webkit-transform-origin:50% 0;-ms-transform-origin:50% 0;transform-origin:50% 0;-webkit-transform:scale(.75) translateY(-21px);-ms-transform:scale(.75) translateY(-21px);transform:scale(.75) translateY(-21px);-webkit-transition:all .2s cubic-bezier(.5,0,0,1.25),opacity .15s ease-out;transition:all .2s cubic-bezier(.5,0,0,1.25),opacity .15s ease-out;z-index:9}.nice-select .list:hover .option:not(:hover){background-color:transparent!important}.nice-select .option{cursor:pointer;font-weight:400;line-height:40px;list-style:none;min-height:40px;outline:0;padding-left:18px;padding-right:29px;text-align:left;-webkit-transition:all .2s;transition:all .2s}.nice-select .option.focus,.nice-select .option.selected.focus,.nice-select .option:hover{background-color:#f6f6f6}.nice-select .option.selected{font-weight:700}.nice-select .option.disabled{background-color:transparent;color:#999;cursor:default}.no-csspointerevents .nice-select .list{display:none}.no-csspointerevents .nice-select.open .list{display:block}
+
+/*w3 school style
+The container must be positioned relative:
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; hide original SELECT element:
+  }
+  
+  .select-selected {
+    background-color: DodgerBlue;
+  }
+  
+  Style the arrow inside the select element:
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  Point the arrow upwards when the select box is open (active):
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  style the items (options), including the selected item:
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  Style items (options):
+  .select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  Hide the items when the select box is closed:
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }*/
+
+  /* <!-- Start Product Details Content -->
+                  <div class="col-md-6 col-lg-12 col-xl-6">
+                    <!-- Start Product Content -->
+                    <div class="product-content">
+                      <span class="catagory">Men</span>
+                      <h2 class="title">Luxure by Louis Philippe</h2>
+                      <span class="author">Slim-Fit Formal 2-Piece Suit</span>
+                      <div class="bottom">
+                        <ul class="review-star">
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star_half</span></li>
+                        </ul>
+
+                        <a href="wishlist.html" class="btn btn-sm btn-default">Wishlist</a>
+                      </div>
+
+                      <span class="price">Rs. 21249 <del>Rs. 24999</del></span>
+
+                      <div class="product-variables">
+                        <!-- Start Product Single Variable -->
+                        <div class="product-variable-color">
+                          <h6 class="title">Color</h6>
+                          <ul class="color-select">
+                            <li>
+                              <label class="checkbox-default" for="color-red">
+                                <input type="checkbox" id="color-red">
+                                <span>Red</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="checkbox-default" for="color-green">
+                                <input type="checkbox" id="color-green">
+                                <span>Green</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="checkbox-default" for="color-blue">
+                                <input type="checkbox" id="color-blue">
+                                <span>Blue</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="checkbox-default" for="color-black">
+                                <input type="checkbox" id="color-black">
+                                <span>Black</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- End Product Single Variable -->
+
+                        <ul class="variable-items">
+                          <li class="variable-single-items type-select">
+                            <select>
+                              <option value="S">Size: S</option>
+                              <option value="M">Size: M</option>
+                              <option value="L">Size: L</option>
+                              <option value="XL" selected>Size: XL</option>
+                              <option value="XXl">Size: XXL</option>
+                            </select>
+                          </li>
+                          <li class="variable-single-items">
+                            <div class="num-block skin-2">
+                              <div class="num-in">
+                                <span class="minus dis"></span>
+                                <input type="text" class="in-num" value="1" readonly="">
+                                <span class="plus"></span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="variable-single-items">
+                            <a href="cart.html" class="btn btn-sm btn-default">Add To Cart</a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                    <!-- End Product Content -->
+                  </div>
+                  <!-- End Product Details Content -->
+                  <!-- Start Product Description Section -->
+                  <!-- <div class="col-12">
+                    <div class="product-description-content section-top-gap-120">
+                      <h6 class="title">Description</h6>
+                      <p>This is Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                        quibusdam animi aliquid corporis nulla assumenda, eveniet amet, ipsam eos,
+                        autem magni nihil? Quas corporis possimus qui dolores dicta aliquam enim.
+                      </p>
+
+                      <p>Navy Blue Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+                        facilis in cum dicta sit voluptates libero, id quod, atque aliquam esse
+                        placeat velit distinctio labore!</p>
+
+                      <ul class="items-info-list">
+                        <li>Striped Lorem ipsum dolor sit amet.</li>
+                        <li>Slim Fit Lorem ipsum dolor sit amet.</li>
+                        <li>Formal Lorem ipsum dolor sit.</li>
+                        <li>Pure wool Lorem ipsum dolor sit amet.</li>
+                      </ul>
+
+                      <p>Product Code : 14293888</p>
+
+                      <div class="social-links">
+                        <span class="text">Share:</span>
+                        <div class="items">
+                          <a href="https://example.com/"><img class="icon-svg"
+                              src="images/icons/icon-facebook-f-dark.svg" alt=""></a>
+                          <a href="https://example.com/"><img class="icon-svg" src="images/icons/icon-twitter-dark.svg"
+                              alt=""></a>
+                          <a href="https://example.com/"><img class="icon-svg"
+                              src="images/icons/icon-pinterest-p-dark.svg" alt=""></a>
+                          <a href="https://example.com/"><img class="icon-svg" src="images/icons/icon-dribbble-dark.svg"
+                              alt=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  <!-- End Product Description Section --> */

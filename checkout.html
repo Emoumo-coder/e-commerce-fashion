@@ -10,7 +10,9 @@
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <!-- <link rel="stylesheet" href="assets/css/material-icons.css" /> -->
+    <link rel="stylesheet" href="assets/css/material-icons.css" />
+    <!-- Nice select cdn -->
+    <link rel="stylesheet" href="assets/css/nice-select.css"/>
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- Swiperjs cdn -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
@@ -30,737 +32,1152 @@
 
 <body style="background-color: lavender;">
 
-    <!-- START HEADER -->
-
-    <header>
-        <!-- The Top Section -->
-        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
-            <p class="font-montserrat font-size-12 text-black-50 m-0"> +971 50 202 0067 support@fashionys.com</p>
-            <div class="font-montserrat font-size-14">
-                <a href="#" class="px-3 border-start text-dark"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="px-3 border-start border-end text-dark"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-        <!-- !The Top Section -->
-
-        <div class="container-sm">
-            <div class="row inner py-2">
-                <div class="col-auto logo m-0">
-                    <a href="index.php" class="color-black font-raleway">Shopee Site</a>
-                </div>
-
-                <div class="col-auto ms-auto right">
-                    <ul class="d-flex justify-content-end py-1 font-raleway font-size-16  list-style">
-                        <li><a href="#" class="color-primary"><i class="fa fa-sign-in"></i><span>Login</span></a></li>
-                        <li><a href="#" class="color-primary"><i class="fa fa-user-plus"></i><span>Register</span></a>
-                        </li>
-                        <li><a href="#" class="color-primary"><i class="fa fa-heart"></i>(0.00)</a></li>
-                        <li><a href="#" class="color-primary"><i class="fa fa-shopping-cart">($0.00)</i></a></li>
-                    </ul>
-                </div>
-                <div class="col-auto search-area">
-                    <form class="search-event d-flex align-items-center justify-content-center">
-                        <input type="text" placeholder="Search..." class="header-search">
-                        <label for="header-search" class="fa fa-search"></label>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 pl_0 pe_0">
-                        <div class="menu-container">
-                            <div class="menu">
-                                <ul>
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="#">Men</a>
-                                        <ul>
-                                            <li><a href="#">Men Accessory</a>
-                                                <ul>
-                                                    <li><a href="#">Men Accessory</a></li>
+    <!-- header section starts  -->
+    <header class="header-section pos-relative light-bg sticky-header d-none d-lg-block section-fluid-270">
+        <div class="header-wrapper pos-relative">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <a href="#" class="header-logo bg-light py-2 px-3 rounded-pill">
+                            <img src="img/icons/icon-shopping-bag-dark.svg" alt="" class="pe-1"><span class="font-size-20 font-raleway" style="font-weight: 800;">Shopee</span>
+                        </a>
+                        <!-- logo ends  -->
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <div class="header-event d-flex align-items-center">
+                            <div class="menu-event d-flex dropdown">
+                                <button class="main-menu-event d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="img/icons/icon-open-menu.svg" alt="">
+                                    <span>Menu</span>
+                                    <img src="img/icons/icon-arrow-drop-down.svg" alt="">
+                                </button>
+                                <ul class="mainmenu-nav dropdown-menu">
+                                    <li class="menu-items">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#all">Men
+                                            <span class="material-icons">arrow_right</span>
+                                        </a>
+                                        <div class="has-dropdown megamenu">
+                                            <div class="menu-content">
+                                                <h6 class="title">Top Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">T-shirts</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Sweatshirts</a></li>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Suits</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="#">Men Accessory</a>
-                                                <ul>
-                                                    <li><a href="#">Men Accessory</a></li>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Bottom Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Jeans</a></li>
+                                                    <li><a href="#">Trousers</a></li>
+                                                    <li><a href="#">Shorts</a></li>
+                                                    <li><a href="#">Joggers</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="#">Men Accessory</a>
-                                                <ul>
-                                                    <li><a href="#">Men Accessory</a></li>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Other Items</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Footwear</a></li>
+                                                    <li><a href="#">Personal Care</a></li>
+                                                    <li><a href="#">Sunglasses</a></li>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Deodrants</a></li>
+                                                    <li><a href="#">Smart Gadgets</a></li>
                                                 </ul>
-                                            </li>
-                                        </ul>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#all">Women
+                                            <span class="material-icons">arrow_right</span>
+                                        </a>
+                                        <div class="has-dropdown megamenu">
+                                            <div class="menu-content">
+                                                <h6 class="title">India Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Kurtas</a></li>
+                                                    <li><a href="#">Ethnic Wear</a></li>
+                                                    <li><a href="#">Leggings</a></li>
+                                                    <li><a href="#">Palazoos</a></li>
+                                                    <li><a href="#">Duppatta</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Western Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Dresses</a></li>
+                                                    <li><a href="#">Jumpsuits</a></li>
+                                                    <li><a href="#">Tops</a></li>
+                                                    <li><a href="#">Jeans</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Other Items</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Footwear</a></li>
+                                                    <li><a href="#">Jewellery</a></li>
+                                                    <li><a href="#">Sunglasses</a></li>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Deodrants</a></li>
+                                                    <li><a href="#">Beauty Care</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#all">Beauty
+                                            <span class="material-icons">arrow_right</span>
+                                        </a>
+                                        <div class="has-dropdown">
+                                            <div class="menu-content">
+                                                <h6 class="title">Buy From Top Brands</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Lakme</a></li>
+                                                    <li><a href="#">LOreal</a></li>
+                                                    <li><a href="#">Mamaearth</a></li>
+                                                    <li><a href="#">The Body Shop</a></li>
+                                                    <li><a href="#">Kama Ayurveda</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="products.html">Products</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="about-us.html">About Us</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="about-us.html#faq">FAQ</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="contact.html">Contact Us</a>
                                     </li>
 
-                                    <li><a href="about.php">Men</a></li>
-                                    <li><a href="about.php">Women</a></li>
-                                    <li><a href="about.php">Kids</a></li>
-                                    <li><a href="about.php">About Us</a></li>
-                                    <li><a href="faq.php">FAQ</a></li>
-
-                                    <li><a href="contact.php">Contact Us</a></li>
                                 </ul>
                             </div>
+
+                            <div class="search-event">
+                                <input type="search" placeholder="Search..." class="header-search">
+                                <button class="header-search-btn">
+                                    <img src="img/icons/icon-search.svg" alt="">
+                                </button>
+                            </div>
+
+                            <!-- menu ends  -->
                         </div>
                     </div>
+
+                    <div class="col-auto">
+                        <div class="header-action d-flex">
+                            <button class="header-action-item header-action-wishlist" data-bs-toggle="offcanvas"
+                                data-bs-target="#wishlistOffcanvas">
+                                <span class="material-icons">favorite</span>
+                                <span id="ge-tooltip-label-you-menu" role="tooltip">wishlist</span>
+                                <span class="count-tag">03</span>
+                            </button>
+                            <button class="header-action-item header-action-wishlist" data-bs-toggle="offcanvas"
+                                data-bs-target="#addcartOffcanvas">
+                                <span class="material-icons">shopping_cart</span>
+                                <span id="ge-tooltip-label-you-menu" role="tooltip">Cart</span>
+                                <span class="count-tag">03</span>
+                            </button>
+                            <button class="header-action-item header-action-wishlist">
+                                <a href="register.html">
+                                    <i class="fa-solid fa-power-off"></i>
+                                </a>
+                                <span id="ge-tooltip-label-you-menu" role="tooltip">Your account</span>
+                            </button>
+
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
     </header>
-    <!-- !START HEADER -->
+    <!-- header section ends  -->
+
+    <!-- mobile header starts  -->
+
+    <div class="mobile-header d-block d-lg-none">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div class="mobile-logo">
+                        <a href="#" class="header-logo bg-light py-2 px-3 rounded-pill">
+                            <img src="img/icons/icon-shopping-bag-dark.svg" alt="" class="pe-1"><span class="font-size-20 font-raleway" style="font-weight: 800;">Shopee</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="mobile-action-link text-end d-flex">
+                        <button data-bs-toggle="offcanvas" data-bs-target="#toggleMenu">
+                            <span class="material-icons">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- mobile header ends -->
+
+    <!-- offcanvas mobile menu starts  -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="toggleMenu">
+        <div class="offcanvas-header justify-content-end">
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-center">
+                <a href="wishlist.html" class="header-action-item header-action-wishlist">
+                    <span class="material-icons">favorite</span>
+                    <span class="count-tag">03</span>
+                    <span id="ge-tooltip-label-you-menu" role="tooltip">Wishlist</span>
+                </a>
+                <a href="cart.html" class="header-action-item header-action-wishlist">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="count-tag">03</span>
+                    <span id="ge-tooltip-label-you-menu" role="tooltip">Cart</span>
+                </a>
+                <a href="register.html" class="header-action-item header-action-wishlist">
+                    <i class="fa-solid fa-power-off"></i>
+                    <span id="ge-tooltip-label-you-menu" role="tooltip">Your account</span>
+                </a>
+            </div>
+            <div class="header-event mobile-search my-5">
+                <div class="search-event">
+                    <input type="search" class="header-search">
+                    <button class="header-search-btn">
+                        <img src="img/icons/icon-search.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- offcanvas mobile wrapper starts  -->
+            <div class="offcanvas-mobile-menu-wrapper">
+                <div class="mobile-menu-bottom">
+                    <div class="offcanvas-menu">
+                        <ul>
+                            <li>
+                                <a href="#"><span>Home</span></a>
+                            </li>
+                            <li>
+                                <a href="#all"><span>Men</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Top Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">T-shirts</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Sweatshirts</a></li>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Bottom Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Jeans</a></li>
+                                            <li><a href="#">Trousers</a></li>
+                                            <li><a href="#">Shorts</a></li>
+                                            <li><a href="#">Joggers</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Other Items</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Personal Care</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Watches</a></li>
+                                            <li><a href="#">Deodrants</a></li>
+                                            <li><a href="#">Smart Gadgets</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="#all"><span>Women</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Indian Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Kurtas</a></li>
+                                            <li><a href="#">Ethnic Wear</a></li>
+                                            <li><a href="#">Leggings</a></li>
+                                            <li><a href="#">Palazoos</a></li>
+                                            <li><a href="#">Duppatta</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Western Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Jumpsuits</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Jeans</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Other Items</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Jewellery</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Watches</a></li>
+                                            <li><a href="#">Deodrants</a></li>
+                                            <li><a href="#">Beauty Care</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="#all"><span>Beauty</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Buy by Top Brands</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Lakme</a></li>
+                                            <li><a href="#">LOreal</a></li>
+                                            <li><a href="#">Mamaearth</a></li>
+                                            <li><a href="#">The Body Shop</a></li>
+                                            <li><a href="#">Kama Ayurveda</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="products.html">Products</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html#faq">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile-contact-info text-center d-flex justify-content-center">
+                    <div class="social-link d-flex">
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-facebook-f-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-dribbble-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-twitter-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-pinterest-p-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <!-- offcanvas mobile wrapper ends -->
+        </div>
+    </div>
+
+    <!-- offcanvas mobile menu ends  -->
+
+     <!-- wishlist offcanvas section starts  -->
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="wishlistOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><a href="wishlist.html">Wishlist</a></h5>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-products-list">
+                <li class="single-item d-flex justify-content-between align-items-center">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Puma Motorsport</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item d-flex justify-content-between align-items-center">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Blazer</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2299.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item d-flex justify-content-between align-items-center">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Top</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 1138.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="offcanvas-action-link">
+                <a href="wishlist.html" class="btn">View Wishlist</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- wishlist offcanvas section ends -->
+
+
+    <!-- add to cart offcanvas section starts  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addcartOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><a href="cart.html">Add To Cart</a></h5>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-products-list">
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Puma Motorsport</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Blazer</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2299.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Top</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 1138.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="offcanvas-action-link">
+                <a href="cart.html" class="btn">Add to Cart</a>
+                <a href="checkout.html" class="btn">Checkout</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- add to cart offcanvas section ends -->
 
     <!-- START MAIN SECTION -->
     <main>
         <!-- CHECK OUT SECTION -->
-        <div class="container mt-5">
-            <div class="row pt-5">
-                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header">
-                                <div class="row pt-3">
-                                    <div class="col-2 text-center">
-                                        <span
-                                            style="padding:2% 8%;border:1px solid transparent;background-color: rgb(197, 191, 191);">1</span>
-                                    </div>
-                                    <div class="col-6">
-                                        <span
-                                            style="font-size:15px;font-weight:600;color:grey;text-transform: uppercase;">delivery
-                                            address</span>
-                                        <p>user address</p>
-                                    </div>
-                                    <div class="col-sm-4 col-12 text-center ps-0">
-                                        <button class="btn btn-primary" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" id="button-hidder"
-                                            style='text-transform: uppercase;'>Check</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="collapseOne" class="collapse" data-parent="#accordion">
-                                <div class="card-body">
-                                    <div class="row ps-3 ">
-                                        <div class="col-6 ">
-                                            <input type="radio" name="address" checked>&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                                style="text-transform:uppercase;font-size:15px;">username</span>
-                                        </div>
-                                        <div class="col-6 text-end pe-5">
-                                            <a href="#/" class="edit hide-for-front"
-                                                style="text-transform: uppercase;">edit</a>
+        <div class="checkout-section section-fluid-270">
+            <div class="box-wrapper">
+                <div class="container-fluid mt-3">
+                    <div class="row pt-5">
+                        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header header-pill">
+                                        <div class="row pt-3">
+                                            <div class="col-2 text-center">
+                                                <span
+                                                    style="padding:2% 8%;border:1px solid transparent;background-color: #222; color: #fff; font-size:20px;">1</span>
+                                            </div>
+                                            <div class="col-6">
+                                                <span
+                                                    style="font-size:15px;font-weight:600;color:#fff;text-transform: uppercase;">delivery
+                                                    address</span>
+                                                <p>User Address</p>
+                                            </div>
+                                            <div class="col-sm-4 col-12 text-center ps-0">
+                                                <button class="btn btn-dark" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" id="button-hidder"
+                                                    style='text-transform: uppercase;'>Check</button>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row ps-5 pb-3 hide-for-front">
-                                        <div class="col">
-                                            <span style="text-transform: uppercase;"></span>user address</span>
-                                        </div>
-                                    </div>
-                                    <div class="row ps-5 hide-for-front">
-                                        <div class="col">
-                                            <p><button style="text-transform: uppercase;padding:2% 5%;background-color: tomato;
-                                  color:white;border-color:transparent" data-bs-toggle="collapse"
-                                                    data-bs-target="#collapseOne,#collapseTwo"
-                                                    id="button-hidder-1">delivery here</button></p>
-                                        </div>
-                                    </div>
-                                    <div class="container show-for-front">
-                                        <div style="margin-left: -8px;">
-                                            <input type="radio" checked>&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                                style="text-transform:uppercase;font-size:15px;">EDIT ADDRESS</span>
-                                        </div>
-                                        <div class="row ps-5 pt-3 pb-3 ">
-                                            <button class="btn-primary text-white ps-4 pe-4 pt-2 pb-2"
-                                                style="border-radius:10px; width: 240px;">Use my current
-                                                location</button>
-                                        </div>
-                                        <form class="row">
-                                            <div class="col-md-6">
-                                                <label for="inputFullname" class="form-label">Full Name</label>
-                                                <input type="text" class="form-control" id="inputFullname">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputCompanyname" class="form-label">Company Name</label>
-                                                <input type="text" class="form-control" id="inputCompanyname">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputEmail4" class="form-label">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputPhonenum" class="form-label">Phone Number</label>
-                                                <input type="email" class="form-control" id="inputPhonenum">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputAddress" class="form-label">Address</label>
-                                                <textarea type="text" class="form-control" id="inputAddress" cols="30"
-                                                    rows="10" style="height:70px;"></textarea>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputCountry" class="form-label">Country</label>
-                                                <input type="text" class="form-control" id="inputCountry"
-                                                    placeholder="Apartment, studio, or floor">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputCity" class="form-label">City</label>
-                                                <select id="inputCountry" class="reg-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>...</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputState" class="form-label">State</label>
-                                                <input type="text" class="form-control" id="inputState">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputZip" class="form-label">Zip Code</label>
-                                                <input type="text" class="form-control" id="inputZip">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputPassword4" class="form-label">Password</label>
-                                                <input type="password" class="form-control" id="inputPassword4">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="ConfirmPass" class="form-label">Confirm Password</label>
-                                                <input type="password" class="form-control" id="ConfirmPass">
-                                            </div>
-                                            <div class="row pt-3">
-                                                <button class="btn-primary text-white ms-2 ps-4 pe-4 pt-2 pb-2"
-                                                    style="border-radius:10px;max-width: 440px; text-transform: uppercase;font-weight: 600;">save
-                                                    and deliver here</button>
-                                                <span class="pt-2 call-back pe-3"><a href="#"
-                                                        style="text-transform: uppercase;">cancle</a></span>
-                                            </div>
-
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="row pt-3 pb-3">
-                                        <div class="col-2 text-center">
-                                            <span
-                                                style="padding:2% 8%;border:1px solid transparent;background-color: rgb(197, 191, 191);">2</span>
-                                        </div>
-                                        <div class="col-10">
-                                            <span
-                                                style="font-size:15px;font-weight:600;color:grey;text-transform: uppercase;">Order
-                                                Summary</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="collapseTwo" class="collapse">
-                                    <div class="card-body">
-                                        <div class="pb-3 slide_con">
-                                            <div class="slide1">
-                                                <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="cart_id"
-                                                    height="200px">
-                                                <div class="num-in mt-3 ms-1">
-                                                    <span class="minus dis">+</span>
-                                                    <input type="text" class="in-num" value="1" readonly="">
-                                                    <span class="plus">-</span>
-                                                </div>
-                                            </div>
-                                            <div class="slide2">
-                                                <h5 class="font-baloo font-size-20">Pink Saree</h5>
-                                                <!-- product rating -->
-                                                <div class="d-flex flex-wrap">
-                                                    <div class="rating text-warning font-size-12">
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="far fa-star"></i></span>
+                                    <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="row ps-3 card-til">
+                                                <div class="col-6 align-items-center flex-row">
+                                                    <div class="radio-default">
+                                                        <input type="radio" name="address" checked class="radio-card-w">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                                        style="text-transform:uppercase;font-size:15px;">Username</span>
                                                     </div>
-                                                    <a href="#" class="px-2 font-rale font-size-14">20,534 ratings</a>
                                                 </div>
-                                                <!--  !product rating-->
-                                                <!-- color design for lg screen -->
-                                                <div class="pt-2  color-g">
-                                                    <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                                                    <p style="line-height: 0.3;"><b
-                                                            class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                                                    <span class="btn">Save for Later</span>
-                                                </div>
-                                                <!-- color design for sm screen -->
-                                                <div class="pt-2 color-on-sm">
-                                                    <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                                                    <p style="line-height: 0.3;"><b
-                                                            class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                                                    <span><i class="fa fa-heart"></i></span>
-                                                    <span><i class="fa fa-trash"></i></span>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="pb-3 slide_con">
-                                            <div class="slide1">
-                                                <img src="Images/Apparel_Men_Hoodies_1358360080.jpg" alt="cart_id"
-                                                    height="200px">
-                                                <div class="num-in mt-3 ms-1">
-                                                    <span class="minus dis">+</span>
-                                                    <input type="text" class="in-num" value="1" readonly="">
-                                                    <span class="plus">-</span>
+                                                <div class="col-6 col-sm-12 text-end pe-5">
+                                                    <a href="#/" class="edit edit-address hide-for-front" data-bs-toggle="modal"
+                                                    data-bs-target="#address-form"><i class="fa fa-edit font-size-20"></i></a>
                                                 </div>
                                             </div>
-                                            <div class="slide2">
-                                                <h5 class="font-baloo font-size-20">Pink Saree</h5>
-                                                <!-- product rating -->
-                                                <div class="d-flex flex-wrap">
-                                                    <div class="rating text-warning font-size-12">
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="far fa-star"></i></span>
-                                                    </div>
-                                                    <a href="#" class="px-2 font-rale font-size-14">20,534 ratings</a>
-                                                </div>
-                                                <!--  !product rating-->
-                                                <!-- color design for lg screen -->
-                                                <div class="pt-2  color-g">
-                                                    <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                                                    <p style="line-height: 0.3;"><b
-                                                            class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                                                    <span class="btn">Save for Later</span>
-                                                </div>
-                                                <!-- color design for sm screen -->
-                                                <div class="pt-2 color-on-sm">
-                                                    <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                                                    <p style="line-height: 0.3;"><b
-                                                            class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                                                    <span><i class="fa fa-heart"></i></span>
-                                                    <span><i class="fa fa-trash"></i></span>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="pb-3 slide_con">
-                                            <div class="slide1">
-                                                <img src="Images/Apparel_Men_Hoodies_1358359679.jpg" alt="cart_id"
-                                                    height="200px">
-                                                <div class="num-in mt-3 ms-1">
-                                                    <span class="minus dis">+</span>
-                                                    <input type="text" class="in-num" value="1" readonly="">
-                                                    <span class="plus">-</span>
-                                                </div>
-                                            </div>
-                                            <div class="slide2">
-                                                <h5 class="font-baloo font-size-20">Pink Saree</h5>
-                                                <!-- product rating -->
-                                                <div class="d-flex flex-wrap">
-                                                    <div class="rating text-warning font-size-12">
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="fas fa-star"></i></span>
-                                                        <span><i class="far fa-star"></i></span>
-                                                    </div>
-                                                    <a href="#" class="px-2 font-rale font-size-14">20,534 ratings</a>
-                                                </div>
-                                                <!--  !product rating-->
-                                                <!-- color design for lg screen -->
-                                                <div class="pt-2  color-g">
-                                                    <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                                                    <p style="line-height: 0.3;"><b
-                                                            class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                                                    <span class="btn">Save for Later</span>
-                                                </div>
-                                                <!-- color design for sm screen -->
-                                                <div class="pt-2 color-on-sm">
-                                                    <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                                                    <p style="line-height: 0.3;"><b
-                                                            class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                                                    <span><i class="fa fa-heart"></i></span>
-                                                    <span><i class="fa fa-trash"></i></span>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col pe-5 text-end">
-                                                <p><button style="text-transform: uppercase;padding:2% 5%;background-color: tomato;color:white;
-                                                        border-color:transparent" data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseTwo,#payment-option">continue</button>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <div class="row pt-3 pb-3">
-                                        <div class="col-2 text-center">
-                                            <span
-                                                style="padding:2% 8%;border:1px solid transparent;background-color: rgb(197, 191, 191);">3</span>
-                                        </div>
-                                        <div class="col-10">
-                                            <span
-                                                style="font-size:15px;font-weight:600;color:grey;text-transform: uppercase;">Payment
-                                                Options</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="collapse" id="payment-option">
-                                        <div class="row">
-                                            <div class="col ps-4 pb-3 d-flex align-items-center" id="pay-pal-hidder">
-                                                <input type="radio" name="payment-method" data-bs-toggle="collapse"
-                                                    data-bs-target="#PayPal">&nbsp;&nbsp;&nbsp;
-                                                <div>
-                                                    <span class="dark-mode__paypal dark-mode__paypal--light">
-                                                        <span class="inline-svg dark-mode__hidden"><svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="90"
-                                                                height="30" viewBox="0 0 68 17" version="1.1"
-                                                                aria-hidden="true" focusable="false">
-                                                                <g stroke="none" stroke-width="1" fill="none"
-                                                                    fill-rule="evenodd">
-                                                                    <g fill-rule="nonzero">
-                                                                        <g>
-                                                                            <path
-                                                                                d="M25.3415161,3.70106452 L21.5910968,3.70106452 C21.3344516,3.70106452 21.1161935,3.88751613 21.0761613,4.14087097 L19.5593226,13.7579355 C19.5291613,13.9476774 19.676129,14.1187742 19.8686129,14.1187742 L21.6590968,14.1187742 C21.9157419,14.1187742 22.134,13.9323226 22.1740323,13.6784194 L22.583129,11.0845484 C22.6226129,10.8306452 22.8414194,10.6441935 23.0975161,10.6441935 L24.2847742,10.6441935 C26.7552581,10.6441935 28.1810645,9.44870968 28.5534194,7.07967742 C28.7212258,6.04322581 28.5605484,5.22887097 28.0752258,4.65854839 C27.5421935,4.03229032 26.5967742,3.70106452 25.3415161,3.70106452 Z M25.7741935,7.21348387 C25.5690968,8.55922581 24.540871,8.55922581 23.5466452,8.55922581 L22.9807097,8.55922581 L23.3777419,6.04596774 C23.4013226,5.89406452 23.5329355,5.78219355 23.6864839,5.78219355 L23.945871,5.78219355 C24.623129,5.78219355 25.262,5.78219355 25.592129,6.16825806 C25.789,6.39858065 25.8493226,6.74077419 25.7741935,7.21348387 Z"
-                                                                                fill="#253B80"></path>
-                                                                            <path
-                                                                                d="M36.5521935,7.17016129 L34.7562258,7.17016129 C34.6032258,7.17016129 34.4710645,7.28203226 34.4474839,7.43393548 L34.3679677,7.93625806 L34.2423871,7.75419355 C33.8535806,7.18990323 32.9865806,7.00125806 32.1212258,7.00125806 C30.1366129,7.00125806 28.4415484,8.5043871 28.1114194,10.6129355 C27.9397742,11.6647419 28.1838065,12.6704839 28.7804516,13.371871 C29.3277419,14.0167742 30.1108387,14.2854839 31.0425484,14.2854839 C32.6416452,14.2854839 33.5283871,13.2572581 33.5283871,13.2572581 L33.4483226,13.7562903 C33.4181613,13.947129 33.565129,14.1182258 33.7565161,14.1182258 L35.3742581,14.1182258 C35.6314516,14.1182258 35.8486129,13.9317742 35.8891935,13.677871 L36.8598387,7.531 C36.8905484,7.34180645 36.744129,7.17016129 36.5521935,7.17016129 Z M34.0488065,10.6655806 C33.8755161,11.6916129 33.0611613,12.3803871 32.0225161,12.3803871 C31.501,12.3803871 31.0842258,12.213129 30.8166129,11.8961613 C30.5511935,11.5813871 30.4502903,11.1333548 30.5347419,10.6343226 C30.6965161,9.61706452 31.5245806,8.90580645 32.5473226,8.90580645 C33.0573226,8.90580645 33.4719032,9.07525806 33.745,9.39496774 C34.0186452,9.71796774 34.1272258,10.1687419 34.0488065,10.6655806 Z"
-                                                                                fill="#253B80"></path>
-                                                                            <path
-                                                                                d="M46.1171613,7.17016129 L44.3124194,7.17016129 C44.1402258,7.17016129 43.9784516,7.25570968 43.8808387,7.39883871 L41.3917097,11.0653548 L40.3366129,7.54196774 C40.2702581,7.32151613 40.0668065,7.17016129 39.8364839,7.17016129 L38.063,7.17016129 C37.8474839,7.17016129 37.6977742,7.38074194 37.7663226,7.58364516 L39.7542258,13.4173871 L37.8853226,16.0556774 C37.7383548,16.2635161 37.8864194,16.5492258 38.1403226,16.5492258 L39.942871,16.5492258 C40.1139677,16.5492258 40.2740968,16.465871 40.3711613,16.3254839 L46.3738065,7.66096774 C46.5174839,7.45367742 46.3699677,7.17016129 46.1171613,7.17016129 Z"
-                                                                                fill="#253B80"></path>
-                                                                            <path
-                                                                                d="M52.0923871,3.70106452 L48.3414194,3.70106452 C48.0853226,3.70106452 47.8670645,3.88751613 47.8270323,4.14087097 L46.3101935,13.7579355 C46.2800323,13.9476774 46.427,14.1187742 46.6183871,14.1187742 L48.5432258,14.1187742 C48.722,14.1187742 48.875,13.9882581 48.9029677,13.8105806 L49.3334516,11.0845484 C49.3729355,10.8306452 49.5917419,10.6441935 49.8478387,10.6441935 L51.0345484,10.6441935 C53.5055806,10.6441935 54.9308387,9.44870968 55.3037419,7.07967742 C55.4720968,6.04322581 55.3103226,5.22887097 54.825,4.65854839 C54.2925161,4.03229032 53.3476452,3.70106452 52.0923871,3.70106452 Z M52.5250645,7.21348387 C52.3205161,8.55922581 51.2922903,8.55922581 50.2975161,8.55922581 L49.732129,8.55922581 L50.1297097,6.04596774 C50.1532903,5.89406452 50.2838065,5.78219355 50.4379032,5.78219355 L50.6972903,5.78219355 C51.374,5.78219355 52.0134194,5.78219355 52.3435484,6.16825806 C52.5404194,6.39858065 52.6001935,6.74077419 52.5250645,7.21348387 Z"
-                                                                                fill="#179BD7"></path>
-                                                                            <path
-                                                                                d="M63.3025161,7.17016129 L61.5076452,7.17016129 C61.3535484,7.17016129 61.2224839,7.28203226 61.1994516,7.43393548 L61.1199355,7.93625806 L60.9938065,7.75419355 C60.605,7.18990323 59.7385484,7.00125806 58.8731935,7.00125806 C56.8885806,7.00125806 55.1940645,8.5043871 54.8639355,10.6129355 C54.6928387,11.6647419 54.9357742,12.6704839 55.5324194,13.371871 C56.0808065,14.0167742 56.8628065,14.2854839 57.7945161,14.2854839 C59.3936129,14.2854839 60.2803548,13.2572581 60.2803548,13.2572581 L60.2002903,13.7562903 C60.170129,13.947129 60.3170968,14.1182258 60.5095806,14.1182258 L62.1267742,14.1182258 C62.382871,14.1182258 62.601129,13.9317742 62.6411613,13.677871 L63.6123548,7.531 C63.6419677,7.34180645 63.495,7.17016129 63.3025161,7.17016129 Z M60.799129,10.6655806 C60.6269355,11.6916129 59.8114839,12.3803871 58.7728387,12.3803871 C58.2524194,12.3803871 57.8345484,12.213129 57.5669355,11.8961613 C57.3015161,11.5813871 57.2017097,11.1333548 57.2850645,10.6343226 C57.4479355,9.61706452 58.2749032,8.90580645 59.2976452,8.90580645 C59.8076452,8.90580645 60.2222258,9.07525806 60.4953226,9.39496774 C60.7700645,9.71796774 60.8786452,10.1687419 60.799129,10.6655806 Z"
-                                                                                fill="#179BD7"></path>
-                                                                            <path
-                                                                                d="M65.4198387,3.96483871 L63.8805161,13.7579355 C63.8503548,13.9476774 63.9973226,14.1187742 64.1887097,14.1187742 L65.7362581,14.1187742 C65.9934516,14.1187742 66.2117097,13.9323226 66.2511935,13.6784194 L67.769129,4.06190323 C67.7992903,3.87216129 67.6523226,3.70051613 67.4609355,3.70051613 L65.7280323,3.70051613 C65.5750323,3.70106452 65.4434194,3.81293548 65.4198387,3.96483871 Z"
-                                                                                fill="#179BD7"></path>
-                                                                            <path
-                                                                                d="M3.98458065,15.9876774 L4.2713871,14.1659355 L3.63251613,14.151129 L0.58183871,14.151129 L2.70190323,0.708516129 C2.70848387,0.667935484 2.72987097,0.630096774 2.76112903,0.603225806 C2.7923871,0.576354839 2.83241935,0.561548387 2.87409677,0.561548387 L8.01796774,0.561548387 C9.72564516,0.561548387 10.904129,0.916903226 11.5194194,1.61829032 C11.807871,1.94732258 11.9915806,2.29116129 12.0804194,2.66954839 C12.1736452,3.06658065 12.1752903,3.54093548 12.0842581,4.11948387 L12.0776774,4.16170968 L12.0776774,4.53241935 L12.366129,4.69583871 C12.6090645,4.82470968 12.8020968,4.97222581 12.9501613,5.14112903 C13.1969355,5.42245161 13.3565161,5.78 13.4239677,6.20390323 C13.4936129,6.63987097 13.4705806,7.15864516 13.3565161,7.74596774 C13.2249032,8.42158065 13.012129,9.01 12.7247742,9.49148387 C12.4604516,9.93512903 12.1237419,10.3030968 11.7239677,10.5882581 C11.3422903,10.8591613 10.8887742,11.0648065 10.3760323,11.1964194 C9.87919355,11.3258387 9.31270968,11.3910968 8.6913871,11.3910968 L8.29106452,11.3910968 C8.00480645,11.3910968 7.72677419,11.4941935 7.50851613,11.679 C7.28970968,11.8676452 7.14493548,12.1253871 7.10051613,12.4072581 L7.07035484,12.5712258 L6.56364516,15.7820323 L6.5406129,15.8999355 C6.53458065,15.9372258 6.52416129,15.955871 6.50880645,15.9684839 C6.49509677,15.98 6.47535484,15.9876774 6.45616129,15.9876774 L3.98458065,15.9876774 Z"
-                                                                                fill="#253B80"></path>
-                                                                            <path
-                                                                                d="M12.6392258,4.20448387 L12.6392258,4.20448387 L12.6392258,4.20448387 C12.623871,4.30264516 12.6063226,4.403 12.5865806,4.50609677 C11.9082258,7.98890323 9.58745161,9.19206452 6.62341935,9.19206452 L5.11425806,9.19206452 C4.75177419,9.19206452 4.44632258,9.45529032 4.38983871,9.81283871 L4.38983871,9.81283871 L4.38983871,9.81283871 L3.61716129,14.7132258 L3.39835484,16.1022903 C3.3616129,16.337 3.54258065,16.5486774 3.77948387,16.5486774 L6.45616129,16.5486774 C6.77312903,16.5486774 7.0423871,16.3183548 7.09229032,16.0057742 L7.1186129,15.8697742 L7.62258065,12.6715806 L7.65493548,12.4960968 C7.70429032,12.1824194 7.97409677,11.9520968 8.29106452,11.9520968 L8.6913871,11.9520968 C11.2847097,11.9520968 13.3148387,10.8991935 13.9081935,7.85235484 C14.1560645,6.57954839 14.0277419,5.51677419 13.371871,4.76932258 C13.1733548,4.54393548 12.927129,4.35693548 12.6392258,4.20448387 Z"
-                                                                                fill="#179BD7"></path>
-                                                                            <path
-                                                                                d="M11.9296129,3.92151613 C11.8259677,3.89135484 11.7190323,3.86393548 11.6093548,3.83925806 C11.499129,3.81512903 11.3861613,3.79374194 11.2699032,3.77509677 C10.863,3.70929032 10.4171613,3.67803226 9.93951613,3.67803226 L5.90777419,3.67803226 C5.80851613,3.67803226 5.71419355,3.70051613 5.62974194,3.74109677 C5.44383871,3.83048387 5.30564516,4.00651613 5.27219355,4.22203226 L4.41451613,9.65435484 L4.38983871,9.81283871 C4.44632258,9.45529032 4.75177419,9.19206452 5.11425806,9.19206452 L6.62341935,9.19206452 C9.58745161,9.19206452 11.9082258,7.98835484 12.5865806,4.50609677 C12.606871,4.403 12.623871,4.30264516 12.6392258,4.20448387 C12.4675806,4.11345161 12.2816774,4.03558065 12.0815161,3.96922581 C12.0321613,3.95277419 11.9811613,3.93687097 11.9296129,3.92151613 Z"
-                                                                                fill="#222D65"></path>
-                                                                            <path
-                                                                                d="M5.27219355,4.22203226 C5.30564516,4.00651613 5.44383871,3.83048387 5.62974194,3.74164516 C5.71474194,3.70106452 5.80851613,3.67858065 5.90777419,3.67858065 L9.93951613,3.67858065 C10.4171613,3.67858065 10.863,3.70983871 11.2699032,3.77564516 C11.3861613,3.79429032 11.499129,3.81567742 11.6093548,3.83980645 C11.7190323,3.86448387 11.8259677,3.89190323 11.9296129,3.92206452 C11.9811613,3.93741935 12.0321613,3.95332258 12.0820645,3.96922581 C12.2822258,4.03558065 12.468129,4.114 12.6397742,4.20448387 C12.8415806,2.91741935 12.638129,2.04109677 11.9422258,1.24758065 C11.1750323,0.374 9.79035484,0 8.01851613,0 L2.87464516,0 C2.51270968,0 2.20396774,0.263225806 2.14803226,0.621322581 L0.00548387097,14.202129 C-0.0367419355,14.4708387 0.170548387,14.7132258 0.441451613,14.7132258 L3.61716129,14.7132258 L4.41451613,9.65435484 L5.27219355,4.22203226 Z"
-                                                                                fill="#253B80"></path>
-                                                                        </g>
-                                                                    </g>
-                                                                </g>
-                                                            </svg></span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="PayPal" class="collapse">
-                                            <div class="row pt-2">
-                                                <div class="col text-center">
-                                                    <p>Continuing will take you to your PayPal account. You'll be able to review and submit your order after you log in.</p>
-                                                </div>
-                                            </div>
-                                            <div class="row ps-5">
+                                            <div class="row ps-5 pb-3 hide-for-front">
                                                 <div class="col">
-                                                    <p><button
-                                                            style="text-transform: uppercase;padding:1.5% 7%;background-color: tomato;color:white;border-color:transparent"
-                                                            data-bs-toggle="collapse"
-                                                            data-bs-target="#payment-option">continue</button></p>
+                                                    <span style="text-transform: uppercase; margin-top: 12px; font-weight: 700;" class="font-size-16">user address</span>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <!-- Button trigger modal -->
-                                        <div class="row">
-                                            <div class="col ps-4 d-flex" id="debit-hidder">
-                                                <input type="radio" name="payment-method" data-bs-toggle="modal" class="mt-1"
-                                                        data-bs-target="#debit">
-                                                <div>
-                                                    <div class="d-inline-block ms-2" style="margin-top: -7px;">
-                                                        <span
-                                                            class="inline-svg svg-payment-icon-sm svg-payment-icon-p-4"><svg
-                                                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                                                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                xmlns:svg="http://www.w3.org/2000/svg" version="1.1"
-                                                                x="0px" y="0px" viewBox="0 0 1920.01 620.07999"
-                                                                xml:space="preserve"
-                                                                sodipodi:docname="d262c3fc767b0f2b042f1a30f2519b44.svgz"
-                                                                width="100%" height="100%"
-                                                                aria-labelledby="paymentsvisa-2-visa" role="img"
-                                                                focusable="false">
-                                                                <defs id="defs9"></defs>
-                                                                <sodipodi:namedview id="namedview7" pagecolor="#ffffff"
-                                                                    bordercolor="#666666" borderopacity="1.0"
-                                                                    inkscape:pageshadow="2" inkscape:pageopacity="0.0"
-                                                                    inkscape:pagecheckerboard="0"></sodipodi:namedview>
-                                                                <style type="text/css" id="style2">
-                                                                    .visa-svg-path {
-                                                                        fill: #1434CB;
-                                                                    }
-                                                                </style>
-                                                                <path class="visa-svg-path"
-                                                                    d="M 729,10.96 477.63,610.7 h -164 L 189.93,132.08 C 182.42,102.6 175.89,91.8 153.05,79.38 115.76,59.15 54.18,40.17 0,28.39 L 3.68,10.96 h 263.99 c 33.65,0 63.9,22.4 71.54,61.15 L 404.54,419.15 566,10.95 h 163 z m 642.58,403.93 c 0.66,-158.29 -218.88,-167.01 -217.37,-237.72 0.47,-21.52 20.96,-44.4 65.81,-50.24 22.23,-2.91 83.48,-5.13 152.95,26.84 L 1400.22,26.59 C 1362.89,13.04 1314.86,0 1255.1,0 1101.75,0 993.83,81.52 992.92,198.25 c -0.99,86.34 77.03,134.52 135.81,163.21 60.47,29.38 80.76,48.26 80.53,74.54 -0.43,40.23 -48.23,57.99 -92.9,58.69 -77.98,1.2 -123.23,-21.1 -159.3,-37.87 l -28.12,131.39 c 36.25,16.63 103.16,31.14 172.53,31.87 162.99,0 269.61,-80.51 270.11,-205.19 m 404.94,195.81 h 143.49 L 1794.76,10.96 h -132.44 c -29.78,0 -54.9,17.34 -66.02,44 L 1363.49,610.7 h 162.91 l 32.34,-89.58 h 199.05 z m -173.11,-212.5 81.66,-225.18 47,225.18 z M 950.67,10.96 822.38,610.7 H 667.24 L 795.58,10.96 Z"
-                                                                    id="path4"></path>
-                                                                <title id="paymentsvisa-2-visa">Visa</title>
-                                                            </svg></span>
-
-                                                        <span
-                                                            class="inline-svg svg-payment-icon-sm svg-payment-icon-p-2"><svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 131.39 86.9" width="100%" height="100%"
-                                                                aria-labelledby="paymentsmastercard-2-mastercard"
-                                                                role="img" focusable="false">
-                                                                <defs>
-                                                                    <style>
-                                                                        .a {
-                                                                            opacity: 0;
-                                                                        }
-
-                                                                        .b {
-                                                                            fill: #fff;
-                                                                        }
-
-                                                                        .c {
-                                                                            fill: #ff5f00;
-                                                                        }
-
-                                                                        .d {
-                                                                            fill: #eb001b;
-                                                                        }
-
-                                                                        .e {
-                                                                            fill: #f79e1b;
-                                                                        }
-                                                                    </style>
-                                                                </defs>
-                                                                <title id="paymentsmastercard-2-mastercard">Mastercard
-                                                                </title>
-                                                                <g class="a">
-                                                                    <rect class="b" width="131.39" height="86.9"></rect>
-                                                                </g>
-                                                                <rect class="c" x="48.37" y="15.14" width="34.66"
-                                                                    height="56.61"></rect>
-                                                                <path class="d"
-                                                                    d="M51.94,43.45a35.94,35.94,0,0,1,13.75-28.3,36,36,0,1,0,0,56.61A35.94,35.94,0,0,1,51.94,43.45Z">
-                                                                </path>
-                                                                <path class="e"
-                                                                    d="M120.5,65.76V64.6H121v-.24h-1.19v.24h.47v1.16Zm2.31,0v-1.4h-.36l-.42,1-.42-1h-.36v1.4h.26V64.7l.39.91h.27l.39-.91v1.06Z">
-                                                                </path>
-                                                                <path class="e"
-                                                                    d="M123.94,43.45a36,36,0,0,1-58.25,28.3,36,36,0,0,0,0-56.61,36,36,0,0,1,58.25,28.3Z">
-                                                                </path>
-                                                            </svg></span>
-
-                                                        <span class="inline-svg svg-payment-icon-sm"><svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
-                                                                height="100%" viewBox="0 15 70 40"
-                                                                aria-labelledby="paymentsamex-2-american-express"
-                                                                role="img" focusable="false">
-                                                                <g fill="#006FCF">
-                                                                    <path
-                                                                        d="M55.6,40.3v-3.4h1.1V13.6H14V30l1.1-1.4v5.6H14v22h42.7V43.9c-0.1,0-1,0.1-1.1,0.1v-1.8V40.3L55.6,40.3z">
-                                                                    </path>
-                                                                    <path fill="#FFFFFF"
-                                                                        d="M56.7,43.9v-7h-0.4H30.2l-0.7,1l-0.7-1h-7.6v7.5h7.6l0.7-1l0.7,1H35v-1.6h-0.1c0.6,0,1.1-0.1,1.6-0.3v1.9h3.3     v-1.1l0.8,1.1H55c0.4,0,0.8-0.1,1.1-0.2C56.4,44.1,56.6,44,56.7,43.9L56.7,43.9z M51.5,34.3h3.2v-7.5h-3.4v1.2l-0.8-1.2h-3v1.5     l-0.7-1.5h-4.9c-0.2,0-0.5,0-0.7,0.1c-0.2,0-0.4,0.1-0.6,0.1c-0.1,0-0.3,0.1-0.4,0.2c-0.2,0.1-0.3,0.2-0.4,0.2v-0.3v-0.3H23.8     l-0.4,1.3l-0.4-1.3h-3.7v1.5l-0.7-1.5h-3.1L14,30.1v3.6v0.7h2.2l0.4-1.1h0.8l0.4,1.1h16.6v-1.1l0.8,1.1h4.6v-0.2v-0.3     c0.1,0.1,0.2,0.1,0.4,0.2c0.1,0.1,0.3,0.1,0.4,0.2c0.2,0.1,0.3,0.1,0.5,0.1c0.3,0,0.5,0.1,0.8,0.1h2.8l0.4-1.1h0.8l0.4,1.1h4.6     v-1.1L51.5,34.3L51.5,34.3z">
-                                                                    </path>
-                                                                    <path
-                                                                        d="M26.5,39.1v-1h-4v5h4v-1h-2.8v-1h2.8v-1h-2.8v-1H26.5L26.5,39.1z M30.7,43.1h1.5l-2-2.5l2-2.5h-1.5l-1.2,1.6     l-1.2-1.6h-1.5l2,2.5l-2,2.5h1.5l1.2-1.6L30.7,43.1L30.7,43.1z M32.4,38.1v5h1.2v-1.7h1.5c1.1,0,1.8-0.7,1.8-1.7     c0-1-0.7-1.7-1.7-1.7H32.4L32.4,38.1z M35.7,39.8c0,0.3-0.2,0.6-0.6,0.6h-1.4v-1.2h1.4C35.5,39.2,35.7,39.4,35.7,39.8L35.7,39.8z      M38.8,41.3h0.6l1.5,1.8h1.5l-1.7-1.9c0.9-0.2,1.4-0.8,1.4-1.6c0-0.9-0.7-1.6-1.7-1.6h-2.7v5h1.2V41.3L38.8,41.3z M40.2,39.1     c0.4,0,0.7,0.3,0.7,0.6c0,0.3-0.2,0.6-0.7,0.6h-1.4v-1.2H40.2L40.2,39.1z M47,39.1v-1h-4v5h4v-1h-2.8v-1h2.8v-1h-2.8v-1H47L47,39.1     z M50.3,42.1h-2.6v1h2.5c1.1,0,1.7-0.7,1.7-1.6c0-0.9-0.6-1.4-1.6-1.4h-1.2c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5h2.2     l0.4-1h-2.6c-1.1,0-1.7,0.7-1.7,1.6c0,0.9,0.6,1.5,1.6,1.5h1.2c0.3,0,0.5,0.2,0.5,0.5C50.8,41.9,50.6,42.1,50.3,42.1L50.3,42.1z      M55.1,42.1h-2.6v1H55c1.1,0,1.7-0.7,1.7-1.6c0-0.9-0.6-1.4-1.6-1.4H54c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5h2.2l0.4-1     h-2.6c-1.1,0-1.7,0.7-1.7,1.6c0,0.9,0.6,1.5,1.6,1.5h1.2c0.3,0,0.5,0.2,0.5,0.5C55.6,41.9,55.3,42.1,55.1,42.1L55.1,42.1z">
-                                                                    </path>
-                                                                    <path
-                                                                        d="M18.6,33.1h1.4l-2.1-5h-1.6l-2.2,5h1.3l0.4-1.1h2.4L18.6,33.1L18.6,33.1z M16.6,30L17,29l0.4,0.9l0.4,1.1h-1.6     L16.6,30L16.6,30z M21.4,29.7l0-1.4l1.4,4.8h1.1l1.4-4.8l0,1.3v3.4h1.2v-5h-2.1l-1,3.6l-1-3.6h-2.1v5h1.2V29.7L21.4,29.7z      M31.4,29.1v-1h-4v5h4v-1h-2.8v-1h2.8v-1h-2.8v-1H31.4L31.4,29.1z M33.5,31.3h0.6l1.5,1.8h1.5l-1.7-1.9c0.9-0.2,1.4-0.8,1.4-1.6     c0-0.9-0.7-1.6-1.7-1.6h-2.7v5h1.2V31.3L33.5,31.3z M34.9,29.1c0.4,0,0.7,0.3,0.7,0.6c0,0.3-0.2,0.6-0.7,0.6h-1.4v-1.2H34.9     L34.9,29.1z M37.4,33.1h1.2v-2.2v-2.8h-1.2v2.8V33.1L37.4,33.1z M41.7,33.1L41.7,33.1l0.6-1.1h-0.4c-0.8,0-1.3-0.5-1.3-1.4v-0.1     c0-0.8,0.4-1.4,1.3-1.4h1.3v-1.1h-1.4c-1.6,0-2.4,1-2.4,2.5v0.1C39.4,32.1,40.3,33.1,41.7,33.1L41.7,33.1z M47,33.1h1.4l-2.1-5     h-1.6l-2.2,5h1.3l0.4-1.1h2.4L47,33.1L47,33.1z M45,30l0.4-0.9l0.4,0.9l0.4,1.1h-1.6L45,30L45,30z M49.8,30.1l0-0.4l0.3,0.4l1.9,3     h1.4v-5h-1.2V31l0,0.4L52,31l-1.9-2.9h-1.5v5h1.2V30.1L49.8,30.1z">
-                                                                    </path>
-                                                                </g>
-                                                                <title id="paymentsamex-2-american-express">American
-                                                                    Express</title>
-                                                            </svg></span>
-
-                                                        <span class="inline-svg svg-payment-icon-sm"><svg
-                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
-                                                                height="100%" viewBox="0 0 74 16" version="1.1"
-                                                                aria-labelledby="paymentsdiscover-2-discover" role="img"
-                                                                focusable="false">
-                                                                <g stroke="none" stroke-width="1" fill="none"
-                                                                    fill-rule="evenodd">
-                                                                    <g transform="translate(0.000000, -1.000000)"
-                                                                        fill-rule="nonzero">
-                                                                        <path
-                                                                            d="M0.405,34.334 L73.758,34.334 C75.711,34.334 77.292,32.77 77.292,30.844 L77.292,6.355 C70.252,10.757 43.71,25.944 0.405,34.334"
-                                                                            fill="#E6792B"></path>
-                                                                        <path
-                                                                            d="M13.18,7.61 C12.646,8.087 11.96,8.29 10.863,8.29 L10.409,8.292 L10.409,2.625 L10.861,2.625 C11.957,2.625 12.618,2.819 13.179,3.318 C13.767,3.832 14.115,4.628 14.115,5.448 C14.115,6.273 13.767,7.098 13.18,7.608 L13.18,7.61 Z M11.2,1.176 L8.715,1.176 L8.715,9.746 L11.192,9.746 C12.505,9.746 13.455,9.436 14.288,8.756 C15.278,7.946 15.864,6.726 15.864,5.466 C15.864,2.936 13.948,1.176 11.204,1.176 L11.2,1.176 Z"
-                                                                            fill="#0D1619"></path>
-                                                                        <polygon fill="#0D1619"
-                                                                            points="16.642 9.743 18.332 9.743 18.332 1.173 16.642 1.173">
-                                                                        </polygon>
-                                                                        <path
-                                                                            d="M22.474,4.46 C21.459,4.09 21.16,3.845 21.16,3.382 C21.16,2.842 21.69,2.432 22.42,2.432 C22.93,2.432 23.346,2.639 23.79,3.124 L24.673,1.984 C23.943,1.352 23.073,1.034 22.123,1.034 C20.587,1.034 19.416,2.084 19.416,3.484 C19.416,4.669 19.962,5.271 21.549,5.834 C22.212,6.068 22.549,6.221 22.719,6.324 C23.059,6.544 23.227,6.851 23.227,7.211 C23.227,7.908 22.667,8.419 21.91,8.419 C21.105,8.419 20.454,8.023 20.063,7.279 L18.973,8.319 C19.753,9.449 20.689,9.951 21.979,9.951 C23.735,9.951 24.971,8.791 24.971,7.135 C24.971,5.775 24.401,5.157 22.471,4.46"
-                                                                            fill="#0D1619"></path>
-                                                                        <path
-                                                                            d="M25.506,5.463 C25.506,7.983 27.512,9.935 30.089,9.935 C30.816,9.935 31.439,9.793 32.209,9.435 L32.209,7.467 C31.529,8.135 30.932,8.404 30.165,8.404 C28.46,8.404 27.248,7.184 27.248,5.448 C27.248,3.805 28.495,2.508 30.088,2.508 C30.89,2.508 31.504,2.79 32.208,3.468 L32.208,1.506 C31.466,1.136 30.854,0.983 30.125,0.983 C27.56,0.983 25.503,2.975 25.503,5.463"
-                                                                            fill="#0D1619"></path>
-                                                                        <polyline fill="#0D1619"
-                                                                            points="45.93 6.93 43.61 1.174 41.763 1.174 45.448 9.961 46.358 9.961 50.11 1.176 48.274 1.176 45.93 6.93">
-                                                                        </polyline>
-                                                                        <polyline fill="#0D1619"
-                                                                            points="50.876 9.743 55.68 9.743 55.68 8.29 52.57 8.29 52.57 5.977 55.562 5.977 55.562 4.527 52.57 4.527 52.57 2.627 55.68 2.627 55.68 1.174 50.876 1.174 50.876 9.742">
-                                                                        </polyline>
-                                                                        <path
-                                                                            d="M58.982,5.118 L58.492,5.118 L58.492,2.522 L59.012,2.522 C60.067,2.522 60.64,2.96 60.64,3.792 C60.64,4.652 60.067,5.118 58.982,5.118 Z M62.38,3.704 C62.38,2.097 61.263,1.174 59.31,1.174 L56.798,1.174 L56.798,9.744 L58.491,9.744 L58.491,6.3 L58.714,6.3 L61.056,9.743 L63.138,9.743 L60.4,6.133 C61.678,5.876 62.38,5.015 62.38,3.703 L62.38,3.704 Z"
-                                                                            fill="#0D1619"></path>
-                                                                        <path
-                                                                            d="M63.256,1.916 L63.222,1.916 L63.222,1.72 L63.258,1.72 C63.346,1.72 63.393,1.752 63.393,1.817 C63.393,1.881 63.343,1.917 63.256,1.917 L63.256,1.916 Z M63.576,1.813 C63.576,1.663 63.473,1.58 63.286,1.58 L63.042,1.58 L63.042,2.336 L63.222,2.336 L63.222,2.043 L63.437,2.336 L63.664,2.336 L63.408,2.026 C63.516,1.996 63.576,1.918 63.576,1.813 Z"
-                                                                            fill="#1B1A18"></path>
-                                                                        <path
-                                                                            d="M63.322,2.498 C63.027,2.498 62.788,2.258 62.788,1.958 C62.788,1.658 63.025,1.418 63.322,1.418 C63.612,1.418 63.848,1.661 63.848,1.958 C63.848,2.255 63.613,2.498 63.322,2.498 Z M63.322,1.298 C62.952,1.298 62.657,1.59 62.657,1.956 C62.657,2.322 62.953,2.616 63.322,2.616 C63.686,2.616 63.982,2.32 63.982,1.956 C63.982,1.594 63.686,1.296 63.322,1.296 L63.322,1.298 Z"
-                                                                            fill="#1B1A18"></path>
-                                                                        <path
-                                                                            d="M37.481,1.016 C34.926,1.016 32.853,2.986 32.853,5.418 C32.853,8.004 34.836,9.936 37.481,9.936 C40.061,9.936 42.099,7.978 42.099,5.469 C42.099,2.974 40.074,1.014 37.481,1.014"
-                                                                            fill="#E6792B"></path>
-                                                                    </g>
-                                                                </g>
-                                                                <title id="paymentsdiscover-2-discover">Discover</title>
-                                                            </svg></span>
-
-                                                    </div>
+                                            <div class="row hide-for-front ms-2">
+                                                <div class="col-12">
+                                                    <p><button style="text-transform: capitalize;padding:12px 20px;" data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseOne,#collapseTwo"
+                                                            id="button-hidder-1" class="btn card-btn hide-for-front">delivery here</button></p>
                                                 </div>
-                                                </p>
                                             </div>
-                                        </div>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="debit" tabindex="-1" aria-labelledby="creditModal"data-bs-backdrop="static"
-                                         data-bs-keyboard="false" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Credit card</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="container-fluid">
-                                                            <form action="">
-                                                                <div class="row">
-                                                                    <div class="mb-3">
-                                                                        <label for="recipient-name"
-                                                                            class="col-form-label">Name on card
-                                                                            :</label>
-                                                                        <input type="text" class="form-control"
-                                                                            id="recipient-name">
+                                            <div class="container show-for-front mt-3">
+                                                
+                                                <div class="modal fade" id="address-form" tabindex="-1" aria-labelledby="creditModal"data-bs-backdrop="static"
+                                                 data-bs-keyboard="false" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down modal-dialog-scrollable">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel"><span
+                                                                    style="text-transform:uppercase; margin-top: 12px; font-weight: 700;" class="font-size-16">EDIT ADDRESS</span></h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                    aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container-fluid">
+                                                                    <div class="row ps-2 pt-3 pb-3 ">
+                                                                        <button
+                                                                            style="text-transform: uppercase; padding:12px 20px" class="btn card-btn">Use my current
+                                                                            location</button>
                                                                     </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="mb-3">
-                                                                        <label for="recipient-name"
-                                                                            class="col-form-label">Card number :</label>
-                                                                        <input type="text" class="form-control"
-                                                                            id="recipient-name">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-sm-8 col-12">
-                                                                        <div class="mb-3">
-                                                                            <label for="recipient-name"
-                                                                                class="col-form-label">Expiration date
-                                                                                :</label>
-                                                                            <input type="date" class="form-control"
-                                                                                id="recipient-name">
+                                                                    <form class="row">
+                                                                        <div class="col-md-6 each-input">
+                                                                          <label for="inputFullname" class="form-label">Full Name</label>
+                                                                          <input type="text" class="form-control" id="inputFullname" required>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="col-sm-4 col-12">
-                                                                        <div class="mb-3">
-                                                                            <label for="recipient-name"
-                                                                                class="col-form-label">Security code
-                                                                                :</label>
-                                                                            <input type="text" class="form-control"
-                                                                                id="recipient-name">
+                                                                        <div class="col-md-6 each-input">
+                                                                          <label for="inputCompanyname" class="form-label">Company Name</label>
+                                                                          <input type="text" class="form-control" id="inputCompanyname" required>
                                                                         </div>
-                                                                    </div>
+                                                                        <div class="col-md-6 each-input">
+                                                                          <label for="inputEmail4" class="form-label">Email</label>
+                                                                          <input type="email" class="form-control" id="inputEmail4" required>
+                                                                        </div>
+                                                                        <div class="col-md-6 each-input">
+                                                                          <label for="inputPhonenum" class="form-label">Phone Number</label>
+                                                                          <input type="email" class="form-control" id="inputPhonenum" required>
+                                                                        </div>
+                                                                        <div class="col-12 each-input">
+                                                                          <label for="inputAddress" class="form-label">Address</label>
+                                                                          <textarea type="text" class="form-control" id="inputAddress" cols="30" rows="10" style="height:100px; resize: none;" required></textarea>   
+                                                                        </div>
+                                                                        <div class="col-md-6 each-input d-flex flex-column">
+                                                                            <label for="inputCountry" class="form-label mb-2">Country</label>
+                                                                            <select id="inputCountry" class="reg-select" required>
+                                                                                <option selected>Select City</option>
+                                                                                <option></option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-6 each-input">
+                                                                          <label for="inputCity" class="form-label">City</label>
+                                                                          <input type="text" class="form-control" id="inputCountry" placeholder="Apartment, studio, or floor" required>
+                                                                        </div>
+                                                                        <div class="col-md-6 each-input">
+                                                                          <label for="inputState" class="form-label">State</label>
+                                                                          <input type="text" class="form-control" id="inputState" required>
+                                                                        </div>
+                                                                        <div class="col-md-6 each-input">
+                                                                          <label for="inputZip" class="form-label">Zip Code</label>
+                                                                          <input type="text" class="form-control" id="inputZip" required>
+                                                                        </div>
+                            
+                                                                    </form>
                                                                 </div>
-                                                            </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn"
+                                                                    data-bs-dismiss="modal" 
+                                                                    style="text-transform: capitalize; background-color: #222; color: #fff;">cancle</button>
+                                                                        <p><button style="text-transform: capitalize;padding:12px 20px;"
+                                                                                data-bs-dismiss="modal"
+                                                                                class="btn card-btn hide-for-front">Save Address</button></p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save
-                                                            changes</button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="row pt-3 pb-3">
+                                                <div class="col-2 text-center">
+                                                    <span
+                                                        style="padding:2% 8%;border:1px solid transparent;background-color: #222; color: #fff; font-size:20px;">2</span>
+                                                </div>
+                                                <div class="col-10">
+                                                    <span
+                                                        style="font-size:15px;font-weight:600;color:#fff;text-transform: uppercase;">Order
+                                                        Summary</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse">
+                                            <div class="card-body">
+                                                <div class="pb-3 slide_con">
+                                                  <div class="slide1">
+                                                    <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="cart_id" height="200px">
+                                                    <div class="variable-single-items quantity mt-2">
+                                                      <div class="input-group">
+                                                        <div class="button minus">
+                                                          <button type="button" class="btn btn-number" data-type="minus" data-field="quant[1]">
+                                                            <i class=" fa fa-minus"></i>
+                                                          </button>
+                                                        </div>
+                                                        <input type="hidden" name="slug" value="roadster-men-black-solid-quilted-jacket">
+                                                        <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1"
+                                                          id="quantity">
+                                                        <div class="button plus">
+                                                          <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                                                            <i class="fa fa-plus"></i>
+                                                          </button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="slide2">
+                                                    <div class="product-content">
+                                                      <h2 class="title">Luxure by Louis Philippe</h2>
+                                                      <div class="bottom">
+                                                        <ul class="review-star d-flex">
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star_half</span></li>
+                                                        </ul>
+                                
+                                                        <a href="wishlist.html" class="btn btn-sm btn-default">Wishlist</a>
+                                                      </div>
+                                                      <span class="category mt-3">Color: Black</span>
+                                                      <span class="category">size: xxl</span>
+                                                    </div>
+                                
+                                                  </div>
+                                                <div class="slide3 d-flex flex-column align-items-center justify-content-start">
+                                                  <div class="product-content">
+                                                    <span class="price">$29 </span>
+                                                    <p><a href="wishlist.html" class="btn btn-sm btn-default">Remove</a></p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                                <div class="pb-3 slide_con">
+                                                  <div class="slide1">
+                                                    <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="cart_id" height="200px">
+                                                    <div class="variable-single-items quantity mt-2">
+                                                      <div class="input-group">
+                                                        <div class="button minus">
+                                                          <button type="button" class="btn btn-number" data-type="minus" data-field="quant[1]">
+                                                            <i class=" fa fa-minus"></i>
+                                                          </button>
+                                                        </div>
+                                                        <input type="hidden" name="slug" value="roadster-men-black-solid-quilted-jacket">
+                                                        <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1"
+                                                          id="quantity">
+                                                        <div class="button plus">
+                                                          <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                                                            <i class="fa fa-plus"></i>
+                                                          </button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="slide2">
+                                                    <div class="product-content">
+                                                      <h2 class="title">Luxure by Louis Philippe</h2>
+                                                      <div class="bottom">
+                                                        <ul class="review-star d-flex">
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star_half</span></li>
+                                                        </ul>
+                                
+                                                        <a href="wishlist.html" class="btn btn-sm btn-default">Wishlist</a>
+                                                      </div>
+                                                      <span class="category mt-3">Color: Black</span>
+                                                      <span class="category">size: xxl</span>
+                                                    </div>
+                                
+                                                  </div>
+                                                <div class="slide3 d-flex flex-column align-items-center justify-content-start">
+                                                  <div class="product-content">
+                                                    <span class="price">$12 </span>
+                                                    <p><a href="wishlist.html" class="btn btn-sm btn-default">Remove</a></p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                                <div class="pb-3 slide_con">
+                                                  <div class="slide1">
+                                                    <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="cart_id" height="200px">
+                                                    <div class="variable-single-items quantity mt-2">
+                                                      <div class="input-group">
+                                                        <div class="button minus">
+                                                          <button type="button" class="btn btn-number" data-type="minus" data-field="quant[1]">
+                                                            <i class=" fa fa-minus"></i>
+                                                          </button>
+                                                        </div>
+                                                        <input type="hidden" name="slug" value="roadster-men-black-solid-quilted-jacket">
+                                                        <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1"
+                                                          id="quantity">
+                                                        <div class="button plus">
+                                                          <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                                                            <i class="fa fa-plus"></i>
+                                                          </button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="slide2">
+                                                    <div class="product-content">
+                                                      <h2 class="title">Luxure by Louis Philippe</h2>
+                                                      <div class="bottom">
+                                                        <ul class="review-star d-flex">
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star</span></li>
+                                                          <li class="fill"><span class="material-icons">star_half</span></li>
+                                                        </ul>
+                                
+                                                        <a href="wishlist.html" class="btn btn-sm btn-default">Wishlist</a>
+                                                      </div>
+                                                      <span class="category mt-3">Color: Black</span>
+                                                      <span class="category">size: xxl</span>
+                                                    </div>
+                                
+                                                  </div>
+                                                <div class="slide3 d-flex flex-column align-items-center justify-content-start">
+                                                  <div class="product-content">
+                                                    <span class="price">$45 </span>
+                                                    <p><a href="wishlist.html" class="btn btn-sm btn-default">Remove</a></p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                                <div class="row">
+                                                    <div class="col pe-5 text-end">
+                                                        <p><button style="text-transform: capitalize; padding:12px 20px; border-radius: 12px; background-color: black;color:white;
+                                                                border-color:transparent" data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseTwo,#payment-option">Proceed</button>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col ps-4" id="net-banking-hidder">
-                                                <p><input type="radio" name="payment-method" data-bs-target="#net-banking"
-                                                        data-bs-toggle="collapse">&nbsp;&nbsp;&nbsp;Net Banking</p>
-                                            </div>
-                                        </div>
-                                        <div class="collapse" id="net-banking">
-                                            <div class="row ps-4 pe-4">
-                                                <div class="col-12 pb-2 ">
-                                                    POPULAR BANKS
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="row pt-3 pb-3">
+                                                <div class="col-2 text-center">
+                                                    <span
+                                                        style="padding:2% 8%;border:1px solid transparent;background-color: #222; color: #fff; font-size:20px;">3</span>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-6 pt-3">
-                                                    <input type="radio" name="bank">&nbsp;&nbsp;&nbsp;<img
-                                                        src="Images/hdfc-logo.png" style="height:20px">&nbsp;&nbsp;HDFC
-                                                    Bank
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-6 pt-3">
-                                                    <input type="radio" name="bank">&nbsp;&nbsp;<img
-                                                        src="Images/ici-logo.png" style="height:30px">&nbsp;&nbsp;ICICI
-                                                    Bank
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-6 pt-3">
-                                                    <input type="radio" name="bank">&nbsp;&nbsp;&nbsp;<img
-                                                        src="Images/state-logo.png"
-                                                        style="height:20px">&nbsp;&nbsp;State Bank Of India
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-6 pt-3">
-                                                    <input type="radio" name="bank">&nbsp;&nbsp;&nbsp;<img
-                                                        src="Images/axis-logo.jpg" style="height:20px">&nbsp;&nbsp;Axis
-                                                    Bank
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-6 pt-3">
-                                                    <input type="radio" name="bank">&nbsp;&nbsp;<img
-                                                        src="Images/kotak-logo.jpeg"
-                                                        style="height:30px">&nbsp;&nbsp;Kotak Bank
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-6 pt-3">
-                                                    <span style="visibility: hidden;">hello user</span>
-                                                </div>
-                                            </div>
-                                            <div class="row pt-3 pl-4">
-                                                <div class="col-12">
-                                                    <span>Other Bank</span>
-                                                </div>
-                                                <div class="col-12 pt-3">
-                                                    <input type="text" placeholder="Bank Name" style="width:50%"
-                                                        class="pt-1 pb-1 pl-4">
-                                                </div>
-                                                <div class="col-12 pt-4">
-                                                    <p><button
-                                                            style="text-transform: uppercase;padding:1.5% 7%;background-color: grey;color:white;border-color:transparent;font-weight: 600;"
-                                                            data-toggle="collapse" data-target="#payment-option">PAY
-                                                            &#8377;1,377</button></p>
+                                                <div class="col-10">
+                                                    <span
+                                                        style="font-size:15px;font-weight:600;color:#fff;text-transform: uppercase;">Payment
+                                                        Options</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col pl-4" id="cash-hidder">
-                                                <p><input type="radio" name="payment-method" data-toggle="collapse"
-                                                        data-target="#cash">&nbsp;&nbsp;&nbsp;Cash on Delivery</p>
-                                                <div class="collapse" id="cash">
-                                                    <p class="pl-3"><button
-                                                            style="text-transform: uppercase;padding:1.5% 7%;background-color: grey;color:white;border-color:transparent;font-weight: 600;"
-                                                            data-toggle="collapse"
-                                                            data-target="#payment-option">confirm</button></p>
+                                        <div class="card-body">
+                                            <div class="collapse" id="payment-option">
+                                                <div class="row">
+                                                    <div class="col ps-4 pb-3 d-flex align-items-center" id="pay-pal-hidder">
+                                                        <div class="radio-default radio-default-height">
+                                                            <input type="radio" name="payment-method" data-bs-toggle="collapse"
+                                                            data-bs-target="#PayPal">
+                                                        <div>
+                                                            <span class="dark-mode__paypal dark-mode__paypal--light option-check-style">
+                                                                <span class="inline-svg dark-mode__hidden"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="90"
+                                                                        height="30" viewBox="0 0 68 17" version="1.1"
+                                                                        aria-hidden="true" focusable="false">
+                                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                                            fill-rule="evenodd">
+                                                                            <g fill-rule="nonzero">
+                                                                                <g>
+                                                                                    <path
+                                                                                        d="M25.3415161,3.70106452 L21.5910968,3.70106452 C21.3344516,3.70106452 21.1161935,3.88751613 21.0761613,4.14087097 L19.5593226,13.7579355 C19.5291613,13.9476774 19.676129,14.1187742 19.8686129,14.1187742 L21.6590968,14.1187742 C21.9157419,14.1187742 22.134,13.9323226 22.1740323,13.6784194 L22.583129,11.0845484 C22.6226129,10.8306452 22.8414194,10.6441935 23.0975161,10.6441935 L24.2847742,10.6441935 C26.7552581,10.6441935 28.1810645,9.44870968 28.5534194,7.07967742 C28.7212258,6.04322581 28.5605484,5.22887097 28.0752258,4.65854839 C27.5421935,4.03229032 26.5967742,3.70106452 25.3415161,3.70106452 Z M25.7741935,7.21348387 C25.5690968,8.55922581 24.540871,8.55922581 23.5466452,8.55922581 L22.9807097,8.55922581 L23.3777419,6.04596774 C23.4013226,5.89406452 23.5329355,5.78219355 23.6864839,5.78219355 L23.945871,5.78219355 C24.623129,5.78219355 25.262,5.78219355 25.592129,6.16825806 C25.789,6.39858065 25.8493226,6.74077419 25.7741935,7.21348387 Z"
+                                                                                        fill="#253B80"></path>
+                                                                                    <path
+                                                                                        d="M36.5521935,7.17016129 L34.7562258,7.17016129 C34.6032258,7.17016129 34.4710645,7.28203226 34.4474839,7.43393548 L34.3679677,7.93625806 L34.2423871,7.75419355 C33.8535806,7.18990323 32.9865806,7.00125806 32.1212258,7.00125806 C30.1366129,7.00125806 28.4415484,8.5043871 28.1114194,10.6129355 C27.9397742,11.6647419 28.1838065,12.6704839 28.7804516,13.371871 C29.3277419,14.0167742 30.1108387,14.2854839 31.0425484,14.2854839 C32.6416452,14.2854839 33.5283871,13.2572581 33.5283871,13.2572581 L33.4483226,13.7562903 C33.4181613,13.947129 33.565129,14.1182258 33.7565161,14.1182258 L35.3742581,14.1182258 C35.6314516,14.1182258 35.8486129,13.9317742 35.8891935,13.677871 L36.8598387,7.531 C36.8905484,7.34180645 36.744129,7.17016129 36.5521935,7.17016129 Z M34.0488065,10.6655806 C33.8755161,11.6916129 33.0611613,12.3803871 32.0225161,12.3803871 C31.501,12.3803871 31.0842258,12.213129 30.8166129,11.8961613 C30.5511935,11.5813871 30.4502903,11.1333548 30.5347419,10.6343226 C30.6965161,9.61706452 31.5245806,8.90580645 32.5473226,8.90580645 C33.0573226,8.90580645 33.4719032,9.07525806 33.745,9.39496774 C34.0186452,9.71796774 34.1272258,10.1687419 34.0488065,10.6655806 Z"
+                                                                                        fill="#253B80"></path>
+                                                                                    <path
+                                                                                        d="M46.1171613,7.17016129 L44.3124194,7.17016129 C44.1402258,7.17016129 43.9784516,7.25570968 43.8808387,7.39883871 L41.3917097,11.0653548 L40.3366129,7.54196774 C40.2702581,7.32151613 40.0668065,7.17016129 39.8364839,7.17016129 L38.063,7.17016129 C37.8474839,7.17016129 37.6977742,7.38074194 37.7663226,7.58364516 L39.7542258,13.4173871 L37.8853226,16.0556774 C37.7383548,16.2635161 37.8864194,16.5492258 38.1403226,16.5492258 L39.942871,16.5492258 C40.1139677,16.5492258 40.2740968,16.465871 40.3711613,16.3254839 L46.3738065,7.66096774 C46.5174839,7.45367742 46.3699677,7.17016129 46.1171613,7.17016129 Z"
+                                                                                        fill="#253B80"></path>
+                                                                                    <path
+                                                                                        d="M52.0923871,3.70106452 L48.3414194,3.70106452 C48.0853226,3.70106452 47.8670645,3.88751613 47.8270323,4.14087097 L46.3101935,13.7579355 C46.2800323,13.9476774 46.427,14.1187742 46.6183871,14.1187742 L48.5432258,14.1187742 C48.722,14.1187742 48.875,13.9882581 48.9029677,13.8105806 L49.3334516,11.0845484 C49.3729355,10.8306452 49.5917419,10.6441935 49.8478387,10.6441935 L51.0345484,10.6441935 C53.5055806,10.6441935 54.9308387,9.44870968 55.3037419,7.07967742 C55.4720968,6.04322581 55.3103226,5.22887097 54.825,4.65854839 C54.2925161,4.03229032 53.3476452,3.70106452 52.0923871,3.70106452 Z M52.5250645,7.21348387 C52.3205161,8.55922581 51.2922903,8.55922581 50.2975161,8.55922581 L49.732129,8.55922581 L50.1297097,6.04596774 C50.1532903,5.89406452 50.2838065,5.78219355 50.4379032,5.78219355 L50.6972903,5.78219355 C51.374,5.78219355 52.0134194,5.78219355 52.3435484,6.16825806 C52.5404194,6.39858065 52.6001935,6.74077419 52.5250645,7.21348387 Z"
+                                                                                        fill="#179BD7"></path>
+                                                                                    <path
+                                                                                        d="M63.3025161,7.17016129 L61.5076452,7.17016129 C61.3535484,7.17016129 61.2224839,7.28203226 61.1994516,7.43393548 L61.1199355,7.93625806 L60.9938065,7.75419355 C60.605,7.18990323 59.7385484,7.00125806 58.8731935,7.00125806 C56.8885806,7.00125806 55.1940645,8.5043871 54.8639355,10.6129355 C54.6928387,11.6647419 54.9357742,12.6704839 55.5324194,13.371871 C56.0808065,14.0167742 56.8628065,14.2854839 57.7945161,14.2854839 C59.3936129,14.2854839 60.2803548,13.2572581 60.2803548,13.2572581 L60.2002903,13.7562903 C60.170129,13.947129 60.3170968,14.1182258 60.5095806,14.1182258 L62.1267742,14.1182258 C62.382871,14.1182258 62.601129,13.9317742 62.6411613,13.677871 L63.6123548,7.531 C63.6419677,7.34180645 63.495,7.17016129 63.3025161,7.17016129 Z M60.799129,10.6655806 C60.6269355,11.6916129 59.8114839,12.3803871 58.7728387,12.3803871 C58.2524194,12.3803871 57.8345484,12.213129 57.5669355,11.8961613 C57.3015161,11.5813871 57.2017097,11.1333548 57.2850645,10.6343226 C57.4479355,9.61706452 58.2749032,8.90580645 59.2976452,8.90580645 C59.8076452,8.90580645 60.2222258,9.07525806 60.4953226,9.39496774 C60.7700645,9.71796774 60.8786452,10.1687419 60.799129,10.6655806 Z"
+                                                                                        fill="#179BD7"></path>
+                                                                                    <path
+                                                                                        d="M65.4198387,3.96483871 L63.8805161,13.7579355 C63.8503548,13.9476774 63.9973226,14.1187742 64.1887097,14.1187742 L65.7362581,14.1187742 C65.9934516,14.1187742 66.2117097,13.9323226 66.2511935,13.6784194 L67.769129,4.06190323 C67.7992903,3.87216129 67.6523226,3.70051613 67.4609355,3.70051613 L65.7280323,3.70051613 C65.5750323,3.70106452 65.4434194,3.81293548 65.4198387,3.96483871 Z"
+                                                                                        fill="#179BD7"></path>
+                                                                                    <path
+                                                                                        d="M3.98458065,15.9876774 L4.2713871,14.1659355 L3.63251613,14.151129 L0.58183871,14.151129 L2.70190323,0.708516129 C2.70848387,0.667935484 2.72987097,0.630096774 2.76112903,0.603225806 C2.7923871,0.576354839 2.83241935,0.561548387 2.87409677,0.561548387 L8.01796774,0.561548387 C9.72564516,0.561548387 10.904129,0.916903226 11.5194194,1.61829032 C11.807871,1.94732258 11.9915806,2.29116129 12.0804194,2.66954839 C12.1736452,3.06658065 12.1752903,3.54093548 12.0842581,4.11948387 L12.0776774,4.16170968 L12.0776774,4.53241935 L12.366129,4.69583871 C12.6090645,4.82470968 12.8020968,4.97222581 12.9501613,5.14112903 C13.1969355,5.42245161 13.3565161,5.78 13.4239677,6.20390323 C13.4936129,6.63987097 13.4705806,7.15864516 13.3565161,7.74596774 C13.2249032,8.42158065 13.012129,9.01 12.7247742,9.49148387 C12.4604516,9.93512903 12.1237419,10.3030968 11.7239677,10.5882581 C11.3422903,10.8591613 10.8887742,11.0648065 10.3760323,11.1964194 C9.87919355,11.3258387 9.31270968,11.3910968 8.6913871,11.3910968 L8.29106452,11.3910968 C8.00480645,11.3910968 7.72677419,11.4941935 7.50851613,11.679 C7.28970968,11.8676452 7.14493548,12.1253871 7.10051613,12.4072581 L7.07035484,12.5712258 L6.56364516,15.7820323 L6.5406129,15.8999355 C6.53458065,15.9372258 6.52416129,15.955871 6.50880645,15.9684839 C6.49509677,15.98 6.47535484,15.9876774 6.45616129,15.9876774 L3.98458065,15.9876774 Z"
+                                                                                        fill="#253B80"></path>
+                                                                                    <path
+                                                                                        d="M12.6392258,4.20448387 L12.6392258,4.20448387 L12.6392258,4.20448387 C12.623871,4.30264516 12.6063226,4.403 12.5865806,4.50609677 C11.9082258,7.98890323 9.58745161,9.19206452 6.62341935,9.19206452 L5.11425806,9.19206452 C4.75177419,9.19206452 4.44632258,9.45529032 4.38983871,9.81283871 L4.38983871,9.81283871 L4.38983871,9.81283871 L3.61716129,14.7132258 L3.39835484,16.1022903 C3.3616129,16.337 3.54258065,16.5486774 3.77948387,16.5486774 L6.45616129,16.5486774 C6.77312903,16.5486774 7.0423871,16.3183548 7.09229032,16.0057742 L7.1186129,15.8697742 L7.62258065,12.6715806 L7.65493548,12.4960968 C7.70429032,12.1824194 7.97409677,11.9520968 8.29106452,11.9520968 L8.6913871,11.9520968 C11.2847097,11.9520968 13.3148387,10.8991935 13.9081935,7.85235484 C14.1560645,6.57954839 14.0277419,5.51677419 13.371871,4.76932258 C13.1733548,4.54393548 12.927129,4.35693548 12.6392258,4.20448387 Z"
+                                                                                        fill="#179BD7"></path>
+                                                                                    <path
+                                                                                        d="M11.9296129,3.92151613 C11.8259677,3.89135484 11.7190323,3.86393548 11.6093548,3.83925806 C11.499129,3.81512903 11.3861613,3.79374194 11.2699032,3.77509677 C10.863,3.70929032 10.4171613,3.67803226 9.93951613,3.67803226 L5.90777419,3.67803226 C5.80851613,3.67803226 5.71419355,3.70051613 5.62974194,3.74109677 C5.44383871,3.83048387 5.30564516,4.00651613 5.27219355,4.22203226 L4.41451613,9.65435484 L4.38983871,9.81283871 C4.44632258,9.45529032 4.75177419,9.19206452 5.11425806,9.19206452 L6.62341935,9.19206452 C9.58745161,9.19206452 11.9082258,7.98835484 12.5865806,4.50609677 C12.606871,4.403 12.623871,4.30264516 12.6392258,4.20448387 C12.4675806,4.11345161 12.2816774,4.03558065 12.0815161,3.96922581 C12.0321613,3.95277419 11.9811613,3.93687097 11.9296129,3.92151613 Z"
+                                                                                        fill="#222D65"></path>
+                                                                                    <path
+                                                                                        d="M5.27219355,4.22203226 C5.30564516,4.00651613 5.44383871,3.83048387 5.62974194,3.74164516 C5.71474194,3.70106452 5.80851613,3.67858065 5.90777419,3.67858065 L9.93951613,3.67858065 C10.4171613,3.67858065 10.863,3.70983871 11.2699032,3.77564516 C11.3861613,3.79429032 11.499129,3.81567742 11.6093548,3.83980645 C11.7190323,3.86448387 11.8259677,3.89190323 11.9296129,3.92206452 C11.9811613,3.93741935 12.0321613,3.95332258 12.0820645,3.96922581 C12.2822258,4.03558065 12.468129,4.114 12.6397742,4.20448387 C12.8415806,2.91741935 12.638129,2.04109677 11.9422258,1.24758065 C11.1750323,0.374 9.79035484,0 8.01851613,0 L2.87464516,0 C2.51270968,0 2.20396774,0.263225806 2.14803226,0.621322581 L0.00548387097,14.202129 C-0.0367419355,14.4708387 0.170548387,14.7132258 0.441451613,14.7132258 L3.61716129,14.7132258 L4.41451613,9.65435484 L5.27219355,4.22203226 Z"
+                                                                                        fill="#253B80"></path>
+                                                                                </g>
+                                                                            </g>
+                                                                        </g>
+                                                                    </svg></span>
+                                                            </span>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="PayPal" class="collapse">
+                                                    <div class="row pt-2">
+                                                        <div class="col text-center">
+                                                            <p>Continuing will take you to your PayPal account. You'll be able to review and submit your order after you log in.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row ps-5">
+                                                        <div class="col">
+                                                            <p><button
+                                                                    style="text-transform: capitalize;padding: 12px 20px;background-color: #222;color:white;border-radius:12px;"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#payment-option">continue</button></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Button trigger modal -->
+                                                <div class="row">
+                                                    <div class="col ps-4 d-flex" id="debit-hidder">
+                                                        <div class="radio-default radio-default-height">
+                                                            <input type="radio" name="payment-method" data-bs-toggle="modal" class="mt-1"
+                                                                data-bs-target="#debit">
+                                                        </div>
+                                                        <div class="option-check-style-1">
+                                                            <div class="d-inline-block ms-2" style="margin-top: -7px;">
+                                                                <span
+                                                                    class="inline-svg svg-payment-icon-sm svg-payment-icon-p-4"><svg
+                                                                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                                                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        xmlns:svg="http://www.w3.org/2000/svg" version="1.1"
+                                                                        x="0px" y="0px" viewBox="0 0 1920.01 620.07999"
+                                                                        xml:space="preserve"
+                                                                        sodipodi:docname="d262c3fc767b0f2b042f1a30f2519b44.svgz"
+                                                                        width="100%" height="100%"
+                                                                        aria-labelledby="paymentsvisa-2-visa" role="img"
+                                                                        focusable="false">
+                                                                        <defs id="defs9"></defs>
+                                                                        <sodipodi:namedview id="namedview7" pagecolor="#ffffff"
+                                                                            bordercolor="#666666" borderopacity="1.0"
+                                                                            inkscape:pageshadow="2" inkscape:pageopacity="0.0"
+                                                                            inkscape:pagecheckerboard="0"></sodipodi:namedview>
+                                                                        <style type="text/css" id="style2">
+                                                                            .visa-svg-path {
+                                                                                fill: #1434CB;
+                                                                            }
+                                                                        </style>
+                                                                        <path class="visa-svg-path"
+                                                                            d="M 729,10.96 477.63,610.7 h -164 L 189.93,132.08 C 182.42,102.6 175.89,91.8 153.05,79.38 115.76,59.15 54.18,40.17 0,28.39 L 3.68,10.96 h 263.99 c 33.65,0 63.9,22.4 71.54,61.15 L 404.54,419.15 566,10.95 h 163 z m 642.58,403.93 c 0.66,-158.29 -218.88,-167.01 -217.37,-237.72 0.47,-21.52 20.96,-44.4 65.81,-50.24 22.23,-2.91 83.48,-5.13 152.95,26.84 L 1400.22,26.59 C 1362.89,13.04 1314.86,0 1255.1,0 1101.75,0 993.83,81.52 992.92,198.25 c -0.99,86.34 77.03,134.52 135.81,163.21 60.47,29.38 80.76,48.26 80.53,74.54 -0.43,40.23 -48.23,57.99 -92.9,58.69 -77.98,1.2 -123.23,-21.1 -159.3,-37.87 l -28.12,131.39 c 36.25,16.63 103.16,31.14 172.53,31.87 162.99,0 269.61,-80.51 270.11,-205.19 m 404.94,195.81 h 143.49 L 1794.76,10.96 h -132.44 c -29.78,0 -54.9,17.34 -66.02,44 L 1363.49,610.7 h 162.91 l 32.34,-89.58 h 199.05 z m -173.11,-212.5 81.66,-225.18 47,225.18 z M 950.67,10.96 822.38,610.7 H 667.24 L 795.58,10.96 Z"
+                                                                            id="path4"></path>
+                                                                        <title id="paymentsvisa-2-visa">Visa</title>
+                                                                    </svg></span>
+        
+                                                                <span
+                                                                    class="inline-svg svg-payment-icon-sm svg-payment-icon-p-2"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 131.39 86.9" width="100%" height="100%"
+                                                                        aria-labelledby="paymentsmastercard-2-mastercard"
+                                                                        role="img" focusable="false">
+                                                                        <defs>
+                                                                            <style>
+                                                                                .a {
+                                                                                    opacity: 0;
+                                                                                }
+        
+                                                                                .b {
+                                                                                    fill: #fff;
+                                                                                }
+        
+                                                                                .c {
+                                                                                    fill: #ff5f00;
+                                                                                }
+        
+                                                                                .d {
+                                                                                    fill: #eb001b;
+                                                                                }
+        
+                                                                                .e {
+                                                                                    fill: #f79e1b;
+                                                                                }
+                                                                            </style>
+                                                                        </defs>
+                                                                        <title id="paymentsmastercard-2-mastercard">Mastercard
+                                                                        </title>
+                                                                        <g class="a">
+                                                                            <rect class="b" width="131.39" height="86.9"></rect>
+                                                                        </g>
+                                                                        <rect class="c" x="48.37" y="15.14" width="34.66"
+                                                                            height="56.61"></rect>
+                                                                        <path class="d"
+                                                                            d="M51.94,43.45a35.94,35.94,0,0,1,13.75-28.3,36,36,0,1,0,0,56.61A35.94,35.94,0,0,1,51.94,43.45Z">
+                                                                        </path>
+                                                                        <path class="e"
+                                                                            d="M120.5,65.76V64.6H121v-.24h-1.19v.24h.47v1.16Zm2.31,0v-1.4h-.36l-.42,1-.42-1h-.36v1.4h.26V64.7l.39.91h.27l.39-.91v1.06Z">
+                                                                        </path>
+                                                                        <path class="e"
+                                                                            d="M123.94,43.45a36,36,0,0,1-58.25,28.3,36,36,0,0,0,0-56.61,36,36,0,0,1,58.25,28.3Z">
+                                                                        </path>
+                                                                    </svg></span>
+        
+                                                                <span class="inline-svg svg-payment-icon-sm"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
+                                                                        height="100%" viewBox="0 15 70 40"
+                                                                        aria-labelledby="paymentsamex-2-american-express"
+                                                                        role="img" focusable="false">
+                                                                        <g fill="#006FCF">
+                                                                            <path
+                                                                                d="M55.6,40.3v-3.4h1.1V13.6H14V30l1.1-1.4v5.6H14v22h42.7V43.9c-0.1,0-1,0.1-1.1,0.1v-1.8V40.3L55.6,40.3z">
+                                                                            </path>
+                                                                            <path fill="#FFFFFF"
+                                                                                d="M56.7,43.9v-7h-0.4H30.2l-0.7,1l-0.7-1h-7.6v7.5h7.6l0.7-1l0.7,1H35v-1.6h-0.1c0.6,0,1.1-0.1,1.6-0.3v1.9h3.3     v-1.1l0.8,1.1H55c0.4,0,0.8-0.1,1.1-0.2C56.4,44.1,56.6,44,56.7,43.9L56.7,43.9z M51.5,34.3h3.2v-7.5h-3.4v1.2l-0.8-1.2h-3v1.5     l-0.7-1.5h-4.9c-0.2,0-0.5,0-0.7,0.1c-0.2,0-0.4,0.1-0.6,0.1c-0.1,0-0.3,0.1-0.4,0.2c-0.2,0.1-0.3,0.2-0.4,0.2v-0.3v-0.3H23.8     l-0.4,1.3l-0.4-1.3h-3.7v1.5l-0.7-1.5h-3.1L14,30.1v3.6v0.7h2.2l0.4-1.1h0.8l0.4,1.1h16.6v-1.1l0.8,1.1h4.6v-0.2v-0.3     c0.1,0.1,0.2,0.1,0.4,0.2c0.1,0.1,0.3,0.1,0.4,0.2c0.2,0.1,0.3,0.1,0.5,0.1c0.3,0,0.5,0.1,0.8,0.1h2.8l0.4-1.1h0.8l0.4,1.1h4.6     v-1.1L51.5,34.3L51.5,34.3z">
+                                                                            </path>
+                                                                            <path
+                                                                                d="M26.5,39.1v-1h-4v5h4v-1h-2.8v-1h2.8v-1h-2.8v-1H26.5L26.5,39.1z M30.7,43.1h1.5l-2-2.5l2-2.5h-1.5l-1.2,1.6     l-1.2-1.6h-1.5l2,2.5l-2,2.5h1.5l1.2-1.6L30.7,43.1L30.7,43.1z M32.4,38.1v5h1.2v-1.7h1.5c1.1,0,1.8-0.7,1.8-1.7     c0-1-0.7-1.7-1.7-1.7H32.4L32.4,38.1z M35.7,39.8c0,0.3-0.2,0.6-0.6,0.6h-1.4v-1.2h1.4C35.5,39.2,35.7,39.4,35.7,39.8L35.7,39.8z      M38.8,41.3h0.6l1.5,1.8h1.5l-1.7-1.9c0.9-0.2,1.4-0.8,1.4-1.6c0-0.9-0.7-1.6-1.7-1.6h-2.7v5h1.2V41.3L38.8,41.3z M40.2,39.1     c0.4,0,0.7,0.3,0.7,0.6c0,0.3-0.2,0.6-0.7,0.6h-1.4v-1.2H40.2L40.2,39.1z M47,39.1v-1h-4v5h4v-1h-2.8v-1h2.8v-1h-2.8v-1H47L47,39.1     z M50.3,42.1h-2.6v1h2.5c1.1,0,1.7-0.7,1.7-1.6c0-0.9-0.6-1.4-1.6-1.4h-1.2c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5h2.2     l0.4-1h-2.6c-1.1,0-1.7,0.7-1.7,1.6c0,0.9,0.6,1.5,1.6,1.5h1.2c0.3,0,0.5,0.2,0.5,0.5C50.8,41.9,50.6,42.1,50.3,42.1L50.3,42.1z      M55.1,42.1h-2.6v1H55c1.1,0,1.7-0.7,1.7-1.6c0-0.9-0.6-1.4-1.6-1.4H54c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5h2.2l0.4-1     h-2.6c-1.1,0-1.7,0.7-1.7,1.6c0,0.9,0.6,1.5,1.6,1.5h1.2c0.3,0,0.5,0.2,0.5,0.5C55.6,41.9,55.3,42.1,55.1,42.1L55.1,42.1z">
+                                                                            </path>
+                                                                            <path
+                                                                                d="M18.6,33.1h1.4l-2.1-5h-1.6l-2.2,5h1.3l0.4-1.1h2.4L18.6,33.1L18.6,33.1z M16.6,30L17,29l0.4,0.9l0.4,1.1h-1.6     L16.6,30L16.6,30z M21.4,29.7l0-1.4l1.4,4.8h1.1l1.4-4.8l0,1.3v3.4h1.2v-5h-2.1l-1,3.6l-1-3.6h-2.1v5h1.2V29.7L21.4,29.7z      M31.4,29.1v-1h-4v5h4v-1h-2.8v-1h2.8v-1h-2.8v-1H31.4L31.4,29.1z M33.5,31.3h0.6l1.5,1.8h1.5l-1.7-1.9c0.9-0.2,1.4-0.8,1.4-1.6     c0-0.9-0.7-1.6-1.7-1.6h-2.7v5h1.2V31.3L33.5,31.3z M34.9,29.1c0.4,0,0.7,0.3,0.7,0.6c0,0.3-0.2,0.6-0.7,0.6h-1.4v-1.2H34.9     L34.9,29.1z M37.4,33.1h1.2v-2.2v-2.8h-1.2v2.8V33.1L37.4,33.1z M41.7,33.1L41.7,33.1l0.6-1.1h-0.4c-0.8,0-1.3-0.5-1.3-1.4v-0.1     c0-0.8,0.4-1.4,1.3-1.4h1.3v-1.1h-1.4c-1.6,0-2.4,1-2.4,2.5v0.1C39.4,32.1,40.3,33.1,41.7,33.1L41.7,33.1z M47,33.1h1.4l-2.1-5     h-1.6l-2.2,5h1.3l0.4-1.1h2.4L47,33.1L47,33.1z M45,30l0.4-0.9l0.4,0.9l0.4,1.1h-1.6L45,30L45,30z M49.8,30.1l0-0.4l0.3,0.4l1.9,3     h1.4v-5h-1.2V31l0,0.4L52,31l-1.9-2.9h-1.5v5h1.2V30.1L49.8,30.1z">
+                                                                            </path>
+                                                                        </g>
+                                                                        <title id="paymentsamex-2-american-express">American
+                                                                            Express</title>
+                                                                    </svg></span>
+        
+                                                                <span class="inline-svg svg-payment-icon-sm"><svg
+                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
+                                                                        height="100%" viewBox="0 0 74 16" version="1.1"
+                                                                        aria-labelledby="paymentsdiscover-2-discover" role="img"
+                                                                        focusable="false">
+                                                                        <g stroke="none" stroke-width="1" fill="none"
+                                                                            fill-rule="evenodd">
+                                                                            <g transform="translate(0.000000, -1.000000)"
+                                                                                fill-rule="nonzero">
+                                                                                <path
+                                                                                    d="M0.405,34.334 L73.758,34.334 C75.711,34.334 77.292,32.77 77.292,30.844 L77.292,6.355 C70.252,10.757 43.71,25.944 0.405,34.334"
+                                                                                    fill="#E6792B"></path>
+                                                                                <path
+                                                                                    d="M13.18,7.61 C12.646,8.087 11.96,8.29 10.863,8.29 L10.409,8.292 L10.409,2.625 L10.861,2.625 C11.957,2.625 12.618,2.819 13.179,3.318 C13.767,3.832 14.115,4.628 14.115,5.448 C14.115,6.273 13.767,7.098 13.18,7.608 L13.18,7.61 Z M11.2,1.176 L8.715,1.176 L8.715,9.746 L11.192,9.746 C12.505,9.746 13.455,9.436 14.288,8.756 C15.278,7.946 15.864,6.726 15.864,5.466 C15.864,2.936 13.948,1.176 11.204,1.176 L11.2,1.176 Z"
+                                                                                    fill="#0D1619"></path>
+                                                                                <polygon fill="#0D1619"
+                                                                                    points="16.642 9.743 18.332 9.743 18.332 1.173 16.642 1.173">
+                                                                                </polygon>
+                                                                                <path
+                                                                                    d="M22.474,4.46 C21.459,4.09 21.16,3.845 21.16,3.382 C21.16,2.842 21.69,2.432 22.42,2.432 C22.93,2.432 23.346,2.639 23.79,3.124 L24.673,1.984 C23.943,1.352 23.073,1.034 22.123,1.034 C20.587,1.034 19.416,2.084 19.416,3.484 C19.416,4.669 19.962,5.271 21.549,5.834 C22.212,6.068 22.549,6.221 22.719,6.324 C23.059,6.544 23.227,6.851 23.227,7.211 C23.227,7.908 22.667,8.419 21.91,8.419 C21.105,8.419 20.454,8.023 20.063,7.279 L18.973,8.319 C19.753,9.449 20.689,9.951 21.979,9.951 C23.735,9.951 24.971,8.791 24.971,7.135 C24.971,5.775 24.401,5.157 22.471,4.46"
+                                                                                    fill="#0D1619"></path>
+                                                                                <path
+                                                                                    d="M25.506,5.463 C25.506,7.983 27.512,9.935 30.089,9.935 C30.816,9.935 31.439,9.793 32.209,9.435 L32.209,7.467 C31.529,8.135 30.932,8.404 30.165,8.404 C28.46,8.404 27.248,7.184 27.248,5.448 C27.248,3.805 28.495,2.508 30.088,2.508 C30.89,2.508 31.504,2.79 32.208,3.468 L32.208,1.506 C31.466,1.136 30.854,0.983 30.125,0.983 C27.56,0.983 25.503,2.975 25.503,5.463"
+                                                                                    fill="#0D1619"></path>
+                                                                                <polyline fill="#0D1619"
+                                                                                    points="45.93 6.93 43.61 1.174 41.763 1.174 45.448 9.961 46.358 9.961 50.11 1.176 48.274 1.176 45.93 6.93">
+                                                                                </polyline>
+                                                                                <polyline fill="#0D1619"
+                                                                                    points="50.876 9.743 55.68 9.743 55.68 8.29 52.57 8.29 52.57 5.977 55.562 5.977 55.562 4.527 52.57 4.527 52.57 2.627 55.68 2.627 55.68 1.174 50.876 1.174 50.876 9.742">
+                                                                                </polyline>
+                                                                                <path
+                                                                                    d="M58.982,5.118 L58.492,5.118 L58.492,2.522 L59.012,2.522 C60.067,2.522 60.64,2.96 60.64,3.792 C60.64,4.652 60.067,5.118 58.982,5.118 Z M62.38,3.704 C62.38,2.097 61.263,1.174 59.31,1.174 L56.798,1.174 L56.798,9.744 L58.491,9.744 L58.491,6.3 L58.714,6.3 L61.056,9.743 L63.138,9.743 L60.4,6.133 C61.678,5.876 62.38,5.015 62.38,3.703 L62.38,3.704 Z"
+                                                                                    fill="#0D1619"></path>
+                                                                                <path
+                                                                                    d="M63.256,1.916 L63.222,1.916 L63.222,1.72 L63.258,1.72 C63.346,1.72 63.393,1.752 63.393,1.817 C63.393,1.881 63.343,1.917 63.256,1.917 L63.256,1.916 Z M63.576,1.813 C63.576,1.663 63.473,1.58 63.286,1.58 L63.042,1.58 L63.042,2.336 L63.222,2.336 L63.222,2.043 L63.437,2.336 L63.664,2.336 L63.408,2.026 C63.516,1.996 63.576,1.918 63.576,1.813 Z"
+                                                                                    fill="#1B1A18"></path>
+                                                                                <path
+                                                                                    d="M63.322,2.498 C63.027,2.498 62.788,2.258 62.788,1.958 C62.788,1.658 63.025,1.418 63.322,1.418 C63.612,1.418 63.848,1.661 63.848,1.958 C63.848,2.255 63.613,2.498 63.322,2.498 Z M63.322,1.298 C62.952,1.298 62.657,1.59 62.657,1.956 C62.657,2.322 62.953,2.616 63.322,2.616 C63.686,2.616 63.982,2.32 63.982,1.956 C63.982,1.594 63.686,1.296 63.322,1.296 L63.322,1.298 Z"
+                                                                                    fill="#1B1A18"></path>
+                                                                                <path
+                                                                                    d="M37.481,1.016 C34.926,1.016 32.853,2.986 32.853,5.418 C32.853,8.004 34.836,9.936 37.481,9.936 C40.061,9.936 42.099,7.978 42.099,5.469 C42.099,2.974 40.074,1.014 37.481,1.014"
+                                                                                    fill="#E6792B"></path>
+                                                                            </g>
+                                                                        </g>
+                                                                        <title id="paymentsdiscover-2-discover">Discover</title>
+                                                                    </svg></span>
+        
+                                                            </div>
+                                                        </div>
+                                                        </p>
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="debit" tabindex="-1" aria-labelledby="creditModal"data-bs-backdrop="static"
+                                                 data-bs-keyboard="false" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Credit card</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                    aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container-fluid">
+                                                                    <form action="">
+                                                                        <div class="row">
+                                                                            <div class="mb-3">
+                                                                                <label for="recipient-name"
+                                                                                    class="col-form-label">Name on card
+                                                                                    :</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="recipient-name">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="mb-3">
+                                                                                <label for="recipient-name"
+                                                                                    class="col-form-label">Card number :</label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="recipient-name">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-8 col-12">
+                                                                                <div class="mb-3">
+                                                                                    <label for="recipient-name"
+                                                                                        class="col-form-label">Expiration date
+                                                                                        :</label>
+                                                                                    <input type="date" class="form-control"
+                                                                                        id="recipient-name">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-sm-4 col-12">
+                                                                                <div class="mb-3">
+                                                                                    <label for="recipient-name"
+                                                                                        class="col-form-label">Security code
+                                                                                        :</label>
+                                                                                    <input type="text" class="form-control"
+                                                                                        id="recipient-name">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal"
+                                                                    style="text-transform: capitalize; background-color: #222; color: #fff;">Cancel</button>
+                                                                <button type="button" class="btn card-btn">pay</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="margin-left: 1px;">
+                                                    <div class="col pl-4" id="cash-hidder">
+                                                        <div class="radio-default radio-default-height"><input type="radio" name="payment-method" data-bs-toggle="collapse"
+                                                                data-bs-target="#cash">&nbsp;&nbsp;&nbsp;<span>Cash on Delivery</span></div>
+                                                        <div class="collapse" id="cash">
+                                                            <p class="ps-3 ms-2"><button
+                                                                    style="text-transform: capitalize;padding:12px 20px;background-color: #222;color:white;border-radius: 12px;"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#payment-option">confirm</button></p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -768,91 +1185,148 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pt-4">
-                    <div class="container">
-                        <div class="card">
-                            <div class="card-header">PRICE DETAILS</div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col text-left">
-                                        Price(3) :
-                                    </div>
-                                    <div class="col text-right">
-                                        &#8377;1,460
-                                    </div>
+                        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pt-2">
+                          <div class="container-fluid">
+                            <div class="card" style="min-width: fit-content;">
+                              <div class="card-header header-pill">
+                                <span style="font-size:20px;font-weight:700;color:black">Price Details</span>
+                              </div>
+                              <div class="card-body">
+                                <div class="product-content d-flex align-items-center justify-content-between">
+                                  <span class="category">Price(3):</span>
+                                  <span class="price font-size-20" style="margin-top: -13px; font-weight: 500;">$86 </span>
                                 </div>
-                                <div class="row pt-3">
-                                    <div class="col-7 text-left ">
-                                        Delivery Charges :
-                                    </div>
-                                    <div class="col text-right">
-                                        Free
-                                    </div>
+                                <div class="product-content d-flex align-items-center justify-content-between">
+                                  <span class="category">Delivery Charges :</span>
+                                  <span class="price font-size-20" style="margin-top: -13px; font-weight: 500;">
+                                    Free </span>
                                 </div>
                                 <hr>
-                                <div class="row">
-                                    <div class="col text-left">
-                                        Total Amount :
-                                    </div>
-                                    <div class="col text-right">
-                                        &#8377;1,460
-                                    </div>
+                                <div class="product-content d-flex align-items-center justify-content-between">
+                                  <span class="category">Total Amount :</span>
+                                  <span class="price font-size-20" style="margin-top: -13px; font-weight: 500;">$86 </span>
                                 </div>
+                              </div>
                             </div>
+                          </div>
                         </div>
                     </div>
+        
                 </div>
             </div>
-
         </div>
         <!-- CHECK OUT SECTION -->
     </main>
     <!-- !START MAIN SECTION -->
     <!-- START FOOOTER -->
-    <footer id="footer" class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-12">
-                    <h4 class="font-rubik font-size-20">Shopee Site</h4>
-                    <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Repellendus, deserunt.</p>
-                </div>
-                <div class="col-lg-4 col-12 me-2">
-                    <h4 class="font-rubik font-size-20">Newslatter</h4>
-                    <form class="form-row">
-                        <input type="text" class="form-control" placeholder="Email *">
-                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
-                    </form>
-                </div>
-                <div class="col-lg-2 col-12">
-                    <h4 class="font-rubik font-size-20">Information</h4>
-                    <div class="d-flex flex-column flex-wrap">
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+    <footer class="footer-section footer-section-style-1 section-top-gap-120">
+        <div class="box-wrapper">
+            <div class="footer-wrapper section-fluid-270">
+                <div class="container-fluid">
+
+                    <div class="footer-top">
+                        <div class="footer-top-left">
+                            <div class="footer-contact-items">
+                                <a href="tel:+234-8068950848" class="icon-left">
+                                    <img src="img/icons/icon-ios-call-dark.svg" alt="" class="icon-svg">
+                                    +234 8068950848
+                                </a>
+                                <a href="mailto:sandaumaru207@gmail.com" class="icon-left">
+                                    <img src="img/icons/icon-mail-open-dark.svg" alt="" class="icon-svg">
+                                    sandaumaru207@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-top-right">
+                            <div class="footer-social">
+                                <a href="#">
+                                    <img src="img/icons/icon-facebook-f-dark.svg" alt="" class="icon-svg">
+                                </a>
+                                <a href="#">
+                                    <img src="img/icons/icon-dribbble-dark.svg" alt="" class="icon-svg">
+                                </a>
+                                <a href="#">
+                                    <img src="img/icons/icon-pinterest-p-dark.svg" alt="" class="icon-svg">
+                                </a>
+                                <a href="#">
+                                    <img src="img/icons/icon-twitter-dark.svg" alt="" class="icon-svg">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-12">
-                    <h4 class="font-rubik font-size-20">Account</h4>
-                    <div class="d-flex flex-column flex-wrap">
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newslatters</a>
+
+
+                    <div class="footer-center">
+                        <div class="footer-widgets-items">
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Product</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-1">Product</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-1">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Men</a></li>
+                                        <li><a href="#">Women</a></li>
+                                        <li><a href="#">Kids</a></li>
+                                        <li><a href="#">Home & Living</a></li>
+                                        <li><a href="#">Beauty</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Offer</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-2">Offer</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-2">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Gift Cards</a></li>
+                                        <li><a href="#">Insider Points</a></li>
+                                        <li><a href="#">Coupons</a></li>
+                                        <li><a href="#">Birthday Special</a></li>
+                                        <li><a href="#">Festive Season</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Information</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-3">Information</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-3">
+                                    <ul class="footer-nav">
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="about-us.html#faq">FAQ</a></li>
+                                        <li><a href="#">T&C</a></li>
+                                        <li><a href="#">Terms of Use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Useful Links</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-4">Useful Links</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-4">
+                                    <ul class="footer-nav">
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li><a href="register.html">Account</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="copyright-text copyright-text--light">&copy; Copyrights 2022. Desing By <a href="#"> Umar Umar</a></p>
+                        <a href="#" class="payment-logo">
+                            <img src="img/logo/payment-logo.png" alt="" class="img-fluid">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="px-lg-5 credit bg-dark">
-        <p> created by <span>Umar Umar</span> | all rights reserved! </p>
-        <img src="img/logo/payment-logo.png" class="img-fluid" alt="">
-    </div>
     <!-- !START FOOOTER -->
-
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
@@ -868,6 +1342,7 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- Swiperjs js cdn -->
     <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    <script src="assets/js/jquery.nice-select.js"></script>
     <script src="assets/js/header.js"></script>
     <script src="assets/js/checkout.js"></script>
 </body>

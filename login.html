@@ -10,8 +10,10 @@
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <!-- <link rel="stylesheet" href="assets/css/material-icons.css" /> -->
+    <link rel="stylesheet" href="assets/css/material-icons.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- Nice select cdn -->
+    <link rel="stylesheet" href="assets/css/nice-select.css"/>
     <!-- Swiperjs cdn -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
 
@@ -30,163 +32,670 @@
 
 <body style="background-color: lavender;">
 
-    <!-- START HEADER -->
-
-    <header>
-        <!-- The Top Section -->
-        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
-            <p class="font-montserrat font-size-12 text-black-50 m-0"> +971 50 202 0067 support@fashionys.com</p>
-            <div class="font-montserrat font-size-14">
-                <a href="#" class="px-3 border-start text-dark"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="px-3 border-start border-end text-dark"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-        <!-- !The Top Section -->
-
-        <div class="container-sm">
-            <div class="row inner py-2">
-                <div class="col-auto logo m-0">
-                    <a href="index.php" class="color-black font-raleway">Shopee Site</a>
-                </div>
-
-                <div class="col-auto ms-auto right">
-                    <ul class="d-flex justify-content-end py-1 font-raleway font-size-16  list-style">
-                        <li><a href="#" class="color-primary"><i class="fa fa-sign-in"></i><span>Login</span></a></li>
-                        <li><a href="#" class="color-primary"><i class="fa fa-user-plus"></i><span>Register</span></a>
-                        </li>
-                        <li><a href="#" class="color-primary"><i class="fa fa-heart"></i>(0.00)</a></li>
-                        <li><a href="#" class="color-primary"><i class="fa fa-shopping-cart">($0.00)</i></a></li>
-                    </ul>
-                </div>
-                <div class="col-auto search-area">
-                    <form class="search-event d-flex align-items-center justify-content-center">
-                        <input type="text" placeholder="Search..." class="header-search">
-                        <label for="header-search" class="fa fa-search"></label>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 pl_0 pe_0">
-                        <div class="menu-container">
-                            <div class="menu">
-                                <ul>
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="#">Men</a>
-                                        <ul>
-                                            <li><a href="#">Men Accessory</a>
-                                                <ul>
-                                                    <li><a href="#">Men Accessory</a></li>
+    <!-- header section starts  -->
+    <header class="header-section pos-relative light-bg sticky-header d-none d-lg-block section-fluid-270">
+        <div class="header-wrapper pos-relative">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <a href="#" class="header-logo bg-light py-2 px-3 rounded-pill">
+                            <img src="img/icons/icon-shopping-bag-dark.svg" alt="" class="pe-1"><span class="font-size-20 font-raleway" style="font-weight: 800;">Shopee</span>
+                        </a>
+                        <!-- logo ends  -->
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <div class="header-event d-flex align-items-center">
+                            <div class="menu-event d-flex dropdown">
+                                <button class="main-menu-event d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="img/icons/icon-open-menu.svg" alt="">
+                                    <span>Menu</span>
+                                    <img src="img/icons/icon-arrow-drop-down.svg" alt="">
+                                </button>
+                                <ul class="mainmenu-nav dropdown-menu">
+                                    <li class="menu-items">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#all">Men
+                                            <span class="material-icons">arrow_right</span>
+                                        </a>
+                                        <div class="has-dropdown megamenu">
+                                            <div class="menu-content">
+                                                <h6 class="title">Top Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">T-shirts</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Sweatshirts</a></li>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Suits</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="#">Men Accessory</a>
-                                                <ul>
-                                                    <li><a href="#">Men Accessory</a></li>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Bottom Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Jeans</a></li>
+                                                    <li><a href="#">Trousers</a></li>
+                                                    <li><a href="#">Shorts</a></li>
+                                                    <li><a href="#">Joggers</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="#">Men Accessory</a>
-                                                <ul>
-                                                    <li><a href="#">Men Accessory</a></li>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Other Items</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Footwear</a></li>
+                                                    <li><a href="#">Personal Care</a></li>
+                                                    <li><a href="#">Sunglasses</a></li>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Deodrants</a></li>
+                                                    <li><a href="#">Smart Gadgets</a></li>
                                                 </ul>
-                                            </li>
-                                        </ul>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#all">Women
+                                            <span class="material-icons">arrow_right</span>
+                                        </a>
+                                        <div class="has-dropdown megamenu">
+                                            <div class="menu-content">
+                                                <h6 class="title">India Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Kurtas</a></li>
+                                                    <li><a href="#">Ethnic Wear</a></li>
+                                                    <li><a href="#">Leggings</a></li>
+                                                    <li><a href="#">Palazoos</a></li>
+                                                    <li><a href="#">Duppatta</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Western Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Dresses</a></li>
+                                                    <li><a href="#">Jumpsuits</a></li>
+                                                    <li><a href="#">Tops</a></li>
+                                                    <li><a href="#">Jeans</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Other Items</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Footwear</a></li>
+                                                    <li><a href="#">Jewellery</a></li>
+                                                    <li><a href="#">Sunglasses</a></li>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Deodrants</a></li>
+                                                    <li><a href="#">Beauty Care</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#all">Beauty
+                                            <span class="material-icons">arrow_right</span>
+                                        </a>
+                                        <div class="has-dropdown">
+                                            <div class="menu-content">
+                                                <h6 class="title">Buy From Top Brands</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Lakme</a></li>
+                                                    <li><a href="#">LOreal</a></li>
+                                                    <li><a href="#">Mamaearth</a></li>
+                                                    <li><a href="#">The Body Shop</a></li>
+                                                    <li><a href="#">Kama Ayurveda</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="products.html">Products</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="about-us.html">About Us</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="about-us.html#faq">FAQ</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="contact.html">Contact Us</a>
                                     </li>
 
-                                    <li><a href="about.php">Men</a></li>
-                                    <li><a href="about.php">Women</a></li>
-                                    <li><a href="about.php">Kids</a></li>
-                                    <li><a href="about.php">About Us</a></li>
-                                    <li><a href="faq.php">FAQ</a></li>
-
-                                    <li><a href="contact.php">Contact Us</a></li>
                                 </ul>
+                            </div>
+
+                            <div class="search-event">
+                                <input type="search" placeholder="Search..." class="header-search">
+                                <button class="header-search-btn">
+                                    <img src="img/icons/icon-search.svg" alt="">
+                                </button>
+                            </div>
+
+                            <!-- menu ends  -->
+                        </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="header-action d-flex">
+                            <button class="header-action-item header-action-wishlist" data-bs-toggle="offcanvas"
+                                data-bs-target="#wishlistOffcanvas">
+                                <span class="material-icons">favorite</span>
+                                <span id="ge-tooltip-label-you-menu" role="tooltip">wishlist</span>
+                                <span class="count-tag">03</span>
+                            </button>
+                            <button class="header-action-item header-action-wishlist" data-bs-toggle="offcanvas"
+                                data-bs-target="#addcartOffcanvas">
+                                <span class="material-icons">shopping_cart</span>
+                                <span id="ge-tooltip-label-you-menu" role="tooltip">Cart</span>
+                                <span class="count-tag">03</span>
+                            </button>
+                            <button class="header-action-item header-action-wishlist">
+                                <a href="register.html">
+                                    <i class="fa-solid fa-power-off"></i>
+                                </a>
+                                <span id="ge-tooltip-label-you-menu" role="tooltip">Your account</span>
+                            </button>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section ends  -->
+
+    <!-- mobile header starts  -->
+
+    <div class="mobile-header d-block d-lg-none">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div class="mobile-logo">
+                        <a href="#" class="header-logo bg-light py-2 px-3 rounded-pill">
+                            <img src="img/icons/icon-shopping-bag-dark.svg" alt="" class="pe-1"><span class="font-size-20 font-raleway" style="font-weight: 800;">Shopee</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="mobile-action-link text-end d-flex">
+                        <button data-bs-toggle="offcanvas" data-bs-target="#toggleMenu">
+                            <span class="material-icons">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- mobile header ends -->
+
+    <!-- offcanvas mobile menu starts  -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="toggleMenu">
+        <div class="offcanvas-header justify-content-end">
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-center">
+                <a href="wishlist.html" class="header-action-item header-action-wishlist">
+                    <span class="material-icons">favorite</span>
+                    <span class="count-tag">03</span>
+                    <span id="ge-tooltip-label-you-menu" role="tooltip">Wishlist</span>
+                </a>
+                <a href="cart.html" class="header-action-item header-action-wishlist">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="count-tag">03</span>
+                    <span id="ge-tooltip-label-you-menu" role="tooltip">Cart</span>
+                </a>
+                <a href="register.html" class="header-action-item header-action-wishlist">
+                    <i class="fa-solid fa-power-off"></i>
+                    <span id="ge-tooltip-label-you-menu" role="tooltip">Your account</span>
+                </a>
+            </div>
+            <div class="header-event mobile-search my-5">
+                <div class="search-event">
+                    <input type="search" class="header-search">
+                    <button class="header-search-btn">
+                        <img src="img/icons/icon-search.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- offcanvas mobile wrapper starts  -->
+            <div class="offcanvas-mobile-menu-wrapper">
+                <div class="mobile-menu-bottom">
+                    <div class="offcanvas-menu">
+                        <ul>
+                            <li>
+                                <a href="#"><span>Home</span></a>
+                            </li>
+                            <li>
+                                <a href="#all"><span>Men</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Top Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">T-shirts</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Sweatshirts</a></li>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Bottom Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Jeans</a></li>
+                                            <li><a href="#">Trousers</a></li>
+                                            <li><a href="#">Shorts</a></li>
+                                            <li><a href="#">Joggers</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Other Items</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Personal Care</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Watches</a></li>
+                                            <li><a href="#">Deodrants</a></li>
+                                            <li><a href="#">Smart Gadgets</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="#all"><span>Women</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Indian Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Kurtas</a></li>
+                                            <li><a href="#">Ethnic Wear</a></li>
+                                            <li><a href="#">Leggings</a></li>
+                                            <li><a href="#">Palazoos</a></li>
+                                            <li><a href="#">Duppatta</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Western Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Jumpsuits</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Jeans</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Other Items</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Jewellery</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Watches</a></li>
+                                            <li><a href="#">Deodrants</a></li>
+                                            <li><a href="#">Beauty Care</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="#all"><span>Beauty</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Buy by Top Brands</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Lakme</a></li>
+                                            <li><a href="#">LOreal</a></li>
+                                            <li><a href="#">Mamaearth</a></li>
+                                            <li><a href="#">The Body Shop</a></li>
+                                            <li><a href="#">Kama Ayurveda</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="products.html">Products</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html#faq">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile-contact-info text-center d-flex justify-content-center">
+                    <div class="social-link d-flex">
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-facebook-f-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-dribbble-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-twitter-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-pinterest-p-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <!-- offcanvas mobile wrapper ends -->
+        </div>
+    </div>
+
+    <!-- offcanvas mobile menu ends  -->
+
+     <!-- wishlist offcanvas section starts  -->
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="wishlistOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><a href="wishlist.html">Wishlist</a></h5>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-products-list">
+                <li class="single-item d-flex justify-content-between align-items-center">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Puma Motorsport</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item d-flex justify-content-between align-items-center">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Blazer</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2299.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item d-flex justify-content-between align-items-center">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Top</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 1138.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="offcanvas-action-link">
+                <a href="wishlist.html" class="btn">View Wishlist</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- wishlist offcanvas section ends -->
+
+
+    <!-- add to cart offcanvas section starts  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addcartOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><a href="cart.html">Add To Cart</a></h5>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-products-list">
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Puma Motorsport</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Blazer</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2299.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Top</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 1138.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="offcanvas-action-link">
+                <a href="cart.html" class="btn">Add to Cart</a>
+                <a href="checkout.html" class="btn">Checkout</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- add to cart offcanvas section ends -->
+
+    <!-- START MAIN SECTION -->
+    <main>
+
+        <div class="login-section section-fluid-270 section-top-gap-100">
+            <div class="box-wrapper">
+                <div class="login-wrapper">
+                    <div class="container-fluid">
+                        <div class="col-12">
+                            <div class="login-area register-area  register-area-style-1">
+                                <h2 class="register-header">Sign in</h2>
+                                <div class="error-message">Lorem ipsum dolor sit amet.</div>
+                                <form class="row">
+                                    <div class="col-12 each-input">
+                                      <label for="inputEmail4" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="inputEmail4" required>
+                                    </div>
+                                    <div class="col-12 each-input">
+                                      <label for="inputPassword4" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="inputPassword4" required>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button type="submit" class="btn">Sign In</button>
+                                    </div>
+                                    <div class="link">Don't have Account? <a href="#">Register Now</a></div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- !START HEADER -->
-
-    <!-- START MAIN SECTION -->
-    <main>
-
-        <div class="page login"  style="background: rgb(0 110 110);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 fixed-width">
-                        <div class="heading form-heading">Customer Login</div>
-                        <div class='error bg-danger' style='padding: 10px; max-width: 500px; background:#f1f1f1;margin: 6px auto 20px auto;'>jejejhehjeh</div>
-                        <div class='success bg-warning' style='padding: 10px; max-width: 500px; background:#f1f1f1;margin: 6px auto 20px auto;'>djdjdjjdjd</div>
-                        <div class="user-content">
-                            <form class="row">
-                                <div class="col-12">
-                                  <label for="inputEmail4" class="form-label">Email</label>
-                                  <input type="email" class="form-control" id="inputEmail4">
-                                </div>
-                                <div class="col-12">
-                                  <label for="inputPassword4" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="inputPassword4">
-                                </div>
-                                <div class="col-12">
-                                    <input type="submit" class="btn btn-primary" value="Register" name="form1">
-                                </div>
-                                <div class="link">Not yet Register? <a href="#">Register Now</a></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </main>
     <!-- !START MAIN SECTION -->
     <!-- START FOOOTER -->
-    <footer id="footer" class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-12">
-                    <h4 class="font-rubik font-size-20">Shopee Site</h4>
-                    <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Repellendus, deserunt.</p>
-                </div>
-                <div class="col-lg-4 col-12 me-2">
-                    <h4 class="font-rubik font-size-20">Newslatter</h4>
-                    <form class="form-row">
-                        <input type="text" class="form-control" placeholder="Email *">
-                        <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
-                    </form>
-                </div>
-                <div class="col-lg-2 col-12">
-                    <h4 class="font-rubik font-size-20">Information</h4>
-                    <div class="d-flex flex-column flex-wrap">
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+    <footer class="footer-section footer-section-style-1 section-top-gap-120">
+        <div class="box-wrapper">
+            <div class="footer-wrapper section-fluid-270">
+                <div class="container-fluid">
+
+                    <div class="footer-top">
+                        <div class="footer-top-left">
+                            <div class="footer-contact-items">
+                                <a href="tel:+234-8068950848" class="icon-left">
+                                    <img src="img/icons/icon-ios-call-dark.svg" alt="" class="icon-svg">
+                                    +234 8068950848
+                                </a>
+                                <a href="mailto:sandaumaru207@gmail.com" class="icon-left">
+                                    <img src="img/icons/icon-mail-open-dark.svg" alt="" class="icon-svg">
+                                    sandaumaru207@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-top-right">
+                            <div class="footer-social">
+                                <a href="#">
+                                    <img src="img/icons/icon-facebook-f-dark.svg" alt="" class="icon-svg">
+                                </a>
+                                <a href="#">
+                                    <img src="img/icons/icon-dribbble-dark.svg" alt="" class="icon-svg">
+                                </a>
+                                <a href="#">
+                                    <img src="img/icons/icon-pinterest-p-dark.svg" alt="" class="icon-svg">
+                                </a>
+                                <a href="#">
+                                    <img src="img/icons/icon-twitter-dark.svg" alt="" class="icon-svg">
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-12">
-                    <h4 class="font-rubik font-size-20">Account</h4>
-                    <div class="d-flex flex-column flex-wrap">
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
-                        <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newslatters</a>
+
+
+                    <div class="footer-center">
+                        <div class="footer-widgets-items">
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Product</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-1">Product</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-1">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Men</a></li>
+                                        <li><a href="#">Women</a></li>
+                                        <li><a href="#">Kids</a></li>
+                                        <li><a href="#">Home & Living</a></li>
+                                        <li><a href="#">Beauty</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Offer</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-2">Offer</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-2">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Gift Cards</a></li>
+                                        <li><a href="#">Insider Points</a></li>
+                                        <li><a href="#">Coupons</a></li>
+                                        <li><a href="#">Birthday Special</a></li>
+                                        <li><a href="#">Festive Season</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Information</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-3">Information</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-3">
+                                    <ul class="footer-nav">
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="about-us.html#faq">FAQ</a></li>
+                                        <li><a href="#">T&C</a></li>
+                                        <li><a href="#">Terms of Use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Useful Links</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-4">Useful Links</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-4">
+                                    <ul class="footer-nav">
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li><a href="register.html">Account</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="copyright-text copyright-text--light">&copy; Copyrights 2022. Desing By <a href="#"> Umar Umar</a></p>
+                        <a href="#" class="payment-logo">
+                            <img src="img/logo/payment-logo.png" alt="" class="img-fluid">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="px-lg-5 credit bg-dark">
-        <p> created by <span>Umar Umar</span> | all rights reserved! </p>
-        <img src="img/logo/payment-logo.png" class="img-fluid" alt="">
-    </div>
     <!-- !START FOOOTER -->
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
@@ -203,6 +712,8 @@
     <!-- <script src="assets/js/modernizr-3.11.2.min.js"></script> -->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- Swiperjs js cdn -->
+    
+    <script src="assets/js/jquery.nice-select.js"></script>
     <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
     <script src="assets/js/header.js"></script>
 </body>

@@ -10,7 +10,7 @@
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
-  <!-- <link rel="stylesheet" href="assets/css/material-icons.css" /> -->
+  <link rel="stylesheet" href="assets/css/material-icons.css" />
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <!-- Swiperjs cdn -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
@@ -30,102 +30,545 @@
 
 <body style="background-color: lavender;">
 
-  <!-- START HEADER -->
+  <!-- header section starts  -->
+  <header class="header-section pos-relative light-bg sticky-header d-none d-lg-block section-fluid-270">
+    <div class="header-wrapper pos-relative">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto">
+                    <a href="#" class="header-logo bg-light py-2 px-3 rounded-pill">
+                        <img src="img/icons/icon-shopping-bag-dark.svg" alt="" class="pe-1"><span class="font-size-20 font-raleway" style="font-weight: 800;">Shopee</span>
+                    </a>
+                    <!-- logo ends  -->
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                    <div class="header-event d-flex align-items-center">
+                        <div class="menu-event d-flex dropdown">
+                            <button class="main-menu-event d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
+                                <img src="img/icons/icon-open-menu.svg" alt="">
+                                <span>Menu</span>
+                                <img src="img/icons/icon-arrow-drop-down.svg" alt="">
+                            </button>
+                            <ul class="mainmenu-nav dropdown-menu">
+                                <li class="menu-items">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li class="menu-items">
+                                    <a href="#all">Men
+                                        <span class="material-icons">arrow_right</span>
+                                    </a>
+                                    <div class="has-dropdown megamenu">
+                                        <div class="menu-content">
+                                            <h6 class="title">Top Wear</h6>
+                                            <ul class="submenu">
+                                                <li><a href="#">T-shirts</a></li>
+                                                <li><a href="#">Shirts</a></li>
+                                                <li><a href="#">Sweatshirts</a></li>
+                                                <li><a href="#">Jackets</a></li>
+                                                <li><a href="#">Suits</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h6 class="title">Bottom Wear</h6>
+                                            <ul class="submenu">
+                                                <li><a href="#">Jeans</a></li>
+                                                <li><a href="#">Trousers</a></li>
+                                                <li><a href="#">Shorts</a></li>
+                                                <li><a href="#">Joggers</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h6 class="title">Other Items</h6>
+                                            <ul class="submenu">
+                                                <li><a href="#">Footwear</a></li>
+                                                <li><a href="#">Personal Care</a></li>
+                                                <li><a href="#">Sunglasses</a></li>
+                                                <li><a href="#">Watches</a></li>
+                                                <li><a href="#">Deodrants</a></li>
+                                                <li><a href="#">Smart Gadgets</a></li>
+                                            </ul>
+                                        </div>
 
-  <header>
-    <!-- The Top Section -->
-    <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
-      <p class="font-montserrat font-size-12 text-black-50 m-0"> +971 50 202 0067 support@fashionys.com</p>
-      <div class="font-montserrat font-size-14">
-        <a href="#" class="px-3 border-start text-dark"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="px-3 border-start border-end text-dark"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-    <!-- !The Top Section -->
+                                    </div>
+                                </li>
+                                <li class="menu-items">
+                                    <a href="#all">Women
+                                        <span class="material-icons">arrow_right</span>
+                                    </a>
+                                    <div class="has-dropdown megamenu">
+                                        <div class="menu-content">
+                                            <h6 class="title">India Wear</h6>
+                                            <ul class="submenu">
+                                                <li><a href="#">Kurtas</a></li>
+                                                <li><a href="#">Ethnic Wear</a></li>
+                                                <li><a href="#">Leggings</a></li>
+                                                <li><a href="#">Palazoos</a></li>
+                                                <li><a href="#">Duppatta</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h6 class="title">Western Wear</h6>
+                                            <ul class="submenu">
+                                                <li><a href="#">Dresses</a></li>
+                                                <li><a href="#">Jumpsuits</a></li>
+                                                <li><a href="#">Tops</a></li>
+                                                <li><a href="#">Jeans</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h6 class="title">Other Items</h6>
+                                            <ul class="submenu">
+                                                <li><a href="#">Footwear</a></li>
+                                                <li><a href="#">Jewellery</a></li>
+                                                <li><a href="#">Sunglasses</a></li>
+                                                <li><a href="#">Watches</a></li>
+                                                <li><a href="#">Deodrants</a></li>
+                                                <li><a href="#">Beauty Care</a></li>
+                                            </ul>
+                                        </div>
 
-    <div class="container-sm">
-      <div class="row inner py-2">
-        <div class="col-auto logo m-0">
-          <a href="index.php" class="color-black font-raleway">Shopee Site</a>
-        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-items">
+                                    <a href="#all">Beauty
+                                        <span class="material-icons">arrow_right</span>
+                                    </a>
+                                    <div class="has-dropdown">
+                                        <div class="menu-content">
+                                            <h6 class="title">Buy From Top Brands</h6>
+                                            <ul class="submenu">
+                                                <li><a href="#">Lakme</a></li>
+                                                <li><a href="#">LOreal</a></li>
+                                                <li><a href="#">Mamaearth</a></li>
+                                                <li><a href="#">The Body Shop</a></li>
+                                                <li><a href="#">Kama Ayurveda</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-items">
+                                    <a href="products.html">Products</a>
+                                </li>
+                                <li class="menu-items">
+                                    <a href="about-us.html">About Us</a>
+                                </li>
+                                <li class="menu-items">
+                                    <a href="about-us.html#faq">FAQ</a>
+                                </li>
+                                <li class="menu-items">
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
 
-        <div class="col-auto ms-auto right">
-          <ul class="d-flex justify-content-end py-1 font-raleway font-size-16  list-style">
-            <li><a href="#" class="color-primary"><i class="fa fa-sign-in"></i><span>Login</span></a></li>
-            <li><a href="#" class="color-primary"><i class="fa fa-user-plus"></i><span>Register</span></a>
-            </li>
-            <li><a href="#" class="color-primary"><i class="fa fa-heart"></i>(0.00)</a></li>
-            <li><a href="#" class="color-primary"><i class="fa fa-shopping-cart">($0.00)</i></a></li>
-          </ul>
-        </div>
-        <div class="col-auto search-area">
-          <form class="search-event d-flex align-items-center justify-content-center">
-            <input type="text" placeholder="Search..." class="header-search">
-            <label for="header-search" class="fa fa-search"></label>
-          </form>
-        </div>
-      </div>
-    </div>
+                            </ul>
+                        </div>
 
-    <div class="nav">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 pl_0 pe_0">
-            <div class="menu-container">
-              <div class="menu">
-                <ul>
-                  <li><a href="index.php">Home</a></li>
-                  <li><a href="#">Men</a>
-                    <ul>
-                      <li><a href="#">Men Accessory</a>
-                        <ul>
-                          <li><a href="#">Men Accessory</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Men Accessory</a>
-                        <ul>
-                          <li><a href="#">Men Accessory</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Men Accessory</a>
-                        <ul>
-                          <li><a href="#">Men Accessory</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
+                        <div class="search-event">
+                            <input type="search" placeholder="Search..." class="header-search">
+                            <button class="header-search-btn">
+                                <img src="img/icons/icon-search.svg" alt="">
+                            </button>
+                        </div>
 
-                  <li><a href="about.php">Men</a></li>
-                  <li><a href="about.php">Women</a></li>
-                  <li><a href="about.php">Kids</a></li>
-                  <li><a href="about.php">About Us</a></li>
-                  <li><a href="faq.php">FAQ</a></li>
+                        <!-- menu ends  -->
+                    </div>
+                </div>
 
-                  <li><a href="contact.php">Contact Us</a></li>
-                </ul>
-              </div>
+                <div class="col-auto">
+                    <div class="header-action d-flex">
+                        <button class="header-action-item header-action-wishlist" data-bs-toggle="offcanvas"
+                            data-bs-target="#wishlistOffcanvas">
+                            <span class="material-icons">favorite</span>
+                            <span id="ge-tooltip-label-you-menu" role="tooltip">wishlist</span>
+                            <span class="count-tag">03</span>
+                        </button>
+                        <button class="header-action-item header-action-wishlist" data-bs-toggle="offcanvas"
+                            data-bs-target="#addcartOffcanvas">
+                            <span class="material-icons">shopping_cart</span>
+                            <span id="ge-tooltip-label-you-menu" role="tooltip">Cart</span>
+                            <span class="count-tag">03</span>
+                        </button>
+                        <button class="header-action-item header-action-wishlist">
+                            <a href="register.html">
+                                <i class="fa-solid fa-power-off"></i>
+                            </a>
+                            <span id="ge-tooltip-label-you-menu" role="tooltip">Your account</span>
+                        </button>
+
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </header>
-  <!-- !START HEADER -->
+</header>
+<!-- header section ends  -->
 
-  <!-- START MAIN SECTION -->
-  <main>
-    <div class="container mt-5">
+<!-- mobile header starts  -->
+
+<div class="mobile-header d-block d-lg-none">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+                <div class="mobile-logo">
+                    <a href="#" class="header-logo bg-light py-2 px-3 rounded-pill">
+                        <img src="img/icons/icon-shopping-bag-dark.svg" alt="" class="pe-1"><span class="font-size-20 font-raleway" style="font-weight: 800;">Shopee</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="mobile-action-link text-end d-flex">
+                    <button data-bs-toggle="offcanvas" data-bs-target="#toggleMenu">
+                        <span class="material-icons">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- mobile header ends -->
+
+<!-- offcanvas mobile menu starts  -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="toggleMenu">
+    <div class="offcanvas-header justify-content-end">
+        <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="d-flex justify-content-center">
+            <a href="wishlist.html" class="header-action-item header-action-wishlist">
+                <span class="material-icons">favorite</span>
+                <span class="count-tag">03</span>
+                <span id="ge-tooltip-label-you-menu" role="tooltip">Wishlist</span>
+            </a>
+            <a href="cart.html" class="header-action-item header-action-wishlist">
+                <span class="material-icons">shopping_cart</span>
+                <span class="count-tag">03</span>
+                <span id="ge-tooltip-label-you-menu" role="tooltip">Cart</span>
+            </a>
+            <a href="register.html" class="header-action-item header-action-wishlist">
+                <i class="fa-solid fa-power-off"></i>
+                <span id="ge-tooltip-label-you-menu" role="tooltip">Your account</span>
+            </a>
+        </div>
+        <div class="header-event mobile-search my-5">
+            <div class="search-event">
+                <input type="search" class="header-search">
+                <button class="header-search-btn">
+                    <img src="img/icons/icon-search.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+        <!-- offcanvas mobile wrapper starts  -->
+        <div class="offcanvas-mobile-menu-wrapper">
+            <div class="mobile-menu-bottom">
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li>
+                            <a href="#"><span>Home</span></a>
+                        </li>
+                        <li>
+                            <a href="#all"><span>Men</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Top Wear</a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="#">T-shirts</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Sweatshirts</a></li>
+                                        <li><a href="#">Jackets</a></li>
+                                        <li><a href="#">Suits</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Bottom Wear</a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="#">Jeans</a></li>
+                                        <li><a href="#">Trousers</a></li>
+                                        <li><a href="#">Shorts</a></li>
+                                        <li><a href="#">Joggers</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Other Items</a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="#">Footwear</a></li>
+                                        <li><a href="#">Personal Care</a></li>
+                                        <li><a href="#">Sunglasses</a></li>
+                                        <li><a href="#">Watches</a></li>
+                                        <li><a href="#">Deodrants</a></li>
+                                        <li><a href="#">Smart Gadgets</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#all"><span>Women</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Indian Wear</a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="#">Kurtas</a></li>
+                                        <li><a href="#">Ethnic Wear</a></li>
+                                        <li><a href="#">Leggings</a></li>
+                                        <li><a href="#">Palazoos</a></li>
+                                        <li><a href="#">Duppatta</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Western Wear</a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="#">Dresses</a></li>
+                                        <li><a href="#">Jumpsuits</a></li>
+                                        <li><a href="#">Tops</a></li>
+                                        <li><a href="#">Jeans</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Other Items</a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="#">Footwear</a></li>
+                                        <li><a href="#">Jewellery</a></li>
+                                        <li><a href="#">Sunglasses</a></li>
+                                        <li><a href="#">Watches</a></li>
+                                        <li><a href="#">Deodrants</a></li>
+                                        <li><a href="#">Beauty Care</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#all"><span>Beauty</span></a>
+                            <ul class="mobile-sub-menu">
+                                <li>
+                                    <a href="#">Buy by Top Brands</a>
+                                    <ul class="mobile-sub-menu">
+                                        <li><a href="#">Lakme</a></li>
+                                        <li><a href="#">LOreal</a></li>
+                                        <li><a href="#">Mamaearth</a></li>
+                                        <li><a href="#">The Body Shop</a></li>
+                                        <li><a href="#">Kama Ayurveda</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mobile-contact-info text-center d-flex justify-content-center">
+                <div class="social-link d-flex">
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/icon-facebook-f-dark.svg" alt="" class="icon-svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/icon-dribbble-dark.svg" alt="" class="icon-svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/icon-twitter-dark.svg" alt="" class="icon-svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/icons/icon-pinterest-p-dark.svg" alt="" class="icon-svg">
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <!-- offcanvas mobile wrapper ends -->
+    </div>
+</div>
+
+<!-- offcanvas mobile menu ends  -->
+
+ <!-- wishlist offcanvas section starts  -->
+ <div class="offcanvas offcanvas-end" tabindex="-1" id="wishlistOffcanvas">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title"><a href="wishlist.html">Wishlist</a></h5>
+        <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="offcanvas-products-list">
+            <li class="single-item d-flex justify-content-between align-items-center">
+                <div class="box">
+                    <a href="#" class="image">
+                        <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="title">Puma Motorsport</a>
+                        <div>
+                            <span>1 x </span>
+                            <span>Rs. 2499.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-delete text-right">
+                    <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                </div>
+            </li>
+            <li class="single-item d-flex justify-content-between align-items-center">
+                <div class="box">
+                    <a href="#" class="image">
+                        <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="title">Blazer</a>
+                        <div>
+                            <span>1 x </span>
+                            <span>Rs. 2299.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-delete text-right">
+                    <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                </div>
+            </li>
+            <li class="single-item d-flex justify-content-between align-items-center">
+                <div class="box">
+                    <a href="#" class="image">
+                        <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="title">Top</a>
+                        <div>
+                            <span>1 x </span>
+                            <span>Rs. 1138.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-delete text-right">
+                    <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                </div>
+            </li>
+        </ul>
+        <div class="offcanvas-action-link">
+            <a href="wishlist.html" class="btn">View Wishlist</a>
+        </div>
+    </div>
+
+</div>
+<!-- wishlist offcanvas section ends -->
+
+
+<!-- add to cart offcanvas section starts  -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="addcartOffcanvas">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title"><a href="cart.html">Add To Cart</a></h5>
+        <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="offcanvas-products-list">
+            <li class="single-item">
+                <div class="box">
+                    <a href="#" class="image">
+                        <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="title">Puma Motorsport</a>
+                        <div>
+                            <span>1 x </span>
+                            <span>Rs. 2499.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-delete text-right">
+                    <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                </div>
+            </li>
+            <li class="single-item">
+                <div class="box">
+                    <a href="#" class="image">
+                        <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="title">Blazer</a>
+                        <div>
+                            <span>1 x </span>
+                            <span>Rs. 2299.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-delete text-right">
+                    <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                </div>
+            </li>
+            <li class="single-item">
+                <div class="box">
+                    <a href="#" class="image">
+                        <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="">
+                    </a>
+                    <div class="content">
+                        <a href="#" class="title">Top</a>
+                        <div>
+                            <span>1 x </span>
+                            <span>Rs. 1138.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-delete text-right">
+                    <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="offcanvas-action-link">
+            <a href="cart.html" class="btn">Add to Cart</a>
+            <a href="checkout.html" class="btn">Checkout</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- add to cart offcanvas section ends -->
+
+<!-- START MAIN SECTION -->
+<main>
+    <div class="cart-card-section container mt-2">
       <div class="row pt-5">
         <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 mt-3">
           <div class="card">
-            <div class="card-header">
-              <div class="row pt-3 pb-3">
+            <div class="card-header header-pill">
+              <div class="row py-3">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
-                  <span style="font-size:20px;font-weight:700;color:grey;color:black">WishList(3)</span>
+                  <span style="font-size:20px;font-weight:700;color:black">Wislist(3)</span>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12  text-right">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Deliver to &nbsp;<span id="u-name">Dary
-                    nazyar</span>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12  text-end">
+                  <i class="fa fa-map-marker-alt" aria-hidden="true"></i>&nbsp;<span class="deliver-to">
+                    Deliver to: &nbsp;<span id="u-name">Dary
+                      nazyar</span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -134,245 +577,294 @@
                 <div class="pb-3 slide_con">
                   <div class="slide1">
                     <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="cart_id" height="200px">
-                    <div class="num-in mt-3 ms-1">
-                      <span class="minus dis">+</span>
-                      <input type="text" class="in-num" value="1" readonly="">
-                      <span class="plus">-</span>
+                    <div class="variable-single-items quantity mt-2">
+                      <div class="input-group">
+                        <div class="button minus">
+                          <button type="button" class="btn btn-number" data-type="minus" data-field="quant[1]">
+                            <i class=" fa fa-minus"></i>
+                          </button>
+                        </div>
+                        <input type="hidden" name="slug" value="roadster-men-black-solid-quilted-jacket">
+                        <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1"
+                          id="quantity">
+                        <div class="button plus">
+                          <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="slide2">
-                    <h5 class="font-baloo font-size-20">Pink Saree</h5>
-                    <!-- product rating -->
-                    <div class="d-flex flex-wrap">
-                      <div class="rating text-warning font-size-12">
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="far fa-star"></i></span>
+                    <div class="product-content">
+                      <h2 class="title">Luxure by Louis Philippe</h2>
+                      <div class="bottom">
+                        <ul class="review-star d-flex">
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star_half</span></li>
+                        </ul>
+
+                        <a href="wishlist.html" class="btn btn-sm btn-default">Add to Cart</a>
                       </div>
-                      <a href="#" class="px-2 font-rale font-size-14">20,534 ratings</a>
-                    </div>
-                    <!--  !product rating-->
-                    <!-- color design for lg screen -->
-                    <div class="pt-2  color-g">
-                      <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                      <p style="line-height: 0.3;"><b class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                      <span class="btn">Add to Cart</span>
-                    </div>
-                    <!-- color design for sm screen -->
-                    <div class="pt-2 color-on-sm">
-                      <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                      <p style="line-height: 0.3;"><b class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                      <span><i class="fa fa-shopping-cart"></i></span>
+                      <span class="category mt-3">Color: Black</span>
+                      <span class="category">size: xxl</span>
                     </div>
 
                   </div>
-                  <!-- price & remove design for lg screen -->
-                  <div class="slide3 d-flex flex-column align-items-center justify-content-start">
-                    <p><b class="var-style">Price:</b>&nbsp;$390</p>
-                    <p><a href="#/" class="btn" style="font-weight:700">REMOVE</a></p>
-                  </div>
-                  <!-- price & remove design for sm screen -->
-                  <div class="slide3 slide3-on-sm d-flex flex-column w-50 align-items-center justify-content-start">
-                    <p><b class="var-style">Price:</b>&nbsp;$390</p>
-                    <p><a href="#/" style="font-weight:700"><i class="fa fa-trash"></i></a></p>
-                  </div>
-                </div>
-                <div class="pb-3 slide_con">
-                  <div class="slide1">
-                    <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="cart_id" height="200px">
-                    <div class="num-in mt-3 ms-1">
-                      <span class="minus dis">+</span>
-                      <input type="text" class="in-num" value="1" readonly="">
-                      <span class="plus">-</span>
-                    </div>
-                  </div>
-                  <div class="slide2">
-                    <h5 class="font-baloo font-size-20">Pink Saree</h5>
-                    <!-- product rating -->
-                    <div class="d-flex flex-wrap">
-                      <div class="rating text-warning font-size-12">
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="far fa-star"></i></span>
-                      </div>
-                      <a href="#" class="px-2 font-rale font-size-14">20,534 ratings</a>
-                    </div>
-                    <!--  !product rating-->
-                    <!-- color design for lg screen -->
-                    <div class="pt-2  color-g">
-                      <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                      <p style="line-height: 0.3;"><b class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                      <span class="btn">Add to Cart</span>
-                    </div>
-                    <!-- color design for sm screen -->
-                    <div class="pt-2 color-on-sm">
-                      <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                      <p style="line-height: 0.3;"><b class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                      <span><i class="fa fa-shopping-cart"></i></span>
-                    </div>
-
-                  </div>
-                  <!-- price & remove design for lg screen -->
-                  <div class="slide3 d-flex flex-column align-items-center justify-content-start">
-                    <p><b class="var-style">Price:</b>&nbsp;$390</p>
-                    <p><a href="#/" class="btn" style="font-weight:700">REMOVE</a></p>
-                  </div>
-                  <!-- price & remove design for sm screen -->
-                  <div class="slide3 slide3-on-sm d-flex flex-column w-50 align-items-center justify-content-start">
-                    <p><b class="var-style">Price:</b>&nbsp;$390</p>
-                    <p><a href="#/" style="font-weight:700"><i class="fa fa-trash"></i></a></p>
-                  </div>
-                  </div>
-                <div class="pb-3 slide_con">
-                  <div class="slide1">
-                    <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="cart_id" height="200px">
-                    <div class="num-in mt-3 ms-1">
-                      <span class="minus dis">+</span>
-                      <input type="text" class="in-num" value="1" readonly="">
-                      <span class="plus">-</span>
-                    </div>
-                  </div>
-                  <div class="slide2">
-                    <h5 class="font-baloo font-size-20">Pink Saree</h5>
-                    <!-- product rating -->
-                    <div class="d-flex flex-wrap">
-                      <div class="rating text-warning font-size-12">
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="far fa-star"></i></span>
-                      </div>
-                      <a href="#" class="px-2 font-rale font-size-14">20,534 ratings</a>
-                    </div>
-                    <!--  !product rating-->
-                    <!-- color design for lg screen -->
-                    <div class="pt-2  color-g">
-                      <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                      <p style="line-height: 0.3;"><b class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                      <span class="btn">Add to Cart</span>
-                    </div>
-                    <!-- color design for sm screen -->
-                    <div class="pt-2 color-on-sm">
-                      <p><b class="var-style">COLOR:</b>&nbsp;<span>Black</span></p>
-                      <p style="line-height: 0.3;"><b class="var-style">SIZE:</b>&nbsp;<span>XXL</span></p>
-                      <span><i class="fa fa-shopping-cart"></i></span>
-                    </div>
-
-                  </div>
-                  <!-- price & remove design for lg screen -->
-                  <div class="slide3 d-flex flex-column align-items-center justify-content-start">
-                    <p><b class="var-style">Price:</b>&nbsp;$390</p>
-                    <p><a href="#/" class="btn" style="font-weight:700">REMOVE</a></p>
-                  </div>
-                  <!-- price & remove design for sm screen -->
-                  <div class="slide3 slide3-on-sm d-flex flex-column w-50 align-items-center justify-content-start">
-                    <p><b class="var-style">Price:</b>&nbsp;$390</p>
-                    <p><a href="#/" style="font-weight:700"><i class="fa fa-trash"></i></a></p>
-                  </div>
-                  </div>
-                <div class="row">
-                  <div class="col-sm-6 pe-5 text-sm-start text-xm-end">
-                    <p><button
-                        style="text-transform: uppercase;padding:2% 5%;background-color: #eb4d4b;color:white;border-color:transparent"
-                        data-toggle="collapse" data-target="#collapseTwo,#payment-option"><a href="payment.html"
-                          style="color: white;">Place Order</a></button></p>
-                  </div>
-                  <div class="col-sm-6 pe-5 text-end">
-                    <p><button
-                        style="text-transform: uppercase;padding:2% 5%;background-color: #eb4d4b;color:white;border-color:transparent"
-                        data-toggle="collapse" data-target="#collapseTwo,#payment-option"><a href="payment.html"
-                          style="color: white;">continue shopping</a></button></p>
+                <div class="slide3 d-flex flex-column align-items-center justify-content-start">
+                  <div class="product-content">
+                    <span class="price">$29 </span>
+                    <p><a href="wishlist.html" class="btn btn-sm btn-default">Remove</a></p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pt-2">
-          <div class="container">
-            <div class="card">
-              <div class="card-header">PRICE DETAILS</div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col text-start">
-                    Price(3) :
+                <div class="pb-3 slide_con">
+                  <div class="slide1">
+                    <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="cart_id" height="200px">
+                    <div class="variable-single-items quantity mt-2">
+                      <div class="input-group">
+                        <div class="button minus">
+                          <button type="button" class="btn btn-number" data-type="minus" data-field="quant[1]">
+                            <i class=" fa fa-minus"></i>
+                          </button>
+                        </div>
+                        <input type="hidden" name="slug" value="roadster-men-black-solid-quilted-jacket">
+                        <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1"
+                          id="quantity">
+                        <div class="button plus">
+                          <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col text-end">
-                    $1,460
+                  <div class="slide2">
+                    <div class="product-content">
+                      <h2 class="title">Luxure by Louis Philippe</h2>
+                      <div class="bottom">
+                        <ul class="review-star d-flex">
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star_half</span></li>
+                        </ul>
+
+                        <a href="wishlist.html" class="btn btn-sm btn-default">Add to Cart</a>
+                      </div>
+                      <span class="category mt-3">Color: Black</span>
+                      <span class="category">size: xxl</span>
+                    </div>
+
+                  </div>
+                <div class="slide3 d-flex flex-column align-items-center justify-content-start">
+                  <div class="product-content">
+                    <span class="price">$12 </span>
+                    <p><a href="wishlist.html" class="btn btn-sm btn-default">Remove</a></p>
                   </div>
                 </div>
-                <div class="row pt-3">
-                  <div class="col-7 text-start ">
-                    Delivery Charges :
+              </div>
+                <div class="pb-3 slide_con">
+                  <div class="slide1">
+                    <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="cart_id" height="200px">
+                    <div class="variable-single-items quantity mt-2">
+                      <div class="input-group">
+                        <div class="button minus">
+                          <button type="button" class="btn btn-number" data-type="minus" data-field="quant[1]">
+                            <i class=" fa fa-minus"></i>
+                          </button>
+                        </div>
+                        <input type="hidden" name="slug" value="roadster-men-black-solid-quilted-jacket">
+                        <input type="text" name="quant[1]" class="input-number" data-min="1" data-max="1000" value="1"
+                          id="quantity">
+                        <div class="button plus">
+                          <button type="button" class="btn btn-number" data-type="plus" data-field="quant[1]">
+                            <i class="fa fa-plus"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col text-end">
-                    Free
+                  <div class="slide2">
+                    <div class="product-content">
+                      <h2 class="title">Luxure by Louis Philippe</h2>
+                      <div class="bottom">
+                        <ul class="review-star d-flex">
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star</span></li>
+                          <li class="fill"><span class="material-icons">star_half</span></li>
+                        </ul>
+
+                        <a href="wishlist.html" class="btn btn-sm btn-default">Add to Cart</a>
+                      </div>
+                      <span class="category mt-3">Color: Black</span>
+                      <span class="category">size: xxl</span>
+                    </div>
+
+                  </div>
+                <div class="slide3 d-flex flex-column align-items-center justify-content-start">
+                  <div class="product-content">
+                    <span class="price">$45 </span>
+                    <p><a href="wishlist.html" class="btn btn-sm btn-default">Remove</a></p>
                   </div>
                 </div>
-                <hr>
-                <div class="row">
-                  <div class="col text-start">
-                    Total Amount :
-                  </div>
-                  <div class="col text-end">
-                    $1,460
-                  </div>
+              </div>
+              <div class="cart-final-btns">
+                <div>
+                  <p><button class="btn-default btn-default-mod"
+                      data-toggle="collapse" data-target="#collapseTwo,#payment-option"><a href="payment.html">continue shopping</a></button></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mt-3 pt-2">
+        <div class="container-fluid">
+          <div class="card" style="min-width: fit-content;">
+            <div class="card-header header-pill">
+              <span style="font-size:20px;font-weight:700;color:black">Price Details</span>
+            </div>
+            <div class="card-body">
+              <div class="product-content d-flex align-items-center justify-content-between">
+                <span class="category">Price(3):</span>
+                <span class="price font-size-20" style="margin-top: -13px; font-weight: 500;">$86 </span>
+              </div>
+              <div class="product-content d-flex align-items-center justify-content-between">
+                <span class="category">Delivery Charges :</span>
+                <span class="price font-size-20" style="margin-top: -13px; font-weight: 500;">
+                  Free </span>
+              </div>
+              <hr>
+              <div class="product-content d-flex align-items-center justify-content-between">
+                <span class="category">Total Amount :</span>
+                <span class="price font-size-20" style="margin-top: -13px; font-weight: 500;">$86 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </main>
   <!-- !START MAIN SECTION -->
   <!-- START FOOOTER -->
-  <footer id="footer" class="bg-dark text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-12">
-          <h4 class="font-rubik font-size-20">Shopee Site</h4>
-          <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Repellendus, deserunt.</p>
-        </div>
-        <div class="col-lg-4 col-12 me-2">
-          <h4 class="font-rubik font-size-20">Newslatter</h4>
-          <form class="form-row">
-            <input type="text" class="form-control" placeholder="Email *">
-            <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
-          </form>
-        </div>
-        <div class="col-lg-2 col-12">
-          <h4 class="font-rubik font-size-20">Information</h4>
-          <div class="d-flex flex-column flex-wrap">
-            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
-            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
-            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
-            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+  <footer class="footer-section footer-section-style-1 section-top-gap-120">
+    <div class="box-wrapper">
+      <div class="footer-wrapper section-fluid-270">
+        <div class="container-fluid">
+
+          <div class="footer-top">
+            <div class="footer-top-left">
+              <div class="footer-contact-items">
+                <a href="tel:+234-8068950848" class="icon-left">
+                  <img src="img/icons/icon-ios-call-dark.svg" alt="" class="icon-svg">
+                  +234 8068950848
+                </a>
+                <a href="mailto:sandaumaru207@gmail.com" class="icon-left">
+                  <img src="img/icons/icon-mail-open-dark.svg" alt="" class="icon-svg">
+                  sandaumaru207@gmail.com
+                </a>
+              </div>
+            </div>
+            <div class="footer-top-right">
+              <div class="footer-social">
+                <a href="#">
+                  <img src="img/icons/icon-facebook-f-dark.svg" alt="" class="icon-svg">
+                </a>
+                <a href="#">
+                  <img src="img/icons/icon-dribbble-dark.svg" alt="" class="icon-svg">
+                </a>
+                <a href="#">
+                  <img src="img/icons/icon-pinterest-p-dark.svg" alt="" class="icon-svg">
+                </a>
+                <a href="#">
+                  <img src="img/icons/icon-twitter-dark.svg" alt="" class="icon-svg">
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-2 col-12">
-          <h4 class="font-rubik font-size-20">Account</h4>
-          <div class="d-flex flex-column flex-wrap">
-            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
-            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
-            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
-            <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newslatters</a>
+
+
+          <div class="footer-center">
+            <div class="footer-widgets-items">
+              <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                <h5 class="title">Product</h5>
+                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse" data-bs-target="#dividerId-1">Product
+                </h5>
+                <div class="widget-collapse-body collapse" id="dividerId-1">
+                  <ul class="footer-nav">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Home & Living</a></li>
+                    <li><a href="#">Beauty</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                <h5 class="title">Offer</h5>
+                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse" data-bs-target="#dividerId-2">Offer</h5>
+                <div class="widget-collapse-body collapse" id="dividerId-2">
+                  <ul class="footer-nav">
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Insider Points</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Birthday Special</a></li>
+                    <li><a href="#">Festive Season</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                <h5 class="title">Information</h5>
+                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse" data-bs-target="#dividerId-3">
+                  Information</h5>
+                <div class="widget-collapse-body collapse" id="dividerId-3">
+                  <ul class="footer-nav">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="about-us.html#faq">FAQ</a></li>
+                    <li><a href="#">T&C</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                <h5 class="title">Useful Links</h5>
+                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse" data-bs-target="#dividerId-4">Useful
+                  Links</h5>
+                <div class="widget-collapse-body collapse" id="dividerId-4">
+                  <ul class="footer-nav">
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="register.html">Account</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p class="copyright-text copyright-text--light">&copy; Copyrights 2022. Desing By <a href="#"> Umar Umar</a>
+            </p>
+            <a href="#" class="payment-logo">
+              <img src="img/logo/payment-logo.png" alt="" class="img-fluid">
+            </a>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  <div class="px-lg-5 credit bg-dark">
-    <p> created by <span>Umar Umar</span> | all rights reserved! </p>
-    <img src="img/logo/payment-logo.png" class="img-fluid" alt="">
-  </div>
   <!-- !START FOOOTER -->
+  <!-- scroll to top  -->
+  <div id="scroll-to-top" class="scroll-to-top"><span class="material-icons-outlined">expand_less</span></div>
 
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>

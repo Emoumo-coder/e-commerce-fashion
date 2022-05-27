@@ -23,6 +23,8 @@
     <!-- <link rel="stylesheet" href="assets/" /> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" /> -->
 
+    <!-- Material icons -->
+    <link rel="stylesheet" href="assets/css/material-icons.css">
     <!-- font awesome icons -->
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
@@ -34,114 +36,538 @@
 
 <body style="background-color: lavender;">
 
-    <!-- START HEADER -->
-    
-        <!-- START HEADER -->
-    
-    <header>
-        <!-- The Top Section -->
-        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
-            <p class="font-montserrat font-size-12 text-black-50 m-0"> +971 50 202 0067 support@fashionys.com</p>
-            <div class="font-montserrat font-size-14">
-                <a href="#" class="px-3 border-start text-dark"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="px-3 border-start border-end text-dark"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-        <!-- !The Top Section -->
-
-        <div class="container-sm">
-            <div class="row inner py-2">
-                <div class="col-auto logo m-0">
-                    <a href="index.php" class="color-black font-raleway">Shopee Site</a>
-                </div>
-
-                <div class="col-auto ms-auto right">
-                    <ul class="d-flex justify-content-end py-1 font-raleway font-size-16  list-style">
-                        <li><a href="#" class="color-primary"><i class="fa fa-sign-in"></i><span>Login</span></a></li>
-                        <li><a href="#" class="color-primary"><i class="fa fa-user-plus"></i><span>Register</span></a>
-                        </li>
-                        <li><a href="#" class="color-primary"><i class="fa fa-heart"></i>(0.00)</a></li>
-                        <li><a href="#" class="color-primary"><i class="fa fa-shopping-cart">($0.00)</i></a></li>
-                    </ul>
-                </div>
-                <div class="col-auto search-area">
-                    <form class="search-event d-flex align-items-center justify-content-center">
-                        <input type="text" placeholder="Search..." class="header-search">
-                        <label for="header-search" class="fa fa-search"></label>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 pl_0 pe_0">
-                        <div class="menu-container">
-                            <div class="menu">
-                                <ul>
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="#">Men</a>
-                                        <ul>
-                                            <li><a href="#">Men Accessory</a>
-                                                <ul>
-                                                    <li><a href="#">Men Accessory</a></li>
+    <!-- header section starts  -->
+    <header class="header-section pos-relative light-bg sticky-header d-none d-lg-block section-fluid-270">
+        <div class="header-wrapper pos-relative">
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <a href="#" class="header-logo bg-light py-2 px-3 rounded-pill">
+                            <img src="img/icons/icon-shopping-bag-dark.svg" alt="" class="pe-1"><span class="font-size-20 font-raleway" style="font-weight: 800;">Shopee</span>
+                        </a>
+                        <!-- logo ends  -->
+                    </div>
+                    <div class="col-auto d-flex align-items-center">
+                        <div class="header-event d-flex align-items-center">
+                            <div class="menu-event d-flex dropdown">
+                                <button class="main-menu-event d-flex align-items-center dropdown-toggle" data-bs-toggle="dropdown">
+                                    <img src="img/icons/icon-open-menu.svg" alt="">
+                                    <span>Menu</span>
+                                    <img src="img/icons/icon-arrow-drop-down.svg" alt="">
+                                </button>
+                                <ul class="mainmenu-nav dropdown-menu">
+                                    <li class="menu-items">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#all">Men
+                                            <span class="material-icons">arrow_right</span>
+                                        </a>
+                                        <div class="has-dropdown megamenu">
+                                            <div class="menu-content">
+                                                <h6 class="title">Top Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">T-shirts</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Sweatshirts</a></li>
+                                                    <li><a href="#">Jackets</a></li>
+                                                    <li><a href="#">Suits</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="#">Men Accessory</a>
-                                                <ul>
-                                                    <li><a href="#">Men Accessory</a></li>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Bottom Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Jeans</a></li>
+                                                    <li><a href="#">Trousers</a></li>
+                                                    <li><a href="#">Shorts</a></li>
+                                                    <li><a href="#">Joggers</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="#">Men Accessory</a>
-                                                <ul>
-                                                    <li><a href="#">Men Accessory</a></li>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Other Items</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Footwear</a></li>
+                                                    <li><a href="#">Personal Care</a></li>
+                                                    <li><a href="#">Sunglasses</a></li>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Deodrants</a></li>
+                                                    <li><a href="#">Smart Gadgets</a></li>
                                                 </ul>
-                                            </li>
-                                        </ul>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#all">Women
+                                            <span class="material-icons">arrow_right</span>
+                                        </a>
+                                        <div class="has-dropdown megamenu">
+                                            <div class="menu-content">
+                                                <h6 class="title">India Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Kurtas</a></li>
+                                                    <li><a href="#">Ethnic Wear</a></li>
+                                                    <li><a href="#">Leggings</a></li>
+                                                    <li><a href="#">Palazoos</a></li>
+                                                    <li><a href="#">Duppatta</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Western Wear</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Dresses</a></li>
+                                                    <li><a href="#">Jumpsuits</a></li>
+                                                    <li><a href="#">Tops</a></li>
+                                                    <li><a href="#">Jeans</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-content">
+                                                <h6 class="title">Other Items</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Footwear</a></li>
+                                                    <li><a href="#">Jewellery</a></li>
+                                                    <li><a href="#">Sunglasses</a></li>
+                                                    <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Deodrants</a></li>
+                                                    <li><a href="#">Beauty Care</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="#all">Beauty
+                                            <span class="material-icons">arrow_right</span>
+                                        </a>
+                                        <div class="has-dropdown">
+                                            <div class="menu-content">
+                                                <h6 class="title">Buy From Top Brands</h6>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Lakme</a></li>
+                                                    <li><a href="#">LOreal</a></li>
+                                                    <li><a href="#">Mamaearth</a></li>
+                                                    <li><a href="#">The Body Shop</a></li>
+                                                    <li><a href="#">Kama Ayurveda</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="products.html">Products</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="about-us.html">About Us</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="about-us.html#faq">FAQ</a>
+                                    </li>
+                                    <li class="menu-items">
+                                        <a href="contact.html">Contact Us</a>
                                     </li>
 
-                                    <li><a href="about.php">Men</a></li>
-                                    <li><a href="about.php">Women</a></li>
-                                    <li><a href="about.php">Kids</a></li>
-                                    <li><a href="about.php">About Us</a></li>
-                                    <li><a href="faq.php">FAQ</a></li>
-
-                                    <li><a href="contact.php">Contact Us</a></li>
                                 </ul>
                             </div>
+
+                            <div class="search-event">
+                                <input type="search" placeholder="Search..." class="header-search">
+                                <button class="header-search-btn">
+                                    <img src="img/icons/icon-search.svg" alt="">
+                                </button>
+                            </div>
+
+                            <!-- menu ends  -->
                         </div>
                     </div>
+
+                    <div class="col-auto">
+                        <div class="header-action d-flex">
+                            <button class="header-action-item header-action-wishlist" data-bs-toggle="offcanvas"
+                                data-bs-target="#wishlistOffcanvas">
+                                <span class="material-icons">favorite</span>
+                                <span id="ge-tooltip-label-you-menu" role="tooltip">wishlist</span>
+                                <span class="count-tag">03</span>
+                            </button>
+                            <button class="header-action-item header-action-wishlist" data-bs-toggle="offcanvas"
+                                data-bs-target="#addcartOffcanvas">
+                                <span class="material-icons">shopping_cart</span>
+                                <span id="ge-tooltip-label-you-menu" role="tooltip">Cart</span>
+                                <span class="count-tag">03</span>
+                            </button>
+                            <button class="header-action-item header-action-wishlist">
+                                <a href="register.html">
+                                    <i class="fa-solid fa-power-off"></i>
+                                </a>
+                                <span id="ge-tooltip-label-you-menu" role="tooltip">Your account</span>
+                            </button>
+
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
     </header>
-    <!-- !START HEADER -->
+    <!-- header section ends  -->
+
+    <!-- mobile header starts  -->
+
+    <div class="mobile-header d-block d-lg-none">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <div class="mobile-logo">
+                        <a href="#" class="header-logo bg-light py-2 px-3 rounded-pill">
+                            <img src="img/icons/icon-shopping-bag-dark.svg" alt="" class="pe-1"><span class="font-size-20 font-raleway" style="font-weight: 800;">Shopee</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="mobile-action-link text-end d-flex">
+                        <button data-bs-toggle="offcanvas" data-bs-target="#toggleMenu">
+                            <span class="material-icons">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- mobile header ends -->
+
+    <!-- offcanvas mobile menu starts  -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="toggleMenu">
+        <div class="offcanvas-header justify-content-end">
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex justify-content-center">
+                <a href="wishlist.html" class="header-action-item header-action-wishlist">
+                    <span class="material-icons">favorite</span>
+                    <span class="count-tag">03</span>
+                    <span id="ge-tooltip-label-you-menu" role="tooltip">Wishlist</span>
+                </a>
+                <a href="cart.html" class="header-action-item header-action-wishlist">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="count-tag">03</span>
+                    <span id="ge-tooltip-label-you-menu" role="tooltip">Cart</span>
+                </a>
+                <a href="register.html" class="header-action-item header-action-wishlist">
+                    <i class="fa-solid fa-power-off"></i>
+                    <span id="ge-tooltip-label-you-menu" role="tooltip">Your account</span>
+                </a>
+            </div>
+            <div class="header-event mobile-search my-5">
+                <div class="search-event">
+                    <input type="search" class="header-search">
+                    <button class="header-search-btn">
+                        <img src="img/icons/icon-search.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <!-- offcanvas mobile wrapper starts  -->
+            <div class="offcanvas-mobile-menu-wrapper">
+                <div class="mobile-menu-bottom">
+                    <div class="offcanvas-menu">
+                        <ul>
+                            <li>
+                                <a href="#"><span>Home</span></a>
+                            </li>
+                            <li>
+                                <a href="#all"><span>Men</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Top Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">T-shirts</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Sweatshirts</a></li>
+                                            <li><a href="#">Jackets</a></li>
+                                            <li><a href="#">Suits</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Bottom Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Jeans</a></li>
+                                            <li><a href="#">Trousers</a></li>
+                                            <li><a href="#">Shorts</a></li>
+                                            <li><a href="#">Joggers</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Other Items</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Personal Care</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Watches</a></li>
+                                            <li><a href="#">Deodrants</a></li>
+                                            <li><a href="#">Smart Gadgets</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="#all"><span>Women</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Indian Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Kurtas</a></li>
+                                            <li><a href="#">Ethnic Wear</a></li>
+                                            <li><a href="#">Leggings</a></li>
+                                            <li><a href="#">Palazoos</a></li>
+                                            <li><a href="#">Duppatta</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Western Wear</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Jumpsuits</a></li>
+                                            <li><a href="#">Tops</a></li>
+                                            <li><a href="#">Jeans</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Other Items</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Jewellery</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Watches</a></li>
+                                            <li><a href="#">Deodrants</a></li>
+                                            <li><a href="#">Beauty Care</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="#all"><span>Beauty</span></a>
+                                <ul class="mobile-sub-menu">
+                                    <li>
+                                        <a href="#">Buy by Top Brands</a>
+                                        <ul class="mobile-sub-menu">
+                                            <li><a href="#">Lakme</a></li>
+                                            <li><a href="#">LOreal</a></li>
+                                            <li><a href="#">Mamaearth</a></li>
+                                            <li><a href="#">The Body Shop</a></li>
+                                            <li><a href="#">Kama Ayurveda</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="products.html">Products</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html#faq">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mobile-contact-info text-center d-flex justify-content-center">
+                    <div class="social-link d-flex">
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-facebook-f-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-dribbble-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-twitter-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/icons/icon-pinterest-p-dark.svg" alt="" class="icon-svg">
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <!-- offcanvas mobile wrapper ends -->
+        </div>
+    </div>
+
+    <!-- offcanvas mobile menu ends  -->
+
+     <!-- wishlist offcanvas section starts  -->
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="wishlistOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><a href="wishlist.html">Wishlist</a></h5>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-products-list">
+                <li class="single-item d-flex justify-content-between align-items-center">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Puma Motorsport</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item d-flex justify-content-between align-items-center">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Blazer</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2299.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item d-flex justify-content-between align-items-center">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Top</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 1138.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="offcanvas-action-link">
+                <a href="wishlist.html" class="btn">View Wishlist</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- wishlist offcanvas section ends -->
+
+
+    <!-- add to cart offcanvas section starts  -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="addcartOffcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title"><a href="cart.html">Add To Cart</a></h5>
+            <button class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-products-list">
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799721.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Puma Motorsport</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2499.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799858.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Blazer</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 2299.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+                <li class="single-item">
+                    <div class="box">
+                        <a href="#" class="image">
+                            <img src="Images/Apparel_Women_Tops_1356799590.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <a href="#" class="title">Top</a>
+                            <div>
+                                <span>1 x </span>
+                                <span>Rs. 1138.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-delete text-right">
+                        <a href="#"><img src="img/icons/icon-trash.svg" alt=""></a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="offcanvas-action-link">
+                <a href="cart.html" class="btn">Add to Cart</a>
+                <a href="checkout.html" class="btn">Checkout</a>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- add to cart offcanvas section ends -->
+
+    <!-- START MAIN SECTION -->
+    <main>
 
     <!-- breadcrumb section starts  -->
     <div class="breadcrumb-section">
         <div class="box-wrapper">
             <div class="breadcrumb-wrapper b-wrapper pos-relative">
                 <div class="breadcrumb-bg">
-                    <img src="images/product.jpg" alt="">
-                </div>
-                <div class="breadcrumb-content section-fluid-270">
-                    <div class="breadcrumb-wrapper">
-                        <div class="content">
-                            <span class="title-tag">Best Deal On Internet</span>
-                            <h2 class="title">
-                                <span class="text-mark">
-                                    Hurry !
-                                </span>
-                                <br>
-                                Get your favorites now
-                            </h2>
-                        </div>
-                        <ul class="breadcrumb-nav">
-                            <li><a href="#">Shop</a></li>
-                            <li>Product Page</li>
-                        </ul>
-                    </div>
+                    <div class="breadcrumb-bg-img"></div>
                 </div>
             </div>
         </div>
@@ -283,7 +709,7 @@
                                     <div class="sidebar-content">
                                         <div class="banner-animate--flash">
                                             <a href="#" class="sidebar-banner img-responsive">
-                                                <img src="images/banner1.jpg" alt="">
+                                                <img src="images/3d-online-shopping-social-media-mobile-applications-websites-concepts_131114-30.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -305,7 +731,7 @@
                         <div class="col-xl-8 offset-xl-1 col-lg-9">
                             <ul class="product-shop-filter-info d-flex align-items-center justify-content-between">
                                 <li class="product-item-tracking">
-                                    <span>total 02 of 50</span>
+                                    <span>total 03 of 15</span>
                                 </li>
                                 <li class="product-item-filter">
                                     <select name="choice" id="">
@@ -318,8 +744,8 @@
                                 </li>
                             </ul>
                             <div class="product-shop-list-items">
-                                <div class="row mb-n25">
-                                    <div class="col-lg-4 col-md-6 col-12 mb-25">
+                                <div class="row mb-n25 product-shop-list-items-con" style="display: none;">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
                                         <div class="product-single-item-style-1">
                                             <a href="#" class="image img-responsive">
                                                 <img src="img/product/p1.png" alt="" class="img-fluid">
@@ -338,28 +764,42 @@
                                                             <del>Rs. 5999</del>
                                                         </span>
                                                     </div>
-                                                    <div class="bottom d-flex align-items-center justify-content-center">
-                                                        <div class="rating text-success font-size-12">
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="far fa-star"></i></span>
-                                                        </div>
-                                                        <div class="product-event-items ms-2 d-flex justify-content-center">
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-shopping-cart"></i>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
                                                             </a>
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-heart"></i>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
                                                             </a>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12 mb-25">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
                                         <div class="product-single-item-style-1">
                                             <a href="#" class="image img-responsive">
                                                 <img src="img/product/p2.png" alt="" class="img-fluid">
@@ -378,28 +818,42 @@
                                                             <del>Rs. 5999</del>
                                                         </span>
                                                     </div>
-                                                    <div class="bottom">
-                                                        <div class="rating text-success font-size-12">
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="far fa-star"></i></span>
-                                                        </div>
-                                                        <div class="product-event-items">
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-shopping-cart"></i>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
                                                             </a>
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-heart"></i>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
                                                             </a>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12 mb-25">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
                                         <div class="product-single-item-style-1">
                                             <a href="#" class="image img-responsive">
                                                 <img src="img/product/p3.png" alt="" class="img-fluid">
@@ -418,28 +872,42 @@
                                                             <del>Rs. 5999</del>
                                                         </span>
                                                     </div>
-                                                    <div class="bottom">
-                                                        <div class="rating text-success font-size-12">
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="far fa-star"></i></span>
-                                                        </div>
-                                                        <div class="product-event-items">
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-shopping-cart"></i>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
                                                             </a>
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-heart"></i>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
                                                             </a>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12 mb-25">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
                                         <div class="product-single-item-style-1">
                                             <a href="#" class="image img-responsive">
                                                 <img src="img/product/p4.webp" alt="" class="img-fluid">
@@ -458,28 +926,42 @@
                                                             <del>Rs. 5999</del>
                                                         </span>
                                                     </div>
-                                                    <div class="bottom">
-                                                        <div class="rating text-success font-size-12">
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="far fa-star"></i></span>
-                                                        </div>
-                                                        <div class="product-event-items">
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-shopping-cart"></i>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
                                                             </a>
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-heart"></i>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
                                                             </a>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12 mb-25">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
                                         <div class="product-single-item-style-1">
                                             <a href="#" class="image img-responsive">
                                                 <img src="img/product/p5.png" alt="" class="img-fluid">
@@ -498,28 +980,42 @@
                                                             <del>Rs. 5999</del>
                                                         </span>
                                                     </div>
-                                                    <div class="bottom">
-                                                        <div class="rating text-success font-size-12">
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="far fa-star"></i></span>
-                                                        </div>
-                                                        <div class="product-event-items">
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-shopping-cart"></i>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
                                                             </a>
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-heart"></i>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
                                                             </a>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12 mb-25">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
                                         <div class="product-single-item-style-1">
                                             <a href="#" class="image img-responsive">
                                                 <img src="img/product/p6.png" alt="" class="img-fluid">
@@ -538,28 +1034,42 @@
                                                             <del>Rs. 5999</del>
                                                         </span>
                                                     </div>
-                                                    <div class="bottom">
-                                                        <div class="rating text-success font-size-12">
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="far fa-star"></i></span>
-                                                        </div>
-                                                        <div class="product-event-items">
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-shopping-cart"></i>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
                                                             </a>
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-heart"></i>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
                                                             </a>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12 mb-25">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
                                         <div class="product-single-item-style-1">
                                             <a href="#" class="image img-responsive">
                                                 <img src="img/product/p7.png" alt="" class="img-fluid">
@@ -578,28 +1088,42 @@
                                                             <del>Rs. 5999</del>
                                                         </span>
                                                     </div>
-                                                    <div class="bottom">
-                                                        <div class="rating text-success font-size-12">
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="far fa-star"></i></span>
-                                                        </div>
-                                                        <div class="product-event-items">
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-shopping-cart"></i>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
                                                             </a>
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-heart"></i>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
                                                             </a>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-12 mb-25">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
                                         <div class="product-single-item-style-1">
                                             <a href="#" class="image img-responsive">
                                                 <img src="img/product/p8.png" alt="" class="img-fluid">
@@ -618,23 +1142,1225 @@
                                                             <del>Rs. 5999</del>
                                                         </span>
                                                     </div>
-                                                    <div class="bottom d-flex align-items-center justify-content-between">
-                                                        <div class="rating text-success font-size-12">
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="fas fa-star"></i></span>
-                                                            <span><i class="far fa-star"></i></span>
-                                                        </div>
-                                                        <div class="product-event-items">
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-shopping-cart"></i>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
                                                             </a>
-                                                            <a href="#" class="btn cart-btn-s">
-                                                                <i class="fa fa-heart"></i>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
                                                             </a>
                                                         </div>
                                                     </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="img/product/p9.png" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="img/product/p10.png" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="img/product/p11.webp" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="img/product/p12.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="img/product/p13.webp" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="img/product/p13.webp" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="img/product/p14.webp" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-25 product-shop-list-items-each">
+                                        <div class="product-single-item-style-1">
+                                            <a href="#" class="image img-responsive">
+                                                <img src="images/p15.jpg" alt="" class="img-fluid">
+                                                <ul class="tooltip-tag-items">
+                                                    <li class="color-green">20%</li>
+                                                </ul>
+                                            </a>
+                                            <div class="content">
+                                                <div class="text-center">
+                                                    <div class="top">
+                                                        <span class="category">MEN</span>
+                                                        <h4 class="title">
+                                                            <a href="#">Puma Tshirts</a>
+                                                        </h4>
+                                                        <span class="price">Rs. 4799
+                                                            <del>Rs. 5999</del>
+                                                        </span>
+                                                    </div>
+                                                    <div class="bottom d-flex justify-content-between align-items-center">
+                                                        <ul class="review-star d-flex justify-content-center flex-wrap">
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span class="material-icons">star</span>
+                                                            </li>
+                                                            <li class="fill">
+                                                                <span
+                                                                    class="material-icons">star_half</span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="product-event-items d-flex">
+                                                            <a href="#" class="btn cart-btn">
+                                                                <span
+                                                                    class="material-icons">shopping_cart_border</span>
+                                                            </a>
+                                                            <a href="#" class="btn wishlist-btn">
+                                                                <span
+                                                                    class="material-icons">favorite_border</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -644,21 +2370,23 @@
 
                             <div class="d-flex justify-content-center">
                                 <ul class="page-pagination">
-                                    <li class="icon-direction icon-direction--prev">
+                                    <!-- <li class="page-item icon-direction icon-direction--prev disable">
                                         <a href="#" class="prev">
-                                            <span class="fas fa-arrow-left"></span>
+                                            <span class="material-icons-outlined">arrow_left</span>
                                         </a>
                                     </li>
-                                    <li><a href="#" class="active">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li>...</li>
-                                    <li><a href="#">10</a></li>
-                                    <li class="icon-direction icon-direction--next">
+                                    <li class="page-item active current-page"><a href="#">1</a></li>
+                                    <li class="page-item current-page"><a href="#">2</a></li>
+                                    <li class="page-item dots">...</li>
+                                    <li class="page-item current-page"><a href="#">6</a></li>
+                                    <li class="page-item current-page"><a href="#">7</a></li>
+                                    <li class="page-item dots">...</li>
+                                    <li class="page-item current-page"><a href="#">10</a></li>
+                                    <li class="page-item icon-direction icon-direction--next">
                                         <a href="#" class="next">
-                                            <span class="fas fa-arrow-right"></span>
+                                            <span class="material-icons-outlined">arrow_right</span>
                                         </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -666,50 +2394,123 @@
                 </div>
             </div>
         </div>
-
+    </div>
                         <!-- Product section ends -->
 
         <!-- START FOOOTER -->
-    <footer id="footer" class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row">
-            <div class="col-lg-3 col-12">
-                <h4 class="font-rubik font-size-20">Shopee Site</h4>
-                <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, deserunt.</p>
-            </div>
-            <div class="col-lg-4 col-12 me-2">
-                <h4 class="font-rubik font-size-20">Newslatter</h4>
-                <form class="form-row">
-                    <input type="text" class="form-control" placeholder="Email *">
-                    <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
-                </form>
-            </div>
-            <div class="col-lg-2 col-12">
-                <h4 class="font-rubik font-size-20">Information</h4>
-                <div class="d-flex flex-column flex-wrap">
-                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">About Us</a>
-                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Delivery Information</a>
-                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Privacy Policy</a>
-                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Terms & Conditions</a>
+    </main>
+    <!-- !START MAIN SECTION -->
+    <!-- START FOOOTER -->
+    <footer class="footer-section footer-section-style-1 section-top-gap-120">
+        <div class="box-wrapper">
+            <div class="footer-wrapper section-fluid-270">
+                <div class="container-fluid">
+
+                    <div class="footer-top">
+                        <div class="footer-top-left">
+                            <div class="footer-contact-items">
+                                <a href="tel:+234-8068950848" class="icon-left">
+                                    <img src="img/icons/icon-ios-call-dark.svg" alt="" class="icon-svg">
+                                    +234 8068950848
+                                </a>
+                                <a href="mailto:sandaumaru207@gmail.com" class="icon-left">
+                                    <img src="img/icons/icon-mail-open-dark.svg" alt="" class="icon-svg">
+                                    sandaumaru207@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-top-right">
+                            <div class="footer-social">
+                                <a href="#">
+                                    <img src="img/icons/icon-facebook-f-dark.svg" alt="" class="icon-svg">
+                                </a>
+                                <a href="#">
+                                    <img src="img/icons/icon-dribbble-dark.svg" alt="" class="icon-svg">
+                                </a>
+                                <a href="#">
+                                    <img src="img/icons/icon-pinterest-p-dark.svg" alt="" class="icon-svg">
+                                </a>
+                                <a href="#">
+                                    <img src="img/icons/icon-twitter-dark.svg" alt="" class="icon-svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="footer-center">
+                        <div class="footer-widgets-items">
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Product</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-1">Product</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-1">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Men</a></li>
+                                        <li><a href="#">Women</a></li>
+                                        <li><a href="#">Kids</a></li>
+                                        <li><a href="#">Home & Living</a></li>
+                                        <li><a href="#">Beauty</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Offer</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-2">Offer</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-2">
+                                    <ul class="footer-nav">
+                                        <li><a href="#">Gift Cards</a></li>
+                                        <li><a href="#">Insider Points</a></li>
+                                        <li><a href="#">Coupons</a></li>
+                                        <li><a href="#">Birthday Special</a></li>
+                                        <li><a href="#">Festive Season</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Information</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-3">Information</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-3">
+                                    <ul class="footer-nav">
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="about-us.html#faq">FAQ</a></li>
+                                        <li><a href="#">T&C</a></li>
+                                        <li><a href="#">Terms of Use</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer-widgets-single-items footer-widgets-single-item--light">
+                                <h5 class="title">Useful Links</h5>
+                                <h5 class="collapsed-title collapsed" data-bs-toggle="collapse"
+                                    data-bs-target="#dividerId-4">Useful Links</h5>
+                                <div class="widget-collapse-body collapse" id="dividerId-4">
+                                    <ul class="footer-nav">
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="cart.html">Cart</a></li>
+                                        <li><a href="wishlist.html">Wishlist</a></li>
+                                        <li><a href="register.html">Account</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p class="copyright-text copyright-text--light">&copy; Copyrights 2022. Desing By <a href="#"> Umar Umar</a></p>
+                        <a href="#" class="payment-logo">
+                            <img src="img/logo/payment-logo.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-2 col-12">
-                <h4 class="font-rubik font-size-20">Account</h4>
-                <div class="d-flex flex-column flex-wrap">
-                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
-                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
-                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
-                <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newslatters</a>
-                </div>
-            </div>
             </div>
         </div>
     </footer>
-    <div class="px-lg-5 credit bg-dark">
-        <p> created by <span>Umar Umar</span> | all rights reserved! </p>
-        <img src="img/logo/payment-logo.png" class="img-fluid" alt="">
-    </div>
     <!-- !START FOOOTER -->
+    <!-- scroll to top  -->
+    <div id="scroll-to-top" class="scroll-to-top"><span class="material-icons-outlined">expand_less</span></div>
 
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>

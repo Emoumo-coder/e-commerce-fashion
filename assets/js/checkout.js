@@ -8,11 +8,11 @@ $(document).ready(function(){
         $(this).hide();
     });
     $(".edit").click(function(){
-        $(".hide-for-front").css("display","none");
+        // $(".hide-for-front").css("display","none");
         $(".show-for-front").css("display","block");
     });
     $(".call-back").click(function(){
-        $(".hide-for-front").css("display","block");
+        // $(".hide-for-front").css("display","block");
         $(".show-for-front").css("display","none");
     });
     $("#button-hidder").click(function(){

@@ -19,25 +19,23 @@ $(document).ready(function(){
         $("#collapseTwo,#payment-option").collapse("hide");
     });
     $("#pay-pal-hidder").click(function(){
-        $("#debit,#net-banking,#cash").collapse("hide");
+        $("#debit,#cash").collapse("hide");
+        $("#PayPal,#debit").collapse("hide");
+        setTimeout(() => {
+            window.location.replace("index.html");
+        }, 3000);
     })
     $("#debit-hidder").click(function(){
-        $("#PayPal,#net-banking,#cash").collapse("hide");
-    })
-    $("#net-banking-hidder").click(function(){
-        $("#PayPal,#cash,#debit").collapse("hide");
+        $("#PayPal,#cash").collapse("hide");
+        $("#PayPal,#debit").collapse("hide");
+        setTimeout(() => {
+            window.location.replace("index.html");
+        }, 3000);
     })
     $("#cash-hidder").click(function(){
-        $("#PayPal,#net-banking,#debit").collapse("hide");
-    })
-
-    $(window). scroll(function(){
-        var scroll = $(window). scrollTop();
-        if (scroll > 0) {
-        $("#top-containt"). css("background" , "rgb(233, 233, 233)");
-        }
-        else{
-        $("#top-containt"). css("background" , "white");}});
-    $('.parallax-window').parallax({imageSrc: 'desktop-1.jpg'});
-
+        $("#PayPal,#debit").collapse("hide");
+        setTimeout(() => {
+            window.location.replace("index.html");
+        }, 3000);
+    });
 })
